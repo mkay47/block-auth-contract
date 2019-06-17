@@ -19,10 +19,10 @@ contract Login{
         return bytes32(hashVal);
     }
     
-     function login_admin() onlyOwner public { 
-        random_number = rand();
-        hash = keccak256(abi.encodePacked(msg.sender,now,random_number));
-        emit LoginAttempt(msg.sender, hash);
+     function login_admin() public { 
+		//random_number = rand();
+        //hash = keccak256(abi.encodePacked(msg.sender,now,random_number));
+        emit LoginAttempt(msg.sender, "12345");
     }
 
     modifier onlyOwner {
