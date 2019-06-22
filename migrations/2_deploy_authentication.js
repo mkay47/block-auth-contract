@@ -1,4 +1,5 @@
-const Authentication = artifacts.require("Authentication");
+//const Authentication = artifacts.require("Authentication");
+const login = artifacts.require("Login");
 module.exports = function (deployer) {
-    deployer.deploy(Authentication);
+    deployer.deploy(login);
 };
