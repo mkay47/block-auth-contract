@@ -65,24 +65,25 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506101e2806100206000396000f3fe6080604052600436106100615763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166309bd5a608114610066578063384e8e911461008d5780633b3dca76146100a4578063f262c49f146100b9575b600080fd5b34801561007257600080fd5b5061007b6100ce565b60408051918252519081900360200190f35b34801561009957600080fd5b506100a26100d4565b005b3480156100b057600080fd5b5061007b6100f5565b3480156100c557600080fd5b506100a2610124565b60015481565b6000805473ffffffffffffffffffffffffffffffffffffffff191633179055565b6000805473ffffffffffffffffffffffffffffffffffffffff16331461011a57600080fd5b5060001943014090565b61012c6100f5565b6002819055604080516c0100000000000000000000000033908102602080840191909152426034840152605480840195909552835180840390950185526074830180855285519590910194909420600181905593526094810192909252517f5913a2a1da9e820000b253b31744f5c4b17e184c6d3f19d8e9beaef994d804f89181900360b40190a156fea165627a7a72305820eef0db4ef61ebd6b23c2073415e3170178136225c58813bff51b224d251f8d460029",
-  "deployedBytecode": "0x6080604052600436106100615763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166309bd5a608114610066578063384e8e911461008d5780633b3dca76146100a4578063f262c49f146100b9575b600080fd5b34801561007257600080fd5b5061007b6100ce565b60408051918252519081900360200190f35b34801561009957600080fd5b506100a26100d4565b005b3480156100b057600080fd5b5061007b6100f5565b3480156100c557600080fd5b506100a2610124565b60015481565b6000805473ffffffffffffffffffffffffffffffffffffffff191633179055565b6000805473ffffffffffffffffffffffffffffffffffffffff16331461011a57600080fd5b5060001943014090565b61012c6100f5565b6002819055604080516c0100000000000000000000000033908102602080840191909152426034840152605480840195909552835180840390950185526074830180855285519590910194909420600181905593526094810192909252517f5913a2a1da9e820000b253b31744f5c4b17e184c6d3f19d8e9beaef994d804f89181900360b40190a156fea165627a7a72305820eef0db4ef61ebd6b23c2073415e3170178136225c58813bff51b224d251f8d460029",
-  "sourceMap": "27:791:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:791:0;;;;;;;",
-  "deployedSourceMap": "27:791:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;70:19;;8:9:-1;5:2;;;30:1;27;20:12;5:2;70:19:0;;;;;;;;;;;;;;;;;;;;185:62;;8:9:-1;5:2;;;30:1;27;20:12;5:2;185:62:0;;;;;;321:209;;8:9:-1;5:2;;;30:1;27;20:12;5:2;321:209:0;;;;543:187;;8:9:-1;5:2;;;30:1;27;20:12;5:2;543:187:0;;;;70:19;;;;:::o;185:62::-;221:5;:18;;-1:-1:-1;;221:18:0;229:10;221:18;;;185:62::o;321:209::-;363:7;789:5;;;;775:10;:19;767:28;;;;;;-1:-1:-1;;;408:12:0;:16;461:26;321:209;:::o;543:187::-;595:6;:4;:6::i;:::-;579:13;:22;;;629:46;;;;646:10;629:46;;;;;;;;;;;657:3;629:46;;;;;;;;;;;;;;26:21:-1;;;22:32;;;6:49;;629:46:0;;;;;;619:57;;;;;;;;;;612:4;:64;;;692:30;;;;;;;;;;;;;;;;;;;543:187::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"hash\",\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"Login2\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"rand\",\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"login_admin\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"token\",\"type\":\"bytes32\"}],\"name\":\"LoginAttempt\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/Login.sol\":\"Login\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/Login.sol\":{\"keccak256\":\"0x575eba64f5e54ee24e2e8a100094c64823324e112739b3e8c5de897eafcfca86\",\"urls\":[\"bzzr://6268ac12f93d00209288078d5f917fabcbf195519166432fbcbfa2e95f5d659b\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610173806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806309bd5a6014610051578063384e8e911461006b5780633b3dca7614610075578063f262c49f1461007d575b600080fd5b610059610085565b60408051918252519081900360200190f35b61007361008b565b005b61005961009f565b6100736100c1565b60015481565b600080546001600160a01b03191633179055565b600080546001600160a01b031633146100b757600080fd5b5060001943014090565b6100c961009f565b60028190556040805133606081901b602080840191909152426034840152605480840195909552835180840390950185526074830180855285519590910194909420600181905593526094810192909252517f5913a2a1da9e820000b253b31744f5c4b17e184c6d3f19d8e9beaef994d804f89181900360b40190a156fea165627a7a7230582055bd478a71326e33407d8d8e748fbe2d9a634c8c9c813bda048c38f257a889e80029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806309bd5a6014610051578063384e8e911461006b5780633b3dca7614610075578063f262c49f1461007d575b600080fd5b610059610085565b60408051918252519081900360200190f35b61007361008b565b005b61005961009f565b6100736100c1565b60015481565b600080546001600160a01b03191633179055565b600080546001600160a01b031633146100b757600080fd5b5060001943014090565b6100c961009f565b60028190556040805133606081901b602080840191909152426034840152605480840195909552835180840390950185526074830180855285519590910194909420600181905593526094810192909252517f5913a2a1da9e820000b253b31744f5c4b17e184c6d3f19d8e9beaef994d804f89181900360b40190a156fea165627a7a7230582055bd478a71326e33407d8d8e748fbe2d9a634c8c9c813bda048c38f257a889e80029",
+  "sourceMap": "27:791:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:791:1;;;;;;;",
+  "deployedSourceMap": "27:791:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:791:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;70:19;;;:::i;:::-;;;;;;;;;;;;;;;;185:62;;;:::i;:::-;;321:209;;;:::i;543:187::-;;;:::i;70:19::-;;;;:::o;185:62::-;221:5;:18;;-1:-1:-1;;;;;;221:18:1;229:10;221:18;;;185:62::o;321:209::-;363:7;789:5;;-1:-1:-1;;;;;789:5:1;775:10;:19;767:28;;;;;;-1:-1:-1;;;408:12:1;:16;461:26;321:209;:::o;543:187::-;595:6;:4;:6::i;:::-;579:13;:22;;;629:46;;;646:10;629:46;;;;;;;;;;;;657:3;629:46;;;;;;;;;;;;;;26:21:-1;;;22:32;;;6:49;;629:46:1;;;;;;619:57;;;;;;;;;;612:4;:64;;;692:30;;;;;;;;;;;;;;;;;;;543:187::o",
   "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Login{\r\n\r\n    address owner;\r\n    bytes32 public hash;\r\n    bytes32 random_number;\r\n\r\n\tevent LoginAttempt(address sender, bytes32 token);\r\n    \r\n    function Login2 () public{\r\n        owner = msg.sender;\r\n    }\r\n    \r\n    // min and max are not needed now, some future work idea\r\n    function rand() onlyOwner public returns (bytes32){\r\n        uint256 lastBlockNumber = block.number - 1;\r\n        bytes32 hashVal = bytes32(blockhash(lastBlockNumber));\r\n        return bytes32(hashVal);\r\n    }\r\n    \r\n     function login_admin() public { \r\n\t\trandom_number = rand();\r\n        hash = keccak256(abi.encodePacked(msg.sender,now,random_number));\r\n        emit LoginAttempt(msg.sender, hash);\r\n    }\r\n\r\n    modifier onlyOwner {\r\n       require(msg.sender == owner);\r\n        _;\r\n    }\r\n}",
   "sourcePath": "C:/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/Login.sol",
   "ast": {
     "absolutePath": "/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/Login.sol",
     "exportedSymbols": {
       "Login": [
-        88
+        106
       ]
     },
-    "id": 89,
+    "id": 107,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1,
+        "id": 19,
         "literals": [
           "solidity",
           "^",
@@ -90,7 +91,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:23:1"
       },
       {
         "baseContracts": [],
@@ -98,20 +99,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 88,
+        "id": 106,
         "linearizedBaseContracts": [
-          88
+          106
         ],
         "name": "Login",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 3,
+            "id": 21,
             "name": "owner",
             "nodeType": "VariableDeclaration",
-            "scope": 88,
-            "src": "50:13:0",
+            "scope": 106,
+            "src": "50:13:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -119,10 +120,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 2,
+              "id": 20,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "50:7:0",
+              "src": "50:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -134,11 +135,11 @@
           },
           {
             "constant": false,
-            "id": 5,
+            "id": 23,
             "name": "hash",
             "nodeType": "VariableDeclaration",
-            "scope": 88,
-            "src": "70:19:0",
+            "scope": 106,
+            "src": "70:19:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -146,10 +147,10 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 4,
+              "id": 22,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
-              "src": "70:7:0",
+              "src": "70:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes32",
                 "typeString": "bytes32"
@@ -160,11 +161,11 @@
           },
           {
             "constant": false,
-            "id": 7,
+            "id": 25,
             "name": "random_number",
             "nodeType": "VariableDeclaration",
-            "scope": 88,
-            "src": "96:21:0",
+            "scope": 106,
+            "src": "96:21:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -172,10 +173,10 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 6,
+              "id": 24,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
-              "src": "96:7:0",
+              "src": "96:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes32",
                 "typeString": "bytes32"
@@ -187,21 +188,21 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 13,
+            "id": 31,
             "name": "LoginAttempt",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 12,
+              "id": 30,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9,
+                  "id": 27,
                   "indexed": false,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13,
-                  "src": "142:14:0",
+                  "scope": 31,
+                  "src": "142:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -209,10 +210,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 8,
+                    "id": 26,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "142:7:0",
+                    "src": "142:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -224,12 +225,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 11,
+                  "id": 29,
                   "indexed": false,
                   "name": "token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13,
-                  "src": "158:13:0",
+                  "scope": 31,
+                  "src": "158:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -237,10 +238,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 10,
+                    "id": 28,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "158:7:0",
+                    "src": "158:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -250,32 +251,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "141:31:0"
+              "src": "141:31:1"
             },
-            "src": "123:50:0"
+            "src": "123:50:1"
           },
           {
             "body": {
-              "id": 21,
+              "id": 39,
               "nodeType": "Block",
-              "src": "210:37:0",
+              "src": "210:37:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 19,
+                    "id": 37,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 16,
+                      "id": 34,
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3,
-                      "src": "221:5:0",
+                      "referencedDeclaration": 21,
+                      "src": "221:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -287,18 +288,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 17,
+                        "id": 35,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 160,
-                        "src": "229:3:0",
+                        "referencedDeclaration": 178,
+                        "src": "229:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 18,
+                      "id": 36,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -306,67 +307,67 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "229:10:0",
+                      "src": "229:10:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
                         "typeString": "address payable"
                       }
                     },
-                    "src": "221:18:0",
+                    "src": "221:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 20,
+                  "id": 38,
                   "nodeType": "ExpressionStatement",
-                  "src": "221:18:0"
+                  "src": "221:18:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 22,
+            "id": 40,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "Login2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 14,
+              "id": 32,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "201:2:0"
+              "src": "201:2:1"
             },
             "returnParameters": {
-              "id": 15,
+              "id": 33,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "210:0:0"
+              "src": "210:0:1"
             },
-            "scope": 88,
-            "src": "185:62:0",
+            "scope": 106,
+            "src": "185:62:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 48,
+              "id": 66,
               "nodeType": "Block",
-              "src": "371:159:0",
+              "src": "371:159:1",
               "statements": [
                 {
                   "assignments": [
-                    30
+                    48
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 30,
+                      "id": 48,
                       "name": "lastBlockNumber",
                       "nodeType": "VariableDeclaration",
-                      "scope": 48,
-                      "src": "382:23:0",
+                      "scope": 66,
+                      "src": "382:23:1",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -374,10 +375,10 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 29,
+                        "id": 47,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
-                        "src": "382:7:0",
+                        "src": "382:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -387,14 +388,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 35,
+                  "id": 53,
                   "initialValue": {
                     "argumentTypes": null,
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 34,
+                    "id": 52,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -403,18 +404,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 31,
+                        "id": 49,
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 150,
-                        "src": "408:5:0",
+                        "referencedDeclaration": 168,
+                        "src": "408:5:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
                           "typeString": "block"
                         }
                       },
-                      "id": 32,
+                      "id": 50,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -422,7 +423,7 @@
                       "memberName": "number",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "408:12:0",
+                      "src": "408:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -433,14 +434,14 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 33,
+                      "id": 51,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "423:1:0",
+                      "src": "423:1:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1_by_1",
@@ -448,27 +449,27 @@
                       },
                       "value": "1"
                     },
-                    "src": "408:16:0",
+                    "src": "408:16:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "382:42:0"
+                  "src": "382:42:1"
                 },
                 {
                   "assignments": [
-                    37
+                    55
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 37,
+                      "id": 55,
                       "name": "hashVal",
                       "nodeType": "VariableDeclaration",
-                      "scope": 48,
-                      "src": "435:15:0",
+                      "scope": 66,
+                      "src": "435:15:1",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -476,10 +477,10 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 36,
+                        "id": 54,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
-                        "src": "435:7:0",
+                        "src": "435:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -489,7 +490,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 43,
+                  "id": 61,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -498,12 +499,12 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 40,
+                            "id": 58,
                             "name": "lastBlockNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 30,
-                            "src": "471:15:0",
+                            "referencedDeclaration": 48,
+                            "src": "471:15:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -517,18 +518,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 39,
+                          "id": 57,
                           "name": "blockhash",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 151,
-                          "src": "461:9:0",
+                          "referencedDeclaration": 169,
+                          "src": "461:9:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_blockhash_view$_t_uint256_$returns$_t_bytes32_$",
                             "typeString": "function (uint256) view returns (bytes32)"
                           }
                         },
-                        "id": 41,
+                        "id": 59,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -536,7 +537,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "461:26:0",
+                        "src": "461:26:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -550,20 +551,20 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 38,
+                      "id": 56,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "nodeType": "ElementaryTypeNameExpression",
-                      "src": "453:7:0",
+                      "src": "453:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_bytes32_$",
                         "typeString": "type(bytes32)"
                       },
                       "typeName": "bytes32"
                     },
-                    "id": 42,
+                    "id": 60,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -571,14 +572,14 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "453:35:0",
+                    "src": "453:35:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "435:53:0"
+                  "src": "435:53:1"
                 },
                 {
                   "expression": {
@@ -586,12 +587,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 45,
+                        "id": 63,
                         "name": "hashVal",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 37,
-                        "src": "514:7:0",
+                        "referencedDeclaration": 55,
+                        "src": "514:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -605,20 +606,20 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 44,
+                      "id": 62,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "nodeType": "ElementaryTypeNameExpression",
-                      "src": "506:7:0",
+                      "src": "506:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_bytes32_$",
                         "typeString": "type(bytes32)"
                       },
                       "typeName": "bytes32"
                     },
-                    "id": 46,
+                    "id": 64,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -626,63 +627,63 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "506:16:0",
+                    "src": "506:16:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 28,
-                  "id": 47,
+                  "functionReturnParameters": 46,
+                  "id": 65,
                   "nodeType": "Return",
-                  "src": "499:23:0"
+                  "src": "499:23:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 49,
+            "id": 67,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 25,
+                "id": 43,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 24,
+                  "id": 42,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 87,
-                  "src": "337:9:0",
+                  "referencedDeclaration": 105,
+                  "src": "337:9:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "337:9:0"
+                "src": "337:9:1"
               }
             ],
             "name": "rand",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 23,
+              "id": 41,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "334:2:0"
+              "src": "334:2:1"
             },
             "returnParameters": {
-              "id": 28,
+              "id": 46,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27,
+                  "id": 45,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 49,
-                  "src": "363:7:0",
+                  "scope": 67,
+                  "src": "363:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -690,10 +691,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 26,
+                    "id": 44,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "363:7:0",
+                    "src": "363:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -703,36 +704,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "362:9:0"
+              "src": "362:9:1"
             },
-            "scope": 88,
-            "src": "321:209:0",
+            "scope": 106,
+            "src": "321:209:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 75,
+              "id": 93,
               "nodeType": "Block",
-              "src": "573:157:0",
+              "src": "573:157:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 55,
+                    "id": 73,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 52,
+                      "id": 70,
                       "name": "random_number",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7,
-                      "src": "579:13:0",
+                      "referencedDeclaration": 25,
+                      "src": "579:13:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -745,18 +746,18 @@
                       "arguments": [],
                       "expression": {
                         "argumentTypes": [],
-                        "id": 53,
+                        "id": 71,
                         "name": "rand",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 49,
-                        "src": "595:4:0",
+                        "referencedDeclaration": 67,
+                        "src": "595:4:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_nonpayable$__$returns$_t_bytes32_$",
                           "typeString": "function () returns (bytes32)"
                         }
                       },
-                      "id": 54,
+                      "id": 72,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -764,38 +765,38 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "595:6:0",
+                      "src": "595:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "src": "579:22:0",
+                    "src": "579:22:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 56,
+                  "id": 74,
                   "nodeType": "ExpressionStatement",
-                  "src": "579:22:0"
+                  "src": "579:22:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 67,
+                    "id": 85,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 57,
+                      "id": 75,
                       "name": "hash",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5,
-                      "src": "612:4:0",
+                      "referencedDeclaration": 23,
+                      "src": "612:4:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -813,18 +814,18 @@
                               "argumentTypes": null,
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 61,
+                                "id": 79,
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 160,
-                                "src": "646:3:0",
+                                "referencedDeclaration": 178,
+                                "src": "646:3:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
                                   "typeString": "msg"
                                 }
                               },
-                              "id": 62,
+                              "id": 80,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -832,7 +833,7 @@
                               "memberName": "sender",
                               "nodeType": "MemberAccess",
                               "referencedDeclaration": null,
-                              "src": "646:10:0",
+                              "src": "646:10:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address_payable",
                                 "typeString": "address payable"
@@ -840,12 +841,12 @@
                             },
                             {
                               "argumentTypes": null,
-                              "id": 63,
+                              "id": 81,
                               "name": "now",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 162,
-                              "src": "657:3:0",
+                              "referencedDeclaration": 180,
+                              "src": "657:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
@@ -853,12 +854,12 @@
                             },
                             {
                               "argumentTypes": null,
-                              "id": 64,
+                              "id": 82,
                               "name": "random_number",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7,
-                              "src": "661:13:0",
+                              "referencedDeclaration": 25,
+                              "src": "661:13:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes32",
                                 "typeString": "bytes32"
@@ -882,18 +883,18 @@
                             ],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 59,
+                              "id": 77,
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 147,
-                              "src": "629:3:0",
+                              "referencedDeclaration": 165,
+                              "src": "629:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_abi",
                                 "typeString": "abi"
                               }
                             },
-                            "id": 60,
+                            "id": 78,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -901,13 +902,13 @@
                             "memberName": "encodePacked",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": null,
-                            "src": "629:16:0",
+                            "src": "629:16:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
                               "typeString": "function () pure returns (bytes memory)"
                             }
                           },
-                          "id": 65,
+                          "id": 83,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -915,7 +916,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "629:46:0",
+                          "src": "629:46:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes_memory_ptr",
                             "typeString": "bytes memory"
@@ -929,18 +930,18 @@
                             "typeString": "bytes memory"
                           }
                         ],
-                        "id": 58,
+                        "id": 76,
                         "name": "keccak256",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 154,
-                        "src": "619:9:0",
+                        "referencedDeclaration": 172,
+                        "src": "619:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                           "typeString": "function (bytes memory) pure returns (bytes32)"
                         }
                       },
-                      "id": 66,
+                      "id": 84,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -948,21 +949,21 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "619:57:0",
+                      "src": "619:57:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "src": "612:64:0",
+                    "src": "612:64:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 68,
+                  "id": 86,
                   "nodeType": "ExpressionStatement",
-                  "src": "612:64:0"
+                  "src": "612:64:1"
                 },
                 {
                   "eventCall": {
@@ -972,18 +973,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 70,
+                          "id": 88,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 160,
-                          "src": "705:3:0",
+                          "referencedDeclaration": 178,
+                          "src": "705:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 71,
+                        "id": 89,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -991,7 +992,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "705:10:0",
+                        "src": "705:10:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -999,12 +1000,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 72,
+                        "id": 90,
                         "name": "hash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5,
-                        "src": "717:4:0",
+                        "referencedDeclaration": 23,
+                        "src": "717:4:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -1022,18 +1023,18 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 69,
+                      "id": 87,
                       "name": "LoginAttempt",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 13,
-                      "src": "692:12:0",
+                      "referencedDeclaration": 31,
+                      "src": "692:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes32_$returns$__$",
                         "typeString": "function (address,bytes32)"
                       }
                     },
-                    "id": 73,
+                    "id": 91,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1041,48 +1042,48 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "692:30:0",
+                    "src": "692:30:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 74,
+                  "id": 92,
                   "nodeType": "EmitStatement",
-                  "src": "687:35:0"
+                  "src": "687:35:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 76,
+            "id": 94,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "login_admin",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 50,
+              "id": 68,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "563:2:0"
+              "src": "563:2:1"
             },
             "returnParameters": {
-              "id": 51,
+              "id": 69,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "573:0:0"
+              "src": "573:0:1"
             },
-            "scope": 88,
-            "src": "543:187:0",
+            "scope": 106,
+            "src": "543:187:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 86,
+              "id": 104,
               "nodeType": "Block",
-              "src": "757:58:0",
+              "src": "757:58:1",
               "statements": [
                 {
                   "expression": {
@@ -1094,7 +1095,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 82,
+                        "id": 100,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1103,18 +1104,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 79,
+                            "id": 97,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 160,
-                            "src": "775:3:0",
+                            "referencedDeclaration": 178,
+                            "src": "775:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 80,
+                          "id": 98,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1122,7 +1123,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "775:10:0",
+                          "src": "775:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
@@ -1132,18 +1133,18 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 81,
+                          "id": 99,
                           "name": "owner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3,
-                          "src": "789:5:0",
+                          "referencedDeclaration": 21,
+                          "src": "789:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "775:19:0",
+                        "src": "775:19:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1157,21 +1158,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 78,
+                      "id": 96,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        163,
-                        164
+                        181,
+                        182
                       ],
-                      "referencedDeclaration": 163,
-                      "src": "767:7:0",
+                      "referencedDeclaration": 181,
+                      "src": "767:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 83,
+                    "id": 101,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1179,55 +1180,55 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "767:28:0",
+                    "src": "767:28:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 84,
+                  "id": 102,
                   "nodeType": "ExpressionStatement",
-                  "src": "767:28:0"
+                  "src": "767:28:1"
                 },
                 {
-                  "id": 85,
+                  "id": 103,
                   "nodeType": "PlaceholderStatement",
-                  "src": "806:1:0"
+                  "src": "806:1:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 87,
+            "id": 105,
             "name": "onlyOwner",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 77,
+              "id": 95,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "757:0:0"
+              "src": "757:0:1"
             },
-            "src": "738:77:0",
+            "src": "738:77:1",
             "visibility": "internal"
           }
         ],
-        "scope": 89,
-        "src": "27:791:0"
+        "scope": 107,
+        "src": "27:791:1"
       }
     ],
-    "src": "0:818:0"
+    "src": "0:818:1"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/Login.sol",
     "exportedSymbols": {
       "Login": [
-        88
+        106
       ]
     },
-    "id": 89,
+    "id": 107,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1,
+        "id": 19,
         "literals": [
           "solidity",
           "^",
@@ -1235,7 +1236,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:23:1"
       },
       {
         "baseContracts": [],
@@ -1243,20 +1244,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 88,
+        "id": 106,
         "linearizedBaseContracts": [
-          88
+          106
         ],
         "name": "Login",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 3,
+            "id": 21,
             "name": "owner",
             "nodeType": "VariableDeclaration",
-            "scope": 88,
-            "src": "50:13:0",
+            "scope": 106,
+            "src": "50:13:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1264,10 +1265,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 2,
+              "id": 20,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "50:7:0",
+              "src": "50:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -1279,11 +1280,11 @@
           },
           {
             "constant": false,
-            "id": 5,
+            "id": 23,
             "name": "hash",
             "nodeType": "VariableDeclaration",
-            "scope": 88,
-            "src": "70:19:0",
+            "scope": 106,
+            "src": "70:19:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1291,10 +1292,10 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 4,
+              "id": 22,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
-              "src": "70:7:0",
+              "src": "70:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes32",
                 "typeString": "bytes32"
@@ -1305,11 +1306,11 @@
           },
           {
             "constant": false,
-            "id": 7,
+            "id": 25,
             "name": "random_number",
             "nodeType": "VariableDeclaration",
-            "scope": 88,
-            "src": "96:21:0",
+            "scope": 106,
+            "src": "96:21:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1317,10 +1318,10 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 6,
+              "id": 24,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
-              "src": "96:7:0",
+              "src": "96:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes32",
                 "typeString": "bytes32"
@@ -1332,21 +1333,21 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 13,
+            "id": 31,
             "name": "LoginAttempt",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 12,
+              "id": 30,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9,
+                  "id": 27,
                   "indexed": false,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13,
-                  "src": "142:14:0",
+                  "scope": 31,
+                  "src": "142:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1354,10 +1355,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 8,
+                    "id": 26,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "142:7:0",
+                    "src": "142:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1369,12 +1370,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 11,
+                  "id": 29,
                   "indexed": false,
                   "name": "token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13,
-                  "src": "158:13:0",
+                  "scope": 31,
+                  "src": "158:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1382,10 +1383,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 10,
+                    "id": 28,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "158:7:0",
+                    "src": "158:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1395,32 +1396,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "141:31:0"
+              "src": "141:31:1"
             },
-            "src": "123:50:0"
+            "src": "123:50:1"
           },
           {
             "body": {
-              "id": 21,
+              "id": 39,
               "nodeType": "Block",
-              "src": "210:37:0",
+              "src": "210:37:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 19,
+                    "id": 37,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 16,
+                      "id": 34,
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3,
-                      "src": "221:5:0",
+                      "referencedDeclaration": 21,
+                      "src": "221:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -1432,18 +1433,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 17,
+                        "id": 35,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 160,
-                        "src": "229:3:0",
+                        "referencedDeclaration": 178,
+                        "src": "229:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 18,
+                      "id": 36,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1451,67 +1452,67 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "229:10:0",
+                      "src": "229:10:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
                         "typeString": "address payable"
                       }
                     },
-                    "src": "221:18:0",
+                    "src": "221:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 20,
+                  "id": 38,
                   "nodeType": "ExpressionStatement",
-                  "src": "221:18:0"
+                  "src": "221:18:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 22,
+            "id": 40,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "Login2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 14,
+              "id": 32,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "201:2:0"
+              "src": "201:2:1"
             },
             "returnParameters": {
-              "id": 15,
+              "id": 33,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "210:0:0"
+              "src": "210:0:1"
             },
-            "scope": 88,
-            "src": "185:62:0",
+            "scope": 106,
+            "src": "185:62:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 48,
+              "id": 66,
               "nodeType": "Block",
-              "src": "371:159:0",
+              "src": "371:159:1",
               "statements": [
                 {
                   "assignments": [
-                    30
+                    48
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 30,
+                      "id": 48,
                       "name": "lastBlockNumber",
                       "nodeType": "VariableDeclaration",
-                      "scope": 48,
-                      "src": "382:23:0",
+                      "scope": 66,
+                      "src": "382:23:1",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1519,10 +1520,10 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 29,
+                        "id": 47,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
-                        "src": "382:7:0",
+                        "src": "382:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1532,14 +1533,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 35,
+                  "id": 53,
                   "initialValue": {
                     "argumentTypes": null,
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 34,
+                    "id": 52,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1548,18 +1549,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 31,
+                        "id": 49,
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 150,
-                        "src": "408:5:0",
+                        "referencedDeclaration": 168,
+                        "src": "408:5:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
                           "typeString": "block"
                         }
                       },
-                      "id": 32,
+                      "id": 50,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1567,7 +1568,7 @@
                       "memberName": "number",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "408:12:0",
+                      "src": "408:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1578,14 +1579,14 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 33,
+                      "id": 51,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "423:1:0",
+                      "src": "423:1:1",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1_by_1",
@@ -1593,27 +1594,27 @@
                       },
                       "value": "1"
                     },
-                    "src": "408:16:0",
+                    "src": "408:16:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "382:42:0"
+                  "src": "382:42:1"
                 },
                 {
                   "assignments": [
-                    37
+                    55
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 37,
+                      "id": 55,
                       "name": "hashVal",
                       "nodeType": "VariableDeclaration",
-                      "scope": 48,
-                      "src": "435:15:0",
+                      "scope": 66,
+                      "src": "435:15:1",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1621,10 +1622,10 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 36,
+                        "id": 54,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
-                        "src": "435:7:0",
+                        "src": "435:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -1634,7 +1635,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 43,
+                  "id": 61,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -1643,12 +1644,12 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 40,
+                            "id": 58,
                             "name": "lastBlockNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 30,
-                            "src": "471:15:0",
+                            "referencedDeclaration": 48,
+                            "src": "471:15:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -1662,18 +1663,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 39,
+                          "id": 57,
                           "name": "blockhash",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 151,
-                          "src": "461:9:0",
+                          "referencedDeclaration": 169,
+                          "src": "461:9:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_blockhash_view$_t_uint256_$returns$_t_bytes32_$",
                             "typeString": "function (uint256) view returns (bytes32)"
                           }
                         },
-                        "id": 41,
+                        "id": 59,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1681,7 +1682,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "461:26:0",
+                        "src": "461:26:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -1695,20 +1696,20 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 38,
+                      "id": 56,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "nodeType": "ElementaryTypeNameExpression",
-                      "src": "453:7:0",
+                      "src": "453:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_bytes32_$",
                         "typeString": "type(bytes32)"
                       },
                       "typeName": "bytes32"
                     },
-                    "id": 42,
+                    "id": 60,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1716,14 +1717,14 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "453:35:0",
+                    "src": "453:35:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "435:53:0"
+                  "src": "435:53:1"
                 },
                 {
                   "expression": {
@@ -1731,12 +1732,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 45,
+                        "id": 63,
                         "name": "hashVal",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 37,
-                        "src": "514:7:0",
+                        "referencedDeclaration": 55,
+                        "src": "514:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -1750,20 +1751,20 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 44,
+                      "id": 62,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "nodeType": "ElementaryTypeNameExpression",
-                      "src": "506:7:0",
+                      "src": "506:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_bytes32_$",
                         "typeString": "type(bytes32)"
                       },
                       "typeName": "bytes32"
                     },
-                    "id": 46,
+                    "id": 64,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1771,63 +1772,63 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "506:16:0",
+                    "src": "506:16:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 28,
-                  "id": 47,
+                  "functionReturnParameters": 46,
+                  "id": 65,
                   "nodeType": "Return",
-                  "src": "499:23:0"
+                  "src": "499:23:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 49,
+            "id": 67,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 25,
+                "id": 43,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 24,
+                  "id": 42,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 87,
-                  "src": "337:9:0",
+                  "referencedDeclaration": 105,
+                  "src": "337:9:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "337:9:0"
+                "src": "337:9:1"
               }
             ],
             "name": "rand",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 23,
+              "id": 41,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "334:2:0"
+              "src": "334:2:1"
             },
             "returnParameters": {
-              "id": 28,
+              "id": 46,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27,
+                  "id": 45,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 49,
-                  "src": "363:7:0",
+                  "scope": 67,
+                  "src": "363:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1835,10 +1836,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 26,
+                    "id": 44,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "363:7:0",
+                    "src": "363:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1848,36 +1849,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "362:9:0"
+              "src": "362:9:1"
             },
-            "scope": 88,
-            "src": "321:209:0",
+            "scope": 106,
+            "src": "321:209:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 75,
+              "id": 93,
               "nodeType": "Block",
-              "src": "573:157:0",
+              "src": "573:157:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 55,
+                    "id": 73,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 52,
+                      "id": 70,
                       "name": "random_number",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7,
-                      "src": "579:13:0",
+                      "referencedDeclaration": 25,
+                      "src": "579:13:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -1890,18 +1891,18 @@
                       "arguments": [],
                       "expression": {
                         "argumentTypes": [],
-                        "id": 53,
+                        "id": 71,
                         "name": "rand",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 49,
-                        "src": "595:4:0",
+                        "referencedDeclaration": 67,
+                        "src": "595:4:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_nonpayable$__$returns$_t_bytes32_$",
                           "typeString": "function () returns (bytes32)"
                         }
                       },
-                      "id": 54,
+                      "id": 72,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1909,38 +1910,38 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "595:6:0",
+                      "src": "595:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "src": "579:22:0",
+                    "src": "579:22:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 56,
+                  "id": 74,
                   "nodeType": "ExpressionStatement",
-                  "src": "579:22:0"
+                  "src": "579:22:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 67,
+                    "id": 85,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 57,
+                      "id": 75,
                       "name": "hash",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5,
-                      "src": "612:4:0",
+                      "referencedDeclaration": 23,
+                      "src": "612:4:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -1958,18 +1959,18 @@
                               "argumentTypes": null,
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 61,
+                                "id": 79,
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 160,
-                                "src": "646:3:0",
+                                "referencedDeclaration": 178,
+                                "src": "646:3:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
                                   "typeString": "msg"
                                 }
                               },
-                              "id": 62,
+                              "id": 80,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1977,7 +1978,7 @@
                               "memberName": "sender",
                               "nodeType": "MemberAccess",
                               "referencedDeclaration": null,
-                              "src": "646:10:0",
+                              "src": "646:10:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address_payable",
                                 "typeString": "address payable"
@@ -1985,12 +1986,12 @@
                             },
                             {
                               "argumentTypes": null,
-                              "id": 63,
+                              "id": 81,
                               "name": "now",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 162,
-                              "src": "657:3:0",
+                              "referencedDeclaration": 180,
+                              "src": "657:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
@@ -1998,12 +1999,12 @@
                             },
                             {
                               "argumentTypes": null,
-                              "id": 64,
+                              "id": 82,
                               "name": "random_number",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7,
-                              "src": "661:13:0",
+                              "referencedDeclaration": 25,
+                              "src": "661:13:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes32",
                                 "typeString": "bytes32"
@@ -2027,18 +2028,18 @@
                             ],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 59,
+                              "id": 77,
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 147,
-                              "src": "629:3:0",
+                              "referencedDeclaration": 165,
+                              "src": "629:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_abi",
                                 "typeString": "abi"
                               }
                             },
-                            "id": 60,
+                            "id": 78,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2046,13 +2047,13 @@
                             "memberName": "encodePacked",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": null,
-                            "src": "629:16:0",
+                            "src": "629:16:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
                               "typeString": "function () pure returns (bytes memory)"
                             }
                           },
-                          "id": 65,
+                          "id": 83,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2060,7 +2061,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "629:46:0",
+                          "src": "629:46:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes_memory_ptr",
                             "typeString": "bytes memory"
@@ -2074,18 +2075,18 @@
                             "typeString": "bytes memory"
                           }
                         ],
-                        "id": 58,
+                        "id": 76,
                         "name": "keccak256",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 154,
-                        "src": "619:9:0",
+                        "referencedDeclaration": 172,
+                        "src": "619:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                           "typeString": "function (bytes memory) pure returns (bytes32)"
                         }
                       },
-                      "id": 66,
+                      "id": 84,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2093,21 +2094,21 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "619:57:0",
+                      "src": "619:57:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "src": "612:64:0",
+                    "src": "612:64:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 68,
+                  "id": 86,
                   "nodeType": "ExpressionStatement",
-                  "src": "612:64:0"
+                  "src": "612:64:1"
                 },
                 {
                   "eventCall": {
@@ -2117,18 +2118,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 70,
+                          "id": 88,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 160,
-                          "src": "705:3:0",
+                          "referencedDeclaration": 178,
+                          "src": "705:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 71,
+                        "id": 89,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2136,7 +2137,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "705:10:0",
+                        "src": "705:10:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -2144,12 +2145,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 72,
+                        "id": 90,
                         "name": "hash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5,
-                        "src": "717:4:0",
+                        "referencedDeclaration": 23,
+                        "src": "717:4:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -2167,18 +2168,18 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 69,
+                      "id": 87,
                       "name": "LoginAttempt",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 13,
-                      "src": "692:12:0",
+                      "referencedDeclaration": 31,
+                      "src": "692:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes32_$returns$__$",
                         "typeString": "function (address,bytes32)"
                       }
                     },
-                    "id": 73,
+                    "id": 91,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2186,48 +2187,48 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "692:30:0",
+                    "src": "692:30:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 74,
+                  "id": 92,
                   "nodeType": "EmitStatement",
-                  "src": "687:35:0"
+                  "src": "687:35:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 76,
+            "id": 94,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "login_admin",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 50,
+              "id": 68,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "563:2:0"
+              "src": "563:2:1"
             },
             "returnParameters": {
-              "id": 51,
+              "id": 69,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "573:0:0"
+              "src": "573:0:1"
             },
-            "scope": 88,
-            "src": "543:187:0",
+            "scope": 106,
+            "src": "543:187:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 86,
+              "id": 104,
               "nodeType": "Block",
-              "src": "757:58:0",
+              "src": "757:58:1",
               "statements": [
                 {
                   "expression": {
@@ -2239,7 +2240,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 82,
+                        "id": 100,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2248,18 +2249,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 79,
+                            "id": 97,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 160,
-                            "src": "775:3:0",
+                            "referencedDeclaration": 178,
+                            "src": "775:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 80,
+                          "id": 98,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2267,7 +2268,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "775:10:0",
+                          "src": "775:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
@@ -2277,18 +2278,18 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 81,
+                          "id": 99,
                           "name": "owner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3,
-                          "src": "789:5:0",
+                          "referencedDeclaration": 21,
+                          "src": "789:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "775:19:0",
+                        "src": "775:19:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2302,21 +2303,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 78,
+                      "id": 96,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        163,
-                        164
+                        181,
+                        182
                       ],
-                      "referencedDeclaration": 163,
-                      "src": "767:7:0",
+                      "referencedDeclaration": 181,
+                      "src": "767:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 83,
+                    "id": 101,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2324,50 +2325,57 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "767:28:0",
+                    "src": "767:28:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 84,
+                  "id": 102,
                   "nodeType": "ExpressionStatement",
-                  "src": "767:28:0"
+                  "src": "767:28:1"
                 },
                 {
-                  "id": 85,
+                  "id": 103,
                   "nodeType": "PlaceholderStatement",
-                  "src": "806:1:0"
+                  "src": "806:1:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 87,
+            "id": 105,
             "name": "onlyOwner",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 77,
+              "id": 95,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "757:0:0"
+              "src": "757:0:1"
             },
-            "src": "738:77:0",
+            "src": "738:77:1",
             "visibility": "internal"
           }
         ],
-        "scope": 89,
-        "src": "27:791:0"
+        "scope": 107,
+        "src": "27:791:1"
       }
     ],
-    "src": "0:818:0"
+    "src": "0:818:1"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
   },
-  "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-06-22T19:58:19.383Z",
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x888d23Ed8Aa46a438e5cc7d672012fca0b15eE64",
+      "transactionHash": "0x0d8702af2511c64c05003f0a0b5790d2a8060b331d995751e5d58533dcf8ede3"
+    }
+  },
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-07-28T21:30:17.447Z",
   "devdoc": {
     "methods": {}
   },

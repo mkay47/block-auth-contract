@@ -4,8 +4,7 @@ contract Authentication{
 
 	event LoggedIn(string username,string password);
 
-	function Login(string memory username,string memory password) public {
-		
-		emit LoggedIn(username,password);
-	  }
+	function Login() public {
+		emit LoggedIn("hllo","qweqw");
+	}
 }
