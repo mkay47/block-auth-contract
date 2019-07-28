@@ -6,7 +6,7 @@ contract Authentication{
 	bytes32 public hash;
 	
 	//events
-	event LoggedIn(address username, bytes32 password);
+	event LoggedIn(address username, bytes32 token);
 
 	// private functions
 	function rand() public returns (bytes32) {
