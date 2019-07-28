@@ -6,7 +6,6 @@ contract Authentication{
 	address owner;
 	bytes32 public hash;
 
-
 	// This is the constructor which registers the
     // creator and the assigned name.
     constructor() public {
@@ -15,7 +14,6 @@ contract Authentication{
 	
 	//events
 	event LoggedIn(address username,bytes32 password);
-	event Message(address _receiver, string message);
 
 	//functions
 	function rand() public returns (bytes32){
@@ -28,10 +26,6 @@ contract Authentication{
 		random_number = rand();
         hash = keccak256(abi.encodePacked(msg.sender,now,random_number));
 		emit LoggedIn(msg.sender,hash);
-	}
-
-	function SendToken(address account,string memory message) public {
-		emit Message(account,message);
 	}
 	
 }
