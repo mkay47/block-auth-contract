@@ -14,8 +14,7 @@ contract Authentication{
     }
 	
 	//events
-	event LoggedIn(address username,bytes32 password);
-	event Message(address _receiver, string message);
+	event LoggedIn(address user,bytes32 token);
 
 	//functions
 	function rand() public returns (bytes32){
@@ -26,12 +25,8 @@ contract Authentication{
 
 	function Login() public {
 		random_number = rand();
-        hash = keccak256(abi.encodePacked(msg.sender,now,random_number));
+        hash = keccak256(abi.encodePacked(owner,now,random_number));
 		emit LoggedIn(msg.sender,hash);
 	}
 
-	function SendToken(address account,string memory message) public {
-		emit Message(account,message);
-	}
-	
 }
