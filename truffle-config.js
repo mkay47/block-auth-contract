@@ -5,7 +5,8 @@ require('dotenv').config(); // Store environment-specific variable from '.env' t
 module.exports = {
     networks: {
         development: {
-            host: "192.168.8.106",
+            host: "localhost",
+            //host: "192.168.8.106",
             port: 8545,
             network_id: "*" // Match any network id
         },

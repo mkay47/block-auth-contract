@@ -1,8 +1,8 @@
 pragma solidity ^0.5.0;
 
-contract Login{
+contract Authentication{
 
-	event LoginAttempt(address sender, bytes32 token);
+	event DistributeToken(address sender, bytes32 token);
     bytes32 random_number;
     bytes32 token;
 
@@ -16,7 +16,7 @@ contract Login{
     function login_admin() public { 
 		random_number = rand();
         token = keccak256(abi.encodePacked(msg.sender, now, random_number));
-        emit LoginAttempt(msg.sender, token);
+        emit DistributeToken(msg.sender, token);
     }
 
 }
