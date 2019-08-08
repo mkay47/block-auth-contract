@@ -15,7 +15,7 @@ contract Login{
     
     function login_admin() public { 
 		random_number = rand();
-        token = keccak256(abi.encodePacked(msg.sender,now,random_number));
+        token = keccak256(abi.encodePacked(msg.sender, now, random_number));
         emit LoginAttempt(msg.sender, token);
     }
 
