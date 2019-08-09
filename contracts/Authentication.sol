@@ -17,10 +17,6 @@ contract Authentication{
         emit DeviceAdded(deviceCount, name,account,ip);
     }
 
-    constructor() public {
-        addUser("Admin User",msg.sender);
-    }
-
     event DeviceAdded(uint id,string name,address account,string ip);
 
     mapping(uint => Device) public devices;

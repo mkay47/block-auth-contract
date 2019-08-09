@@ -15,15 +15,16 @@ contract('Authentication', (accounts) => {
 
     it('list users', async() => {
         const userCount = await this.Auth.userCount();
-        const user = await this.Auth.users(userCount);
+        //const user = await this.Auth.users(userCount);
+
         /*assert.equal(user.id.toNumber(), userCount.toNumber());
         assert.equal(user.name, 'Admin User');
         assert.equal(user.account.toLowerCase(), '0x9ada8c4979caad44fe7a2b6fb6a45bcd67b8657e');
         assert.equal(userCount.toNumber(), 1);*/
-        console.log("userCount", userCount.toNumber());
-        for (var i = 0; i < userCount; i++) {
-            const u = await this.Auth.users(i);
-            console.log(i, u[0] + ' ' + u[1] + ' ' + u[2]);
+        //console.log("userCount", userCount.toNumber());
+        for (var i = 0; i <= userCount; i++) {
+            const user = await this.Auth.users(i);
+            console.log(i, user.id.toNumber() + ' ' + user.name + ' ' + user.account.toLowerCase());
         }
 
     });
