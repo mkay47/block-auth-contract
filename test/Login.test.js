@@ -13,10 +13,40 @@ contract('Authentication', (accounts) => {
         assert.notEqual(address, undefined);
     });
 
+    it('list users', async() => {
+        const userCount = await this.Auth.userCount();
+        const user = await this.Auth.users(userCount);
+        assert.equal(user.id.toNumber(), userCount.toNumber())
+        assert.equal(user.name, 'Admin User')
+        assert.equal(user.account.toLowerCase(), '0x9ada8c4979caad44fe7a2b6fb6a45bcd67b8657e')
+        assert.equal(userCount.toNumber(), 1)
+
+    });
+
     it('trigger event', async() => {
         const result = await this.Auth.login_admin();
         const event = result.logs[0].args;
         assert.equal(event.sender.toLowerCase(), '0x9ada8c4979caad44fe7a2b6fb6a45bcd67b8657e');
+    });
+
+    it('add user', async() => {
+        const result = await this.Auth.addUser("mkay", "0xddc3d617df684d960330eaea6b45704ff5ecf60b");
+        const userCount = await this.Auth.userCount();
+        assert.equal(userCount, 2);
+        const event = result.logs[0].args;
+        assert.equal(event.id.toNumber(), userCount.toNumber());
+        assert.equal(event.name, 'mkay');
+        assert.equal(event.account.toLowerCase(), '0xddc3d617df684d960330eaea6b45704ff5ecf60b');
+    });
+
+    it('add device', async() => {
+        const result = await this.Auth.addDevice("mkay", "0xddc3d617df684d960330eaea6b45704ff5ecf60b");
+        const deviceCount = await this.Auth.deviceCount();
+        assert.equal(deviceCount, 1);
+        const event = result.logs[0].args;
+        assert.equal(event.id.toNumber(), deviceCount.toNumber());
+        assert.equal(event.name, 'mkay');
+        assert.equal(event.account.toLowerCase(), '0xddc3d617df684d960330eaea6b45704ff5ecf60b');
     });
 
 });
