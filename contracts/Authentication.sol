@@ -1,7 +1,6 @@
 pragma solidity ^0.5.0;
 
 contract Authentication{
-    address owner;
     uint public deviceCount = 0;
     uint public userCount = 0;
 
@@ -9,20 +8,20 @@ contract Authentication{
         uint id;
         string name;
         address account;
+        string ip;
     }
 
-    function addDevice(string memory name, address account) public {
+    function addDevice(string memory name, address account,string memory ip) public {
         deviceCount ++;
-        devices[deviceCount] = Device(deviceCount, name, account);
-        emit DeviceAdded(deviceCount, name,account);
+        devices[deviceCount] = Device(deviceCount, name, account,ip);
+        emit DeviceAdded(deviceCount, name,account,ip);
     }
 
     constructor() public {
-        owner = msg.sender;
-        addUser("Admin User",owner);
+        addUser("Admin User",msg.sender);
     }
 
-    event DeviceAdded(uint id,string name,address account);
+    event DeviceAdded(uint id,string name,address account,string ip);
 
     mapping(uint => Device) public devices;
 
