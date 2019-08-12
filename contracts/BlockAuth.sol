@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0;
 
-contract Authentication{
+contract BlockAuth{
     uint public deviceCount = 0;
     uint public userCount = 0;
 
@@ -19,7 +19,8 @@ contract Authentication{
 
     function addDevice(string memory name, address account,string memory ip) public {
         deviceCount ++;
-        devices[deviceCount] = Device(deviceCount, name, account,ip);
+        Device memory device = Device(deviceCount, name, account,ip);
+        devices[1].push(device);
         emit DeviceAdded(deviceCount, name,account,ip);
     }
 
@@ -29,13 +30,13 @@ contract Authentication{
 
     event DeviceAdded(uint id,string name,address account,string ip);
 
-    mapping(uint => Device) public devices;
-    mapping(uint => User) public users;
-    
+    mapping(uint => Device[]) public devices;
+    mapping(uint => User[]) public users;
     
     function addUser(string memory name, address account) public{
         userCount ++;
-        users[userCount] = User(userCount, name, account);
+        User memory user = User(userCount, name, account);
+        users[1].push(user);
         emit UserAdded(userCount, name, account);
     }
 
