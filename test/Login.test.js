@@ -5,13 +5,23 @@ contract('Authentication', (accounts) => {
         this.Auth = await Auth.deployed();
     });
 
-    /*it('deploys successfully', async() => {
+    it('deploys successfully', async() => {
         const address = await this.Auth.address;
         assert.notEqual(address, 0x0);
         assert.notEqual(address, '');
         assert.notEqual(address, null);
         assert.notEqual(address, undefined);
-    });*/
+    });
+
+    it('add user', async() => {
+        const result = await this.Auth.addUser("mkay", "0xddc3d617df684d960330eaea6b45704ff5ecf60b");
+        const userCount = await this.Auth.userCount();
+        assert.equal(userCount, 2);
+        const event = result.logs[0].args;
+        assert.equal(event.id.toNumber(), userCount.toNumber());
+        assert.equal(event.name, 'mkay');
+        assert.equal(event.account.toLowerCase(), '0xddc3d617df684d960330eaea6b45704ff5ecf60b');
+    });
 
     it('list users', async() => {
         const userCount = await this.Auth.userCount();
@@ -33,16 +43,6 @@ contract('Authentication', (accounts) => {
         const result = await this.Auth.login_admin();
         const event = result.logs[0].args;
         assert.equal(event.sender.toLowerCase(), '0x9ada8c4979caad44fe7a2b6fb6a45bcd67b8657e');
-    });
-
-    it('add user', async() => {
-        const result = await this.Auth.addUser("mkay", "0xddc3d617df684d960330eaea6b45704ff5ecf60b");
-        const userCount = await this.Auth.userCount();
-        assert.equal(userCount, 2);
-        const event = result.logs[0].args;
-        assert.equal(event.id.toNumber(), userCount.toNumber());
-        assert.equal(event.name, 'mkay');
-        assert.equal(event.account.toLowerCase(), '0xddc3d617df684d960330eaea6b45704ff5ecf60b');
     });
 
     it('add device', async() => {
