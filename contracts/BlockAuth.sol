@@ -3,6 +3,9 @@ pragma solidity ^0.5.0;
 contract BlockAuth{
     uint public deviceCount = 0;
     uint public userCount = 0;
+    
+    mapping(uint => Device[]) public devices;
+    mapping(uint => User[]) public users;
 
     struct Device {
         uint id;
@@ -30,9 +33,6 @@ contract BlockAuth{
 
     event DeviceAdded(uint id,string name,address account,string ip);
 
-    mapping(uint => Device[]) public devices;
-    mapping(uint => User[]) public users;
-    
     function addUser(string memory name, address account) public{
         userCount ++;
         User memory user = User(userCount, name, account);
