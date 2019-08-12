@@ -1,4 +1,5 @@
 pragma solidity ^0.5.0;
+pragma experimental ABIEncoderV2;
 
 contract Authentication{
     uint public deviceCount = 0;
@@ -30,6 +31,14 @@ contract Authentication{
         string name;
         address account;
     }
+	
+	function getNthDevice(uint n) public returns (Device memory) {
+		return devices[n];
+	}
+	
+	function getNthUser(uint n) public returns (User memory) {
+		return users[n];
+	}
 
     function addUser(string memory name, address account) public{
         userCount ++;
