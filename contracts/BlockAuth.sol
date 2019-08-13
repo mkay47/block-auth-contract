@@ -49,7 +49,7 @@ contract BlockAuth{
     }
 
     function StoreDocument(uint key, string memory name, string memory description) public returns (bool success) {
-       Device memory dev = Device(1, name, msg.sender, "ip");
+       Device memory dev = Device(key, name, msg.sender, description);
        devices[key].push(dev);
        return true;
     }
