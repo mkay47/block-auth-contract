@@ -23,7 +23,7 @@ contract BlockAuth{
     function addDevice(string memory name, address account,string memory ip) public {
         deviceCount ++;
         Device memory device = Device(deviceCount, name, account,ip);
-        devices[1].push(device);
+        //devices[1].push(device);
         emit DeviceAdded(deviceCount, name,account,ip);
     }
 
@@ -49,7 +49,8 @@ contract BlockAuth{
     }
 
     function StoreDocument(bytes32 key, string memory name, string memory description) public returns (bool success) {
-       Device memory dev = Device(key, name, msg.sender, description);
+       deviceCount ++;
+       Device memory dev = Device(deviceCount, name, msg.sender, description);
        devices[key].push(dev);
        return true;
     }
