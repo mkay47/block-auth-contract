@@ -48,9 +48,9 @@ contract BlockAuth{
         address sender;
     }
 
-    function StoreDocument(uint key, string memory name, string memory description) public returns (bool success) {
-       Device memory dev = Device(1,name, msg.sender,"10.100.10.1");
-       devices[key].push(dev);
+    function StoreDocument(bytes32 key, string memory name, string memory description) public returns (bool success) {
+       Document memory doc = Document(name, description, msg.sender);
+       documents[key].push(doc);
        return true;
     }
 
