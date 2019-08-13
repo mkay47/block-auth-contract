@@ -4,7 +4,7 @@ contract BlockAuth{
     uint public deviceCount = 0;
     uint public userCount = 0;
 
-    mapping(uint => Device[]) public devices;
+    mapping(bytes32 => Device[]) public devices;
     mapping(uint => User[]) public users;
 
     struct Device {
@@ -40,7 +40,7 @@ contract BlockAuth{
         emit UserAdded(userCount, name, account);
     }
 
-    mapping (uint=>Document[]) public documents;
+    mapping (bytes32=>Document[]) public documents;
 
     struct Document{
         string name;
@@ -48,7 +48,7 @@ contract BlockAuth{
         address sender;
     }
 
-    function StoreDocument(uint key, string memory name, string memory description) public returns (bool success) {
+    function StoreDocument(bytes32 key, string memory name, string memory description) public returns (bool success) {
        Device memory dev = Device(key, name, msg.sender, description);
        devices[key].push(dev);
        return true;
