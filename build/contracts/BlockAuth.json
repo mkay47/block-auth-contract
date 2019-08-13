@@ -6544,10 +6544,16 @@
       "links": {},
       "address": "0x6254de7DD275a46EedC45F83A561F2ac612b22f0",
       "transactionHash": "0x22b4ee965cd809f4cb7515776a90f100d15568947005b06dfd31fc42d54c51b6"
+    },
+    "1565656136276": {
+      "events": {},
+      "links": {},
+      "address": "0x6254de7DD275a46EedC45F83A561F2ac612b22f0",
+      "transactionHash": "0x22b4ee965cd809f4cb7515776a90f100d15568947005b06dfd31fc42d54c51b6"
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-08-13T00:22:14.495Z",
+  "updatedAt": "2019-08-13T00:29:05.043Z",
   "devdoc": {
     "methods": {}
   },
