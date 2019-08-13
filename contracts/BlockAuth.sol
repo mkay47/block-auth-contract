@@ -40,7 +40,7 @@ contract BlockAuth{
         emit UserAdded(userCount, name, account);
     }
 
-    mapping (bytes32=>Document[]) public documents;
+    mapping (uint=>Document[]) public documents;
 
     struct Document{
         string name;
