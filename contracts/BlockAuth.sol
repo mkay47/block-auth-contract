@@ -39,7 +39,7 @@ contract BlockAuth{
     event DeviceAdded(uint id,string name,address account,string ip);
     event UserAdded(uint id,string name,address account);
 
-	event DistributeToken(address sender, bytes32 token);
+	event DistributeToken(address user,address device, bytes32 token);
     bytes32 random_number;
     bytes32 token;
 
@@ -50,9 +50,9 @@ contract BlockAuth{
         return bytes32(hashVal);
     }
 
-    function login_admin() public {
+    function login_admin(address device) public {
 		random_number = rand();
         token = keccak256(abi.encodePacked(msg.sender, now, random_number));
-        emit DistributeToken(msg.sender, token);
+        emit DistributeToken(msg.sender,device, token);
     }
 }
