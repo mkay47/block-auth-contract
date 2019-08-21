@@ -1,4 +1,4 @@
-const Authentication = artifacts.require("BlockAuth");
+const BlockAuth = artifacts.require("BlockAuth");
 module.exports = function(deployer) {
-    deployer.deploy(Authentication);
+    deployer.deploy(BlockAuth);
 };
