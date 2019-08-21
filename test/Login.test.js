@@ -25,21 +25,21 @@ contract('BlockAuth', (accounts) => {
 
     it('list users', async() => {
         const userCount = await this.Auth.userCount();
-        //const user = await this.Auth.users(userCount);
+        const user = await this.Auth.users(userCount);
 
-        /*assert.equal(user.id.toNumber(), userCount.toNumber());
+        assert.equal(user.id.toNumber(), userCount.toNumber());
         assert.equal(user.name, 'Admin User');
         assert.equal(user.account.toLowerCase(), '0x9ada8c4979caad44fe7a2b6fb6a45bcd67b8657e');
-        assert.equal(userCount.toNumber(), 1);*/
+        assert.equal(userCount.toNumber(), 1);
         //console.log("userCount", userCount.toNumber());
-        for (var i = 0; i <= userCount; i++) {
+        /*for (var i = 0; i <= userCount; i++) {
             const user = await this.Auth.users(i);
             console.log(i, user.id.toNumber() + ' ' + user.name + ' ' + user.account.toLowerCase());
-        }
+        }*/
 
     });
 
-    /*it('trigger event', async() => {
+    it('trigger event', async() => {
         const result = await this.Auth.login_admin();
         const event = result.logs[0].args;
         assert.equal(event.sender.toLowerCase(), '0x9ada8c4979caad44fe7a2b6fb6a45bcd67b8657e');
@@ -54,6 +54,6 @@ contract('BlockAuth', (accounts) => {
         assert.equal(event.name, 'lights');
         assert.equal(event.account.toLowerCase(), '0xddc3d617df684d960330eaea6b45704ff5ecf60b');
         assert.equal(event.ip, '10.100.120.1');
-    });*/
+    });
 
 });

@@ -7,7 +7,7 @@ module.exports = {
         development: {
             //host: "localhost",
             //host: "192.168.8.106",
-            host: "10.100.11.71",
+            host: "10.100.9.246",
             port: 8545,
             network_id: "*" // Match any network id
         },
