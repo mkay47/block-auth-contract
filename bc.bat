@@ -1,1 +1,1 @@
-ganache-cli -h 10.100.11.71 -m "ranch arch cool purse kangaroo horn run mix material regular fine lava"
+ganache-cli -h 10.100.8.31 -m "ranch arch cool purse kangaroo horn run mix material regular fine lava"

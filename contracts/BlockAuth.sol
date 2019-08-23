@@ -34,7 +34,7 @@ contract BlockAuth{
     }
 
     constructor() public {
-        addUser("Admin User",msg.sender,"password");
+        addUser("Admin",msg.sender,"password");
     }
 
     event DeviceAdded(uint id,string name,address account,string ip);
