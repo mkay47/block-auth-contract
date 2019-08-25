@@ -14,10 +14,11 @@ contract DeviceAuth{
         deviceCount ++;
         Device memory device = Device(name, ip);
         devices[1].push(device);
-        emit DeviceAdded(deviceCount, name,account,ip);
+        emit DeviceAdded(deviceCount, name, ip);
     }
 
     constructor() public {
+        addDevice("lights", "192.16.8.186:8080");
     }
 
     event DeviceAdded(uint id, string name, string ip);
