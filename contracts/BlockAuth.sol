@@ -31,11 +31,11 @@ contract BlockAuth{
         userCount ++;
         User memory user = User(username, account, password, role);
         users[1].push(user);
-        emit UserAdded(deviceCount, username, account, role);
+        emit UserAdded(deviceCount, username, account);
     }
 
     constructor() public {
-        addUser("admin",msg.sender,"password",admin);
+        addUser("admin",msg.sender,"password","admin");
     }
 
     event DeviceAdded(uint id,string name,address account,string ip);
