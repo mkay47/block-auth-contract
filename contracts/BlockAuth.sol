@@ -17,6 +17,7 @@ contract BlockAuth{
         string username;
         address account;
         string password;
+        string role;
     }
 
     function addDevice(string memory name, string memory ip, address account) public {
@@ -26,15 +27,15 @@ contract BlockAuth{
         emit DeviceAdded(deviceCount, name,account,ip);
     }
 
-    function addUser(string memory username, address account,string memory password) public {
+    function addUser(string memory username, address account,string memory password,string memory role) public {
         userCount ++;
-        User memory user = User(username, account, password);
+        User memory user = User(username, account, password, role);
         users[1].push(user);
-        emit UserAdded(deviceCount, username,account);
+        emit UserAdded(deviceCount, username, account, role);
     }
 
     constructor() public {
-        addUser("Admin",msg.sender,"password");
+        addUser("admin",msg.sender,"password",admin);
     }
 
     event DeviceAdded(uint id,string name,address account,string ip);
