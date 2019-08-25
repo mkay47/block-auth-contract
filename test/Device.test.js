@@ -1,7 +1,7 @@
-const Auth = artifacts.require('./BlockAuth.sol');
+const Auth = artifacts.require('./DeviceAuth.sol');
 
-contract('BlockAuth', (accounts) => {
-    /*before(async() => {
+contract('DeviceAuth', (accounts) => {
+    before(async() => {
         this.Auth = await Auth.deployed();
     });
 

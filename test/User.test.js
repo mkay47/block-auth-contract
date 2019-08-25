@@ -1,7 +1,7 @@
-const Auth = artifacts.require('./BlockAuth.sol');
+const Auth = artifacts.require('./UserAuth.sol');
 
-contract('BlockAuth', (accounts) => {
-    /*before(async() => {
+contract('UserAuth', (accounts) => {
+    before(async() => {
         this.Auth = await Auth.deployed();
     });
 
