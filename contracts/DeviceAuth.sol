@@ -18,12 +18,12 @@ contract DeviceAuth{
     }
 
     constructor() public {
-        addDevice("lights", "192.16.8.186:8080");
+        addDevice("lights", "192.168.8.186:8081");
     }
 
     event DeviceAdded(uint id, string name, string ip);
   
-	event DistributeToken(address user,address device, bytes32 token);
+	event DistributeToken(address user,string ip, bytes32 token);
     bytes32 random_number;
     bytes32 token;
 
@@ -34,9 +34,9 @@ contract DeviceAuth{
         return bytes32(hashVal);
     }
 
-    function login_admin(address device) public {
+    function login_admin(string memory ip) public {
 		random_number = rand();
         token = keccak256(abi.encodePacked(msg.sender, now, random_number));
-        emit DistributeToken(msg.sender,device, token);
+        emit DistributeToken(msg.sender, ip, token);
     }
 }
