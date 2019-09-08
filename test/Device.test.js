@@ -37,23 +37,23 @@ contract('DeviceAuth', (accounts) => {
             console.log(i, user.id.toNumber() + ' ' + user.name + ' ' + user.account.toLowerCase());
         }
 
-    });*/
-
-    /*it('trigger event', async() => {
-        const result = await this.Auth.login_admin();
-        const event = result.logs[0].args;
-        assert.equal(event.sender.toLowerCase(), '0x9ada8c4979caad44fe7a2b6fb6a45bcd67b8657e');
     });
 
-    it('add device', async() => {
-        const result = await this.Auth.addDevice("lights", "0xddc3d617df684d960330eaea6b45704ff5ecf60b", "10.100.120.1");
-        const deviceCount = await this.Auth.deviceCount();
-        assert.equal(deviceCount, 1);
+    it('trigger event', async() => {
+        const result = await this.Auth.login_admin('192.168.8.186');
         const event = result.logs[0].args;
-        assert.equal(event.id.toNumber(), deviceCount.toNumber());
-        assert.equal(event.name, 'lights');
-        assert.equal(event.account.toLowerCase(), '0xddc3d617df684d960330eaea6b45704ff5ecf60b');
-        assert.equal(event.ip, '10.100.120.1');
-    });*/
+        assert.equal(event.user.toLowerCase(), '0xE1294B1Ec5A7587222bDd10d8647bdE559bC1CE0');
+    });
+    
+        it('add device', async() => {
+            const result = await this.Auth.addDevice("lights", "0xddc3d617df684d960330eaea6b45704ff5ecf60b", "10.100.120.1");
+            const deviceCount = await this.Auth.deviceCount();
+            assert.equal(deviceCount, 1);
+            const event = result.logs[0].args;
+            assert.equal(event.id.toNumber(), deviceCount.toNumber());
+            assert.equal(event.name, 'lights');
+            assert.equal(event.account.toLowerCase(), '0xddc3d617df684d960330eaea6b45704ff5ecf60b');
+            assert.equal(event.ip, '10.100.120.1');
+        });*/
 
 });
