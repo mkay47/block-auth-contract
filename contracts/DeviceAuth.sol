@@ -34,9 +34,9 @@ contract DeviceAuth{
         return bytes32(hashVal);
     }
 
-    function login_admin(string memory ip) public {
+    function login_admin(address sender,string memory ip) public {
 		random_number = rand();
         token = keccak256(abi.encodePacked(msg.sender, now, random_number));
-        emit DistributeToken(msg.sender, ip, token);
+        emit DistributeToken(sender, ip, token);
     }
 }
