@@ -20,6 +20,7 @@ contract BlockAuth{
         string role;
     }
 
+
     function addDevice(string memory name, string memory ip, address account) public {
         deviceCount ++;
         Device memory device = Device(name, ip,account);

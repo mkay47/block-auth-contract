@@ -3,7 +3,7 @@ pragma solidity ^0.5.0;
 contract UserAuth{
     uint public userCount = 0;
 
-    mapping(uint=>User[]) public users;
+    mapping(uint => User[]) public users;
 
     struct User{
         string username;
@@ -21,7 +21,7 @@ contract UserAuth{
     }
 
     constructor() public {
-        addUser("admin",msg.sender,"password","admin");
+        addUser("owner",msg.sender,"password","owner");
     }
 
     event UserAdded(uint id,string name,address account);
