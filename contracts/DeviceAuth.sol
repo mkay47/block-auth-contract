@@ -33,7 +33,7 @@ contract DeviceAuth{
     
     event DeviceUpdated(uint id, string name, string ip);
 
-	event DistributeToken(address user,string ip, bytes32 token);
+	event DistributeToken(address user,string ip, bytes32 token, string role);
     
     bytes32 random_number;
     bytes32 token;
@@ -45,9 +45,9 @@ contract DeviceAuth{
         return bytes32(hashVal);
     }
 
-    function login_admin(string memory ip) public {
+    function login_admin(string memory ip,string memory role) public {
 		random_number = rand();
         token = keccak256(abi.encodePacked(msg.sender, now, random_number));
-        emit DistributeToken(msg.sender, ip, token);
+        emit DistributeToken(msg.sender, ip, token, role);
     }
 }
