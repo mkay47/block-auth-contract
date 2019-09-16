@@ -1,12 +1,12 @@
 pragma solidity ^0.5.0;
 
-contract RoleAuth {
+contract RoleAuth  {
   uint public roleCount = 0;
   
   struct Role {
     uint id;
     string name;
-    mapping(uint => Permission) permissions;
+    Permission per;
   }
 
   struct Permission{
@@ -14,9 +14,8 @@ contract RoleAuth {
       bool Selected;
   }
 
-  mapping(uint => Role) public roles;
-  mapping(uint => Permission) public permissions;
-
+  mapping(uint => Role) roles;
+  
   event RoleCreated(
     uint id,
     string name
@@ -33,13 +32,8 @@ contract RoleAuth {
 
   function createRole(string memory name) public {
     roleCount ++;
-    roles[roleCount] = Role(roleCount, name);
-    
-    roles[roleCount].permissions[0].title = 'turn on';
-    roles[roleCount].permissions[0].Selected = true;
-    
-    roles[roleCount].permissions[1].title = 'turn off';
-    roles[roleCount].permissions[1].Selected = true;
+    Permission memory p = Permission('on',true);
+    roles[roleCount] = Role(roleCount, name,p);
     
     emit RoleCreated(roleCount, name);
   }
