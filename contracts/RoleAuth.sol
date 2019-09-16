@@ -6,15 +6,9 @@ contract RoleAuth  {
   struct Role {
     uint id;
     string name;
-    Permission per;
   }
 
-  struct Permission{
-      string title;
-      bool Selected;
-  }
-
-  mapping(uint => Role) roles;
+  mapping(uint => Role) public roles;
   
   event RoleCreated(
     uint id,
@@ -32,9 +26,7 @@ contract RoleAuth  {
 
   function createRole(string memory name) public {
     roleCount ++;
-    Permission memory p = Permission('on',true);
-    roles[roleCount] = Role(roleCount, name,p);
-    
+    roles[roleCount] = Role(roleCount, name);
     emit RoleCreated(roleCount, name);
   }
 
