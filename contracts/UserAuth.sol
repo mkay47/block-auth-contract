@@ -17,7 +17,6 @@ contract UserAuth{
     function addUser(string memory username, address account,string memory password,string memory role) public {
         userCount ++;
         users[userCount] = User(userCount,username, account, password, role,"OOOOO");
-        //users[1].push(user);
         emit UserAdded(userCount, username, account);
     }
 

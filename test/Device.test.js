@@ -13,36 +13,37 @@ contract('DeviceAuth', (accounts) => {
         assert.notEqual(address, undefined);
     });
 
-    /*it('add user', async() => {
-        const result = await this.Auth.addUser("mkay", "0xddc3d617df684d960330eaea6b45704ff5ecf60b");
-        const userCount = await this.Auth.userCount();
-        assert.equal(userCount, 2);
+    /*it('add device', async() => {
+        const result = await this.Auth.adddevice("mkay", "0xddc3d617df684d960330eaea6b45704ff5ecf60b");
+        const deviceCount = await this.Auth.deviceCount();
+        assert.equal(deviceCount, 2);
         const event = result.logs[0].args;
-        assert.equal(event.id.toNumber(), userCount.toNumber());
+        assert.equal(event.id.toNumber(), deviceCount.toNumber());
         assert.equal(event.name, 'mkay');
         assert.equal(event.account.toLowerCase(), '0xddc3d617df684d960330eaea6b45704ff5ecf60b');
+    });*/
+
+    it('list device', async() => {
+        const deviceCount = await this.Auth.deviceCount();
+        const device = await this.Auth.devices(deviceCount);
+
+        assert.equal(device.id.toNumber(), deviceCount.toNumber());
+        assert.equal(device.name, 'lights');
+        assert.equal(device.ip, '192.168.8.186:8081');
+        assert.equal(deviceCount.toNumber(), 1);
+        //console.log("deviceCount", deviceCount.toNumber());
+        /*for (var i = 0; i <= deviceCount; i++) {
+            const device = await this.Auth.devices(i);
+            console.log(i, device.id.toNumber() + ' ' + device.name + ' ' + device.account.toLowerCase());
+        }*/
+
     });
-
-    it('list users', async() => {
-        const userCount = await this.Auth.userCount();
-        //const user = await this.Auth.users(userCount);
-
-        /*assert.equal(user.id.toNumber(), userCount.toNumber());
-        assert.equal(user.name, 'Admin User');
-        assert.equal(user.account.toLowerCase(), '0x9ada8c4979caad44fe7a2b6fb6a45bcd67b8657e');
-        assert.equal(userCount.toNumber(), 1);
-        //console.log("userCount", userCount.toNumber());
-        for (var i = 0; i <= userCount; i++) {
-            const user = await this.Auth.users(i);
-            console.log(i, user.id.toNumber() + ' ' + user.name + ' ' + user.account.toLowerCase());
-        }
-
-    });
+    /*
 
     it('trigger event', async() => {
         const result = await this.Auth.login_admin('192.168.8.186');
         const event = result.logs[0].args;
-        assert.equal(event.user.toLowerCase(), '0xE1294B1Ec5A7587222bDd10d8647bdE559bC1CE0');
+        assert.equal(event.device.toLowerCase(), '0xE1294B1Ec5A7587222bDd10d8647bdE559bC1CE0');
     });
     
         it('add device', async() => {

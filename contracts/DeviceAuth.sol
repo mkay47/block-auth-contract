@@ -3,7 +3,7 @@ pragma solidity ^0.5.0;
 contract DeviceAuth{
     uint public deviceCount = 0;
     
-    mapping(uint=>Device) public devices;
+    mapping(uint=> Device) public devices;
    
     struct Device{
         uint id;
@@ -14,7 +14,6 @@ contract DeviceAuth{
     function addDevice(string memory name, string memory ip) public {
         deviceCount ++;
         devices[deviceCount] = Device(deviceCount, name, ip);
-        //devices[1].push(device);
         emit DeviceAdded(deviceCount, name, ip);
     }
 
