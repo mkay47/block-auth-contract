@@ -1,0 +1,3026 @@
+{
+  "contractName": "RoleAuth",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "permissions",
+      "outputs": [
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "Selected",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "roles",
+      "outputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "roleCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "name": "RoleCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "name": "RoleUpdate",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "name": "createRole",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"permissions\",\"outputs\":[{\"name\":\"title\",\"type\":\"string\"},{\"name\":\"Selected\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"name\",\"type\":\"string\"}],\"name\":\"createRole\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"roles\",\"outputs\":[{\"name\":\"id\",\"type\":\"uint256\"},{\"name\":\"name\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"roleCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"name\",\"type\":\"string\"}],\"name\":\"RoleCreated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"name\",\"type\":\"string\"}],\"name\":\"RoleUpdate\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol\":\"RoleAuth\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol\":{\"keccak256\":\"0xf61e0d7907c3e9391721d2c0b81aafe1371eb6d0543e494cae1bd392ef6be89d\",\"urls\":[\"bzzr://8c22141a00aa808d8862c73734af77aba2b680a24a72f1707144d9a24dd57173\"]}},\"version\":1}",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b506100596040518060400160405280600581526020017f6f776e657200000000000000000000000000000000000000000000000000000081525061005e60201b60201c565b6102f6565b600080546001908101808355604080518082018252828152602080820187815293865284815291909420845181559151805192936100a49390850192919091019061025b565b5050604080518082018252600781527f7475726e206f6e00000000000000000000000000000000000000000000000000602080830191825260008054815260018252848120818052600201909152929092209051610105935090919061025b565b50600080548152600160208181526040808420848052600290810183528185208401805460ff19168517905581518083018352600881527f7475726e206f66660000000000000000000000000000000000000000000000008185019081528654875285855283872095875294909101909252909220915161018792919061025b565b5060008054815260016020818152604080842083855260020182528084208301805460ff19169093179092558254825181815280830184815286519482019490945285517f33d5db5dadf5598bea14bf7ec1ca42f58c47dd66bb953ae16559d034bd12dd239592948794929390926060850192908601918190849084905b8381101561021d578181015183820152602001610205565b50505050905090810190601f16801561024a5780820380516001836020036101000a031916815260200191505b50935050505060405180910390a150565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061029c57805160ff19168380011785556102c9565b828001600101855582156102c9579182015b828111156102c95782518255916020019190600101906102ae565b506102d59291506102d9565b5090565b6102f391905b808211156102d557600081556001016102df565b90565b610601806103056000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806358886dba14610051578063af17d38a146100f1578063bfda4a4914610199578063ddf96358146101f8575b600080fd5b61006e6004803603602081101561006757600080fd5b5035610212565b604051808060200183151515158152602001828103825284818151815260200191508051906020019080838360005b838110156100b557818101518382015260200161009d565b50505050905090810190601f1680156100e25780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b6101976004803603602081101561010757600080fd5b81019060208101813564010000000081111561012257600080fd5b82018360208201111561013457600080fd5b8035906020019184600183028401116401000000008311171561015657600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506102b6945050505050565b005b6101b6600480360360208110156101af57600080fd5b503561048e565b604051808381526020018060200182810382528381815181526020019150805190602001908083836000838110156100b557818101518382015260200161009d565b610200610534565b60408051918252519081900360200190f35b600260208181526000928352604092839020805484516001821615610100026000190190911693909304601f81018390048302840183019094528383529283918301828280156102a35780601f10610278576101008083540402835291602001916102a3565b820191906000526020600020905b81548152906001019060200180831161028657829003601f168201915b5050506001909301549192505060ff1682565b600080546001908101808355604080518082018252828152602080820187815293865284815291909420845181559151805192936102fc9390850192919091019061053a565b505060408051808201825260078152600160c91b663a3ab9371037b70260208083019182526000805481526001825284812081805260020190915292909220905161034a935090919061053a565b50600080548152600160208181526040808420848052600290810183528185208401805460ff1916851790558151808301835260088152600160c11b673a3ab9371037b33302818501908152865487528585528387209587529490910190925290922091516103ba92919061053a565b5060008054815260016020818152604080842083855260020182528084208301805460ff19169093179092558254825181815280830184815286519482019490945285517f33d5db5dadf5598bea14bf7ec1ca42f58c47dd66bb953ae16559d034bd12dd239592948794929390926060850192908601918190849084905b83811015610450578181015183820152602001610438565b50505050905090810190601f16801561047d5780820380516001836020036101000a031916815260200191505b50935050505060405180910390a150565b600160208181526000928352604092839020805481840180548651600296821615610100026000190190911695909504601f8101859004850286018501909652858552909491939290919083018282801561052a5780601f106104ff5761010080835404028352916020019161052a565b820191906000526020600020905b81548152906001019060200180831161050d57829003601f168201915b5050505050905082565b60005481565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061057b57805160ff19168380011785556105a8565b828001600101855582156105a8579182015b828111156105a857825182559160200191906001019061058d565b506105b49291506105b8565b5090565b6105d291905b808211156105b457600081556001016105be565b9056fea165627a7a723058202b1040b40c09d28b9ca262399f1f7936415f7f33bb7fc4f1fdf4b61f359208ce0029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806358886dba14610051578063af17d38a146100f1578063bfda4a4914610199578063ddf96358146101f8575b600080fd5b61006e6004803603602081101561006757600080fd5b5035610212565b604051808060200183151515158152602001828103825284818151815260200191508051906020019080838360005b838110156100b557818101518382015260200161009d565b50505050905090810190601f1680156100e25780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b6101976004803603602081101561010757600080fd5b81019060208101813564010000000081111561012257600080fd5b82018360208201111561013457600080fd5b8035906020019184600183028401116401000000008311171561015657600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506102b6945050505050565b005b6101b6600480360360208110156101af57600080fd5b503561048e565b604051808381526020018060200182810382528381815181526020019150805190602001908083836000838110156100b557818101518382015260200161009d565b610200610534565b60408051918252519081900360200190f35b600260208181526000928352604092839020805484516001821615610100026000190190911693909304601f81018390048302840183019094528383529283918301828280156102a35780601f10610278576101008083540402835291602001916102a3565b820191906000526020600020905b81548152906001019060200180831161028657829003601f168201915b5050506001909301549192505060ff1682565b600080546001908101808355604080518082018252828152602080820187815293865284815291909420845181559151805192936102fc9390850192919091019061053a565b505060408051808201825260078152600160c91b663a3ab9371037b70260208083019182526000805481526001825284812081805260020190915292909220905161034a935090919061053a565b50600080548152600160208181526040808420848052600290810183528185208401805460ff1916851790558151808301835260088152600160c11b673a3ab9371037b33302818501908152865487528585528387209587529490910190925290922091516103ba92919061053a565b5060008054815260016020818152604080842083855260020182528084208301805460ff19169093179092558254825181815280830184815286519482019490945285517f33d5db5dadf5598bea14bf7ec1ca42f58c47dd66bb953ae16559d034bd12dd239592948794929390926060850192908601918190849084905b83811015610450578181015183820152602001610438565b50505050905090810190601f16801561047d5780820380516001836020036101000a031916815260200191505b50935050505060405180910390a150565b600160208181526000928352604092839020805481840180548651600296821615610100026000190190911695909504601f8101859004850286018501909652858552909491939290919083018282801561052a5780601f106104ff5761010080835404028352916020019161052a565b820191906000526020600020905b81548152906001019060200180831161050d57829003601f168201915b5050505050905082565b60005481565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061057b57805160ff19168380011785556105a8565b828001600101855582156105a8579182015b828111156105a857825182559160200191906001019061058d565b506105b49291506105b8565b5090565b6105d291905b808211156105b457600081556001016105be565b9056fea165627a7a723058202b1040b40c09d28b9ca262399f1f7936415f7f33bb7fc4f1fdf4b61f359208ce0029",
+  "sourceMap": "27:906:3:-;;;74:1;50:25;;471:53;8:9:-1;5:2;;;30:1;27;20:12;5:2;471:53:3;499:19;;;;;;;;;;;;;;;;;;:10;;;:19;;:::i;:::-;27:906;;530:398;584:9;:12;;;;;;;;;622:21;;;;;;;;;;;;;;;;;;603:16;;;;;;;;;;:40;;;;;;;;:16;;:40;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;656:49:3;;;;;;;;;;;;;;;;;;;-1:-1:-1;662:9:3;;656:16;;:5;:16;;;;;:31;;;:28;;:31;;;;;;;:49;;;;-1:-1:-1;656:31:3;;:49;;:::i;:::-;-1:-1:-1;712:16:3;718:9;;712:16;;755:4;712:16;;;;;;;;:31;;;:28;;;;:31;;;;;:40;;:47;;-1:-1:-1;;712:47:3;;;;;772:50;;;;;;;;;;;;;;;;;778:9;;772:16;;;;;;;;:31;;;:28;;;;:31;;;;;;:50;;;;:31;:50;;:::i;:::-;-1:-1:-1;829:16:3;835:9;;829:16;;872:4;829:16;;;;;;;;:31;;;:28;;:31;;;;;:40;;:47;;-1:-1:-1;;829:47:3;;;;;;;906:9;;894:28;;;;;;;;;;;;;;;;;;;;;;;;906:9;;917:4;;894:28;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;894:28:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;530:398;:::o;27:906::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:906:3;;;-1:-1:-1;27:906:3;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "27:906:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:906:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;297:46;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;297:46:3;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;297:46:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;530:398;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;530:398:3;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;530:398:3;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;530:398:3;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;530:398:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;530:398:3;;-1:-1:-1;530:398:3;;-1:-1:-1;;;;;530:398:3:i;:::-;;258:34;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;258:34:3;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;50:25:3;;;:::i;:::-;;;;;;;;;;;;;;;;297:46;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;297:46:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;297:46:3;;;;;;;-1:-1:-1;;297:46:3;;;:::o;530:398::-;584:9;:12;;;;;;;;;622:21;;;;;;;;;;;;;;;;;;603:16;;;;;;;;;;:40;;;;;;;;:16;;:40;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;656:49:3;;;;;;;;;;;-1:-1:-1;;;;;656:49:3;;;;;;;-1:-1:-1;662:9:3;;656:16;;:5;:16;;;;;:31;;;:28;;:31;;;;;;;:49;;;;-1:-1:-1;656:31:3;;:49;;:::i;:::-;-1:-1:-1;712:16:3;718:9;;712:16;;755:4;712:16;;;;;;;;:31;;;:28;;;;:31;;;;;:40;;:47;;-1:-1:-1;;712:47:3;;;;;772:50;;;;;;;;;;-1:-1:-1;;;;;772:50:3;;;;;;778:9;;772:16;;;;;;;;:31;;;:28;;;;:31;;;;;;:50;;;;:31;:50;;:::i;:::-;-1:-1:-1;829:16:3;835:9;;829:16;;872:4;829:16;;;;;;;;:31;;;:28;;:31;;;;;:40;;:47;;-1:-1:-1;;829:47:3;;;;;;;906:9;;894:28;;;;;;;;;;;;;;;;;;;;;;;;906:9;;917:4;;894:28;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;894:28:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;530:398;:::o;258:34::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;258:34:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;50:25::-;;;;:::o;27:906::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:906:3;;;-1:-1:-1;27:906:3;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract RoleAuth {\r\n  uint public roleCount = 0;\r\n  \r\n  struct Role {\r\n    uint id;\r\n    string name;\r\n    mapping(uint => Permission) permissions;\r\n  }\r\n\r\n  struct Permission{\r\n      string title;\r\n      bool Selected;\r\n  }\r\n\r\n  mapping(uint => Role) public roles;\r\n  mapping(uint => Permission) public permissions;\r\n\r\n  event RoleCreated(\r\n    uint id,\r\n    string name\r\n  );\r\n\r\n  event RoleUpdate(\r\n    uint id,\r\n    string name\r\n  );\r\n\r\n  constructor() public {\r\n    createRole(\"owner\");\r\n  }\r\n\r\n  function createRole(string memory name) public {\r\n    roleCount ++;\r\n    roles[roleCount] = Role(roleCount, name);\r\n    \r\n    roles[roleCount].permissions[0].title = 'turn on';\r\n    roles[roleCount].permissions[0].Selected = true;\r\n    \r\n    roles[roleCount].permissions[1].title = 'turn off';\r\n    roles[roleCount].permissions[1].Selected = true;\r\n    \r\n    emit RoleCreated(roleCount, name);\r\n  }\r\n\r\n}",
+  "sourcePath": "C:/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol",
+    "exportedSymbols": {
+      "RoleAuth": [
+        549
+      ]
+    },
+    "id": 550,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 440,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 549,
+        "linearizedBaseContracts": [
+          549
+        ],
+        "name": "RoleAuth",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 443,
+            "name": "roleCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 549,
+            "src": "50:25:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 441,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "50:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 442,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "74:1:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "RoleAuth.Role",
+            "id": 452,
+            "members": [
+              {
+                "constant": false,
+                "id": 445,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 452,
+                "src": "103:7:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 444,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "103:4:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 447,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 452,
+                "src": "117:11:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 446,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "117:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 451,
+                "name": "permissions",
+                "nodeType": "VariableDeclaration",
+                "scope": 452,
+                "src": "135:39:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                  "typeString": "mapping(uint256 => struct RoleAuth.Permission)"
+                },
+                "typeName": {
+                  "id": 450,
+                  "keyType": {
+                    "id": 448,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "143:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Mapping",
+                  "src": "135:27:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                    "typeString": "mapping(uint256 => struct RoleAuth.Permission)"
+                  },
+                  "valueType": {
+                    "contractScope": null,
+                    "id": 449,
+                    "name": "Permission",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 457,
+                    "src": "151:10:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Permission_$457_storage_ptr",
+                      "typeString": "struct RoleAuth.Permission"
+                    }
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Role",
+            "nodeType": "StructDefinition",
+            "scope": 549,
+            "src": "84:96:3",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "RoleAuth.Permission",
+            "id": 457,
+            "members": [
+              {
+                "constant": false,
+                "id": 454,
+                "name": "title",
+                "nodeType": "VariableDeclaration",
+                "scope": 457,
+                "src": "212:12:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 453,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "212:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 456,
+                "name": "Selected",
+                "nodeType": "VariableDeclaration",
+                "scope": 457,
+                "src": "233:13:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 455,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "233:4:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Permission",
+            "nodeType": "StructDefinition",
+            "scope": 549,
+            "src": "186:66:3",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 461,
+            "name": "roles",
+            "nodeType": "VariableDeclaration",
+            "scope": 549,
+            "src": "258:34:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+              "typeString": "mapping(uint256 => struct RoleAuth.Role)"
+            },
+            "typeName": {
+              "id": 460,
+              "keyType": {
+                "id": 458,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "266:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "258:21:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                "typeString": "mapping(uint256 => struct RoleAuth.Role)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 459,
+                "name": "Role",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 452,
+                "src": "274:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Role_$452_storage_ptr",
+                  "typeString": "struct RoleAuth.Role"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 465,
+            "name": "permissions",
+            "nodeType": "VariableDeclaration",
+            "scope": 549,
+            "src": "297:46:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+              "typeString": "mapping(uint256 => struct RoleAuth.Permission)"
+            },
+            "typeName": {
+              "id": 464,
+              "keyType": {
+                "id": 462,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "305:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "297:27:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                "typeString": "mapping(uint256 => struct RoleAuth.Permission)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 463,
+                "name": "Permission",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 457,
+                "src": "313:10:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Permission_$457_storage_ptr",
+                  "typeString": "struct RoleAuth.Permission"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 471,
+            "name": "RoleCreated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 470,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 467,
+                  "indexed": false,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 471,
+                  "src": "374:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 466,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "374:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 469,
+                  "indexed": false,
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 471,
+                  "src": "388:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 468,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "388:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "367:37:3"
+            },
+            "src": "350:55:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 477,
+            "name": "RoleUpdate",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 476,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 473,
+                  "indexed": false,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 477,
+                  "src": "434:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 472,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "434:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 475,
+                  "indexed": false,
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 477,
+                  "src": "448:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 474,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "448:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "427:37:3"
+            },
+            "src": "411:54:3"
+          },
+          {
+            "body": {
+              "id": 484,
+              "nodeType": "Block",
+              "src": "492:32:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "6f776e6572",
+                        "id": 481,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "510:7:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_02016836a56b71f0d02689e69e326f4f4c1b9057164ef592671cf0d37c8040c0",
+                          "typeString": "literal_string \"owner\""
+                        },
+                        "value": "owner"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_02016836a56b71f0d02689e69e326f4f4c1b9057164ef592671cf0d37c8040c0",
+                          "typeString": "literal_string \"owner\""
+                        }
+                      ],
+                      "id": 480,
+                      "name": "createRole",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 548,
+                      "src": "499:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 482,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "499:19:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 483,
+                  "nodeType": "ExpressionStatement",
+                  "src": "499:19:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 485,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 478,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "482:2:3"
+            },
+            "returnParameters": {
+              "id": 479,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "492:0:3"
+            },
+            "scope": 549,
+            "src": "471:53:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 547,
+              "nodeType": "Block",
+              "src": "577:351:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 491,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "584:12:3",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 490,
+                      "name": "roleCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 443,
+                      "src": "584:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 492,
+                  "nodeType": "ExpressionStatement",
+                  "src": "584:12:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 500,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 493,
+                        "name": "roles",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 461,
+                        "src": "603:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                          "typeString": "mapping(uint256 => struct RoleAuth.Role storage ref)"
+                        }
+                      },
+                      "id": 495,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 494,
+                        "name": "roleCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 443,
+                        "src": "609:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "603:16:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Role_$452_storage",
+                        "typeString": "struct RoleAuth.Role storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 497,
+                          "name": "roleCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 443,
+                          "src": "627:9:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 498,
+                          "name": "name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 487,
+                          "src": "638:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 496,
+                        "name": "Role",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 452,
+                        "src": "622:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Role_$452_storage_ptr_$",
+                          "typeString": "type(struct RoleAuth.Role storage pointer)"
+                        }
+                      },
+                      "id": 499,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "622:21:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Role_$452_memory",
+                        "typeString": "struct RoleAuth.Role memory"
+                      }
+                    },
+                    "src": "603:40:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Role_$452_storage",
+                      "typeString": "struct RoleAuth.Role storage ref"
+                    }
+                  },
+                  "id": 501,
+                  "nodeType": "ExpressionStatement",
+                  "src": "603:40:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 510,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 502,
+                              "name": "roles",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 461,
+                              "src": "656:5:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                                "typeString": "mapping(uint256 => struct RoleAuth.Role storage ref)"
+                              }
+                            },
+                            "id": 504,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 503,
+                              "name": "roleCount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 443,
+                              "src": "662:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "656:16:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Role_$452_storage",
+                              "typeString": "struct RoleAuth.Role storage ref"
+                            }
+                          },
+                          "id": 505,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "permissions",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 451,
+                          "src": "656:28:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                            "typeString": "mapping(uint256 => struct RoleAuth.Permission storage ref)"
+                          }
+                        },
+                        "id": 507,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 506,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "685:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "656:31:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permission_$457_storage",
+                          "typeString": "struct RoleAuth.Permission storage ref"
+                        }
+                      },
+                      "id": 508,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "title",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 454,
+                      "src": "656:37:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "7475726e206f6e",
+                      "id": 509,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "696:9:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_60351d9c1619dd7a1483ded30ebd925e2f81c7fa04ff52fd070e426ff0e26e5c",
+                        "typeString": "literal_string \"turn on\""
+                      },
+                      "value": "turn on"
+                    },
+                    "src": "656:49:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 511,
+                  "nodeType": "ExpressionStatement",
+                  "src": "656:49:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 520,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 512,
+                              "name": "roles",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 461,
+                              "src": "712:5:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                                "typeString": "mapping(uint256 => struct RoleAuth.Role storage ref)"
+                              }
+                            },
+                            "id": 514,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 513,
+                              "name": "roleCount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 443,
+                              "src": "718:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "712:16:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Role_$452_storage",
+                              "typeString": "struct RoleAuth.Role storage ref"
+                            }
+                          },
+                          "id": 515,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "permissions",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 451,
+                          "src": "712:28:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                            "typeString": "mapping(uint256 => struct RoleAuth.Permission storage ref)"
+                          }
+                        },
+                        "id": 517,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 516,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "741:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "712:31:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permission_$457_storage",
+                          "typeString": "struct RoleAuth.Permission storage ref"
+                        }
+                      },
+                      "id": 518,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "Selected",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 456,
+                      "src": "712:40:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 519,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "755:4:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "712:47:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 521,
+                  "nodeType": "ExpressionStatement",
+                  "src": "712:47:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 530,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 522,
+                              "name": "roles",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 461,
+                              "src": "772:5:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                                "typeString": "mapping(uint256 => struct RoleAuth.Role storage ref)"
+                              }
+                            },
+                            "id": 524,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 523,
+                              "name": "roleCount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 443,
+                              "src": "778:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "772:16:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Role_$452_storage",
+                              "typeString": "struct RoleAuth.Role storage ref"
+                            }
+                          },
+                          "id": 525,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "permissions",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 451,
+                          "src": "772:28:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                            "typeString": "mapping(uint256 => struct RoleAuth.Permission storage ref)"
+                          }
+                        },
+                        "id": 527,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "31",
+                          "id": 526,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "801:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          "value": "1"
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "772:31:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permission_$457_storage",
+                          "typeString": "struct RoleAuth.Permission storage ref"
+                        }
+                      },
+                      "id": 528,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "title",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 454,
+                      "src": "772:37:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "7475726e206f6666",
+                      "id": 529,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "812:10:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_670d93a23232a88c48a085dc71cafab6fbe57fe609f918d203c39845ac0a43f0",
+                        "typeString": "literal_string \"turn off\""
+                      },
+                      "value": "turn off"
+                    },
+                    "src": "772:50:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 531,
+                  "nodeType": "ExpressionStatement",
+                  "src": "772:50:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 540,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 532,
+                              "name": "roles",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 461,
+                              "src": "829:5:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                                "typeString": "mapping(uint256 => struct RoleAuth.Role storage ref)"
+                              }
+                            },
+                            "id": 534,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 533,
+                              "name": "roleCount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 443,
+                              "src": "835:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "829:16:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Role_$452_storage",
+                              "typeString": "struct RoleAuth.Role storage ref"
+                            }
+                          },
+                          "id": 535,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "permissions",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 451,
+                          "src": "829:28:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                            "typeString": "mapping(uint256 => struct RoleAuth.Permission storage ref)"
+                          }
+                        },
+                        "id": 537,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "31",
+                          "id": 536,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "858:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          "value": "1"
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "829:31:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permission_$457_storage",
+                          "typeString": "struct RoleAuth.Permission storage ref"
+                        }
+                      },
+                      "id": 538,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "Selected",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 456,
+                      "src": "829:40:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 539,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "872:4:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "829:47:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 541,
+                  "nodeType": "ExpressionStatement",
+                  "src": "829:47:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 543,
+                        "name": "roleCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 443,
+                        "src": "906:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 544,
+                        "name": "name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 487,
+                        "src": "917:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 542,
+                      "name": "RoleCreated",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 471,
+                      "src": "894:11:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (uint256,string memory)"
+                      }
+                    },
+                    "id": 545,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "894:28:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 546,
+                  "nodeType": "EmitStatement",
+                  "src": "889:33:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 548,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createRole",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 488,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 487,
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 548,
+                  "src": "550:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 486,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "550:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "549:20:3"
+            },
+            "returnParameters": {
+              "id": 489,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "577:0:3"
+            },
+            "scope": 549,
+            "src": "530:398:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 550,
+        "src": "27:906:3"
+      }
+    ],
+    "src": "0:933:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol",
+    "exportedSymbols": {
+      "RoleAuth": [
+        549
+      ]
+    },
+    "id": 550,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 440,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 549,
+        "linearizedBaseContracts": [
+          549
+        ],
+        "name": "RoleAuth",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 443,
+            "name": "roleCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 549,
+            "src": "50:25:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 441,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "50:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 442,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "74:1:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "RoleAuth.Role",
+            "id": 452,
+            "members": [
+              {
+                "constant": false,
+                "id": 445,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 452,
+                "src": "103:7:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 444,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "103:4:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 447,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 452,
+                "src": "117:11:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 446,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "117:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 451,
+                "name": "permissions",
+                "nodeType": "VariableDeclaration",
+                "scope": 452,
+                "src": "135:39:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                  "typeString": "mapping(uint256 => struct RoleAuth.Permission)"
+                },
+                "typeName": {
+                  "id": 450,
+                  "keyType": {
+                    "id": 448,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "143:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Mapping",
+                  "src": "135:27:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                    "typeString": "mapping(uint256 => struct RoleAuth.Permission)"
+                  },
+                  "valueType": {
+                    "contractScope": null,
+                    "id": 449,
+                    "name": "Permission",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 457,
+                    "src": "151:10:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Permission_$457_storage_ptr",
+                      "typeString": "struct RoleAuth.Permission"
+                    }
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Role",
+            "nodeType": "StructDefinition",
+            "scope": 549,
+            "src": "84:96:3",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "RoleAuth.Permission",
+            "id": 457,
+            "members": [
+              {
+                "constant": false,
+                "id": 454,
+                "name": "title",
+                "nodeType": "VariableDeclaration",
+                "scope": 457,
+                "src": "212:12:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 453,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "212:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 456,
+                "name": "Selected",
+                "nodeType": "VariableDeclaration",
+                "scope": 457,
+                "src": "233:13:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 455,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "233:4:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Permission",
+            "nodeType": "StructDefinition",
+            "scope": 549,
+            "src": "186:66:3",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 461,
+            "name": "roles",
+            "nodeType": "VariableDeclaration",
+            "scope": 549,
+            "src": "258:34:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+              "typeString": "mapping(uint256 => struct RoleAuth.Role)"
+            },
+            "typeName": {
+              "id": 460,
+              "keyType": {
+                "id": 458,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "266:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "258:21:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                "typeString": "mapping(uint256 => struct RoleAuth.Role)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 459,
+                "name": "Role",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 452,
+                "src": "274:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Role_$452_storage_ptr",
+                  "typeString": "struct RoleAuth.Role"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 465,
+            "name": "permissions",
+            "nodeType": "VariableDeclaration",
+            "scope": 549,
+            "src": "297:46:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+              "typeString": "mapping(uint256 => struct RoleAuth.Permission)"
+            },
+            "typeName": {
+              "id": 464,
+              "keyType": {
+                "id": 462,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "305:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "297:27:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                "typeString": "mapping(uint256 => struct RoleAuth.Permission)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 463,
+                "name": "Permission",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 457,
+                "src": "313:10:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Permission_$457_storage_ptr",
+                  "typeString": "struct RoleAuth.Permission"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 471,
+            "name": "RoleCreated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 470,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 467,
+                  "indexed": false,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 471,
+                  "src": "374:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 466,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "374:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 469,
+                  "indexed": false,
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 471,
+                  "src": "388:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 468,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "388:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "367:37:3"
+            },
+            "src": "350:55:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 477,
+            "name": "RoleUpdate",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 476,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 473,
+                  "indexed": false,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 477,
+                  "src": "434:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 472,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "434:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 475,
+                  "indexed": false,
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 477,
+                  "src": "448:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 474,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "448:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "427:37:3"
+            },
+            "src": "411:54:3"
+          },
+          {
+            "body": {
+              "id": 484,
+              "nodeType": "Block",
+              "src": "492:32:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "6f776e6572",
+                        "id": 481,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "510:7:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_02016836a56b71f0d02689e69e326f4f4c1b9057164ef592671cf0d37c8040c0",
+                          "typeString": "literal_string \"owner\""
+                        },
+                        "value": "owner"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_02016836a56b71f0d02689e69e326f4f4c1b9057164ef592671cf0d37c8040c0",
+                          "typeString": "literal_string \"owner\""
+                        }
+                      ],
+                      "id": 480,
+                      "name": "createRole",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 548,
+                      "src": "499:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 482,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "499:19:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 483,
+                  "nodeType": "ExpressionStatement",
+                  "src": "499:19:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 485,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 478,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "482:2:3"
+            },
+            "returnParameters": {
+              "id": 479,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "492:0:3"
+            },
+            "scope": 549,
+            "src": "471:53:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 547,
+              "nodeType": "Block",
+              "src": "577:351:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 491,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "584:12:3",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 490,
+                      "name": "roleCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 443,
+                      "src": "584:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 492,
+                  "nodeType": "ExpressionStatement",
+                  "src": "584:12:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 500,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 493,
+                        "name": "roles",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 461,
+                        "src": "603:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                          "typeString": "mapping(uint256 => struct RoleAuth.Role storage ref)"
+                        }
+                      },
+                      "id": 495,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 494,
+                        "name": "roleCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 443,
+                        "src": "609:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "603:16:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Role_$452_storage",
+                        "typeString": "struct RoleAuth.Role storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 497,
+                          "name": "roleCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 443,
+                          "src": "627:9:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 498,
+                          "name": "name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 487,
+                          "src": "638:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 496,
+                        "name": "Role",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 452,
+                        "src": "622:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Role_$452_storage_ptr_$",
+                          "typeString": "type(struct RoleAuth.Role storage pointer)"
+                        }
+                      },
+                      "id": 499,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "622:21:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Role_$452_memory",
+                        "typeString": "struct RoleAuth.Role memory"
+                      }
+                    },
+                    "src": "603:40:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Role_$452_storage",
+                      "typeString": "struct RoleAuth.Role storage ref"
+                    }
+                  },
+                  "id": 501,
+                  "nodeType": "ExpressionStatement",
+                  "src": "603:40:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 510,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 502,
+                              "name": "roles",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 461,
+                              "src": "656:5:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                                "typeString": "mapping(uint256 => struct RoleAuth.Role storage ref)"
+                              }
+                            },
+                            "id": 504,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 503,
+                              "name": "roleCount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 443,
+                              "src": "662:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "656:16:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Role_$452_storage",
+                              "typeString": "struct RoleAuth.Role storage ref"
+                            }
+                          },
+                          "id": 505,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "permissions",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 451,
+                          "src": "656:28:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                            "typeString": "mapping(uint256 => struct RoleAuth.Permission storage ref)"
+                          }
+                        },
+                        "id": 507,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 506,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "685:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "656:31:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permission_$457_storage",
+                          "typeString": "struct RoleAuth.Permission storage ref"
+                        }
+                      },
+                      "id": 508,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "title",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 454,
+                      "src": "656:37:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "7475726e206f6e",
+                      "id": 509,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "696:9:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_60351d9c1619dd7a1483ded30ebd925e2f81c7fa04ff52fd070e426ff0e26e5c",
+                        "typeString": "literal_string \"turn on\""
+                      },
+                      "value": "turn on"
+                    },
+                    "src": "656:49:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 511,
+                  "nodeType": "ExpressionStatement",
+                  "src": "656:49:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 520,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 512,
+                              "name": "roles",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 461,
+                              "src": "712:5:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                                "typeString": "mapping(uint256 => struct RoleAuth.Role storage ref)"
+                              }
+                            },
+                            "id": 514,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 513,
+                              "name": "roleCount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 443,
+                              "src": "718:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "712:16:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Role_$452_storage",
+                              "typeString": "struct RoleAuth.Role storage ref"
+                            }
+                          },
+                          "id": 515,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "permissions",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 451,
+                          "src": "712:28:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                            "typeString": "mapping(uint256 => struct RoleAuth.Permission storage ref)"
+                          }
+                        },
+                        "id": 517,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 516,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "741:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "712:31:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permission_$457_storage",
+                          "typeString": "struct RoleAuth.Permission storage ref"
+                        }
+                      },
+                      "id": 518,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "Selected",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 456,
+                      "src": "712:40:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 519,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "755:4:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "712:47:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 521,
+                  "nodeType": "ExpressionStatement",
+                  "src": "712:47:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 530,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 522,
+                              "name": "roles",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 461,
+                              "src": "772:5:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                                "typeString": "mapping(uint256 => struct RoleAuth.Role storage ref)"
+                              }
+                            },
+                            "id": 524,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 523,
+                              "name": "roleCount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 443,
+                              "src": "778:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "772:16:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Role_$452_storage",
+                              "typeString": "struct RoleAuth.Role storage ref"
+                            }
+                          },
+                          "id": 525,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "permissions",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 451,
+                          "src": "772:28:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                            "typeString": "mapping(uint256 => struct RoleAuth.Permission storage ref)"
+                          }
+                        },
+                        "id": 527,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "31",
+                          "id": 526,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "801:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          "value": "1"
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "772:31:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permission_$457_storage",
+                          "typeString": "struct RoleAuth.Permission storage ref"
+                        }
+                      },
+                      "id": 528,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "title",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 454,
+                      "src": "772:37:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "7475726e206f6666",
+                      "id": 529,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "812:10:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_670d93a23232a88c48a085dc71cafab6fbe57fe609f918d203c39845ac0a43f0",
+                        "typeString": "literal_string \"turn off\""
+                      },
+                      "value": "turn off"
+                    },
+                    "src": "772:50:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 531,
+                  "nodeType": "ExpressionStatement",
+                  "src": "772:50:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 540,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 532,
+                              "name": "roles",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 461,
+                              "src": "829:5:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Role_$452_storage_$",
+                                "typeString": "mapping(uint256 => struct RoleAuth.Role storage ref)"
+                              }
+                            },
+                            "id": 534,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 533,
+                              "name": "roleCount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 443,
+                              "src": "835:9:3",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "829:16:3",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Role_$452_storage",
+                              "typeString": "struct RoleAuth.Role storage ref"
+                            }
+                          },
+                          "id": 535,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "permissions",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 451,
+                          "src": "829:28:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Permission_$457_storage_$",
+                            "typeString": "mapping(uint256 => struct RoleAuth.Permission storage ref)"
+                          }
+                        },
+                        "id": 537,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "31",
+                          "id": 536,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "858:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          "value": "1"
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "829:31:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permission_$457_storage",
+                          "typeString": "struct RoleAuth.Permission storage ref"
+                        }
+                      },
+                      "id": 538,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "Selected",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 456,
+                      "src": "829:40:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 539,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "872:4:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "829:47:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 541,
+                  "nodeType": "ExpressionStatement",
+                  "src": "829:47:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 543,
+                        "name": "roleCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 443,
+                        "src": "906:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 544,
+                        "name": "name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 487,
+                        "src": "917:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 542,
+                      "name": "RoleCreated",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 471,
+                      "src": "894:11:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (uint256,string memory)"
+                      }
+                    },
+                    "id": 545,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "894:28:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 546,
+                  "nodeType": "EmitStatement",
+                  "src": "889:33:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 548,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createRole",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 488,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 487,
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 548,
+                  "src": "550:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 486,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "550:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "549:20:3"
+            },
+            "returnParameters": {
+              "id": 489,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "577:0:3"
+            },
+            "scope": 549,
+            "src": "530:398:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 550,
+        "src": "27:906:3"
+      }
+    ],
+    "src": "0:933:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {
+    "1568624347810": {
+      "events": {},
+      "links": {},
+      "address": "0x2241156f59ac0B59E04825650201041AE6cF1d97",
+      "transactionHash": "0xbdf61721e9e6ae6c7f2846ea875b8d4c18f5d3c6a2525995cf6f8467df3dbec8"
+    }
+  },
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-09-16T08:59:22.603Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

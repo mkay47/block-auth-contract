@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0;
 
-contract TodoList {
+contract RoleAuth {
   uint public roleCount = 0;
   
   struct Role {
