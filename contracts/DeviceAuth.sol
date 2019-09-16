@@ -3,18 +3,27 @@ pragma solidity ^0.5.0;
 contract DeviceAuth{
     uint public deviceCount = 0;
     
-    mapping(uint=>Device[]) public devices;
+    mapping(uint=>Device) public devices;
    
     struct Device{
+        uint id;
         string name;
         string ip;
     }
 
     function addDevice(string memory name, string memory ip) public {
         deviceCount ++;
-        Device memory device = Device(name, ip);
-        devices[1].push(device);
+        devices[deviceCount] = Device(deviceCount, name, ip);
+        //devices[1].push(device);
         emit DeviceAdded(deviceCount, name, ip);
+    }
+
+    function updateDevice(uint _id,string memory name,string memory ip) public {
+        Device memory _device = devices[_id];
+        _device.name = name;
+        _device.ip = ip;
+        devices[_id] = _device;
+        emit DeviceUpdated(_id, _device.name, _device.ip);
     }
 
     constructor() public {
@@ -22,8 +31,11 @@ contract DeviceAuth{
     }
 
     event DeviceAdded(uint id, string name, string ip);
-  
+    
+    event DeviceUpdated(uint id, string name, string ip);
+
 	event DistributeToken(address user,string ip, bytes32 token);
+    
     bytes32 random_number;
     bytes32 token;
 
