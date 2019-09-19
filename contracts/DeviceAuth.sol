@@ -9,31 +9,33 @@ contract DeviceAuth{
         uint id;
         string name;
         string ip;
+        string role;
     }
 
-    function addDevice(string memory name, string memory ip) public {
+    function addDevice(string memory name, string memory ip, string memory role) public {
         deviceCount ++;
-        devices[deviceCount] = Device(deviceCount, name, ip);
-        emit DeviceAdded(deviceCount, name, ip);
+        devices[deviceCount] = Device(deviceCount, name, ip, role);
+        emit DeviceAdded(deviceCount, name, ip, role);
     }
 
-    function updateDevice(uint _id,string memory name,string memory ip) public {
+    function updateDevice(uint _id,string memory name,string memory ip, string memory role) public {
         Device memory _device = devices[_id];
         _device.name = name;
         _device.ip = ip;
+        _device.role = role;
         devices[_id] = _device;
-        emit DeviceUpdated(_id, _device.name, _device.ip);
+        emit DeviceUpdated(_id, _device.name, _device.ip, _device.role);
     }
 
     constructor() public {
-        addDevice("lights", "192.168.8.186:8081");
+        addDevice("lights", "192.168.8.186:8081", "owner");
     }
 
-    event DeviceAdded(uint id, string name, string ip);
+    event DeviceAdded(uint id, string name, string ip, string role);
     
-    event DeviceUpdated(uint id, string name, string ip);
+    event DeviceUpdated(uint id, string name, string ip, string role);
 
-	event DistributeToken(address user,string ip, bytes32 token);
+	event DistributeToken(address user,string ip, bytes32 token, string role);
     
     bytes32 random_number;
     bytes32 token;
@@ -45,9 +47,9 @@ contract DeviceAuth{
         return bytes32(hashVal);
     }
 
-    function login_admin(string memory ip) public {
+    function login_admin(string memory ip, string memory role) public {
 		random_number = rand();
         token = keccak256(abi.encodePacked(msg.sender, now, random_number));
-        emit DistributeToken(msg.sender, ip, token);
+        emit DistributeToken(msg.sender, ip, token, role);
     }
 }

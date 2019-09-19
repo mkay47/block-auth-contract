@@ -23,6 +23,7 @@ contract UserAuth{
     function updateUser(uint _id,string memory name,string memory password, string memory role) public {
         User memory _user = users[_id];
         _user.username = name;
+        _user.password = password;
         _user.role = role;
         users[_id] = _user;
         emit UserUpdated(_id, _user.username, _user.role);
@@ -33,6 +34,6 @@ contract UserAuth{
     }
 
     event UserAdded(uint id,string name,address account);
-    event UserUpdated(uint id, string name, string password);
+    event UserUpdated(uint id, string name, string role);
 
 }
