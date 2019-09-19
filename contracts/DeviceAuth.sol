@@ -9,12 +9,13 @@ contract DeviceAuth{
         uint id;
         string name;
         string ip;
+        string status;
         string role;
     }
 
     function addDevice(string memory name, string memory ip, string memory role) public {
         deviceCount ++;
-        devices[deviceCount] = Device(deviceCount, name, ip, role);
+        devices[deviceCount] = Device(deviceCount, name, ip, "offline", role);
         emit DeviceAdded(deviceCount, name, ip, role);
     }
 
@@ -28,7 +29,7 @@ contract DeviceAuth{
     }
 
     constructor() public {
-        addDevice("lights", "192.168.8.186:8081", "owner");
+        addDevice("lights", "192.168.8.186:8081","owner");
     }
 
     event DeviceAdded(uint id, string name, string ip, string role);

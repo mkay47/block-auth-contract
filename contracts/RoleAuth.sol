@@ -1,8 +1,8 @@
 pragma solidity ^0.5.0;
 
 contract RoleAuth {
-  OwnerRole or;
-  GuestRole gr;
+  OwnerRole public or;
+  GuestRole public gr;
 
   struct OwnerRole {
     bool on;

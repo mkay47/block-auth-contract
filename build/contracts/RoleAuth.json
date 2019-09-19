@@ -2,6 +2,42 @@
   "contractName": "RoleAuth",
   "abi": [
     {
+      "constant": true,
+      "inputs": [],
+      "name": "or",
+      "outputs": [
+        {
+          "name": "on",
+          "type": "bool"
+        },
+        {
+          "name": "off",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "gr",
+      "outputs": [
+        {
+          "name": "on",
+          "type": "bool"
+        },
+        {
+          "name": "off",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
       "inputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
@@ -78,12 +114,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"updateOwnerRole\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"UpdateGuestRole\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"on\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"OwnerRoleUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"on\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"GuestRoleUpdated\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol\":\"RoleAuth\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol\":{\"keccak256\":\"0x4bac13885b3cc459a0a42a63655c45c59ee8a18dba36ea47eed9c91b12b2d75c\",\"urls\":[\"bzzr://f8df12375360bcbfe3ecde283837e75392d4680294b77c536c1c85ec2fedd5c6\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5061002260018061003860201b60201c565b61003360018061009560201b60201c565b610109565b6100406100f2565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b61009d6100f2565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b604080518082019091526000808252602082015290565b610188806101186000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063edf35cf81461003b578063f26d64da14610064575b600080fd5b6100626004803603604081101561005157600080fd5b50803515159060200135151561008b565b005b6100626004803603604081101561007a57600080fd5b5080351515906020013515156100e8565b610093610145565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b6100f0610145565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b60408051808201909152600080825260208201529056fea165627a7a7230582023292b83f0e27aca2827e4a634df1b5ce1bad8428925ea776da61668cb49cf730029",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063edf35cf81461003b578063f26d64da14610064575b600080fd5b6100626004803603604081101561005157600080fd5b50803515159060200135151561008b565b005b6100626004803603604081101561007a57600080fd5b5080351515906020013515156100e8565b610093610145565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b6100f0610145565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b60408051808201909152600080825260208201529056fea165627a7a7230582023292b83f0e27aca2827e4a634df1b5ce1bad8428925ea776da61668cb49cf730029",
-  "sourceMap": "27:757:3:-;;;330:93;8:9:-1;5:2;;;30:1;27;20:12;5:2;330:93:3;358:26;374:4;379;358:15;;;:26;;:::i;:::-;391;407:4;412;391:15;;;:26;;:::i;:::-;27:757;;431:171;488:20;;:::i;:::-;-1:-1:-1;488:25:3;;;;;;;;520:11;;;;;;538:13;;;488:25;;;;538:13;;;563:33;;;;;;;;;;488:25;;563:33;;;;;;;;;431:171;;;:::o;608:::-;665:20;;:::i;:::-;-1:-1:-1;665:25:3;;;;;;;;697:11;;;;;;715:13;;;665:25;;;;715:13;;;740:33;;;;;;;;;;665:25;;740:33;;;;;;;;;608:171;;;:::o;27:757::-;;;;;;;;;;-1:-1:-1;27:757:3;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "27:757:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:757:3;;;;;;;;;;;;;;;;;;;;;;;;431:171;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;431:171:3;;;;;;;;;;;:::i;:::-;;608;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;608:171:3;;;;;;;;;;;:::i;431:::-;488:20;;:::i;:::-;-1:-1:-1;488:25:3;;;;;;;;520:11;;;;;;538:13;;;488:25;;;;538:13;;;563:33;;;;;;;;;;488:25;;563:33;;;;;;;;;431:171;;;:::o;608:::-;665:20;;:::i;:::-;-1:-1:-1;665:25:3;;;;;;;;697:11;;;;;;715:13;;;665:25;;;;715:13;;;740:33;;;;;;;;;;665:25;;740:33;;;;;;;;;608:171;;;:::o;27:757::-;;;;;;;;;;-1:-1:-1;27:757:3;;;;;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract RoleAuth {\r\n  OwnerRole or;\r\n  GuestRole gr;\r\n\r\n  struct OwnerRole {\r\n    bool on;\r\n    bool off;\r\n  }\r\n\r\n  struct GuestRole {\r\n    bool on;\r\n    bool off;\r\n  }\r\n\r\n  event OwnerRoleUpdated(\r\n    bool on,\r\n    bool off\r\n  );\r\n\r\n  event GuestRoleUpdated(\r\n    bool on,\r\n    bool off\r\n  );\r\n  \r\n  constructor() public {\r\n    updateOwnerRole(true,true);\r\n    UpdateGuestRole(true,true);\r\n  }\r\n\r\n\r\n  function updateOwnerRole(bool on,bool off) public {\r\n    OwnerRole memory _or = or;\r\n    _or.on = on;\r\n    _or.off = off;\r\n    emit OwnerRoleUpdated(_or.on, _or.off);\r\n  }\r\n\r\n  function UpdateGuestRole(bool on,bool off) public {\r\n    GuestRole memory _gr = gr;\r\n    _gr.on = on;\r\n    _gr.off = off;\r\n    emit GuestRoleUpdated(_gr.on, _gr.off);\r\n  }\r\n\r\n}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"or\",\"outputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"gr\",\"outputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"updateOwnerRole\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"UpdateGuestRole\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"on\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"OwnerRoleUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"on\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"GuestRoleUpdated\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol\":\"RoleAuth\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol\":{\"keccak256\":\"0xd5a598e062350c9cabcf49a4cd87d417d4b283c64706a3f4ee305eb33865302a\",\"urls\":[\"bzzr://921fec38d454f7f797220a5c6b34f5598acc7acd3894b30961cfe8bff3e3ee64\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061002260018061003860201b60201c565b61003360018061009560201b60201c565b610109565b6100406100f2565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b61009d6100f2565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b604080518082019091526000808252602082015290565b6101ed806101186000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80632d5e74d814610051578063950da23f14610074578063edf35cf81461007c578063f26d64da146100a5575b600080fd5b6100596100cc565b60408051921515835290151560208301528051918290030190f35b6100596100de565b6100a36004803603604081101561009257600080fd5b5080351515906020013515156100f0565b005b6100a3600480360360408110156100bb57600080fd5b50803515159060200135151561014d565b60005460ff8082169161010090041682565b60015460ff8082169161010090041682565b6100f86101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b6101556101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b60408051808201909152600080825260208201529056fea165627a7a72305820fbae26a0520d2e0361e700bef7c199050267be06916955fc045cde7d72aa592a0029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80632d5e74d814610051578063950da23f14610074578063edf35cf81461007c578063f26d64da146100a5575b600080fd5b6100596100cc565b60408051921515835290151560208301528051918290030190f35b6100596100de565b6100a36004803603604081101561009257600080fd5b5080351515906020013515156100f0565b005b6100a3600480360360408110156100bb57600080fd5b50803515159060200135151561014d565b60005460ff8082169161010090041682565b60015460ff8082169161010090041682565b6100f86101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b6101556101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b60408051808201909152600080825260208201529056fea165627a7a72305820fbae26a0520d2e0361e700bef7c199050267be06916955fc045cde7d72aa592a0029",
+  "sourceMap": "27:771:3:-;;;344:93;8:9:-1;5:2;;;30:1;27;20:12;5:2;344:93:3;372:26;388:4;393;372:15;;;:26;;:::i;:::-;405;421:4;426;405:15;;;:26;;:::i;:::-;27:771;;445:171;502:20;;:::i;:::-;-1:-1:-1;502:25:3;;;;;;;;534:11;;;;;;552:13;;;502:25;;;;552:13;;;577:33;;;;;;;;;;502:25;;577:33;;;;;;;;;445:171;;;:::o;622:::-;679:20;;:::i;:::-;-1:-1:-1;679:25:3;;;;;;;;711:11;;;;;;729:13;;;679:25;;;;729:13;;;754:33;;;;;;;;;;679:25;;754:33;;;;;;;;;622:171;;;:::o;27:771::-;;;;;;;;;;-1:-1:-1;27:771:3;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "27:771:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:771:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;50:19;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;74;;;:::i;445:171::-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;445:171:3;;;;;;;;;;;:::i;:::-;;622;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;622:171:3;;;;;;;;;;;:::i;50:19::-;;;;;;;;;;;;;:::o;74:::-;;;;;;;;;;;;;:::o;445:171::-;502:20;;:::i;:::-;-1:-1:-1;502:25:3;;;;;;;;534:11;;;;;;552:13;;;502:25;;;;552:13;;;577:33;;;;;;;;;;502:25;;577:33;;;;;;;;;445:171;;;:::o;622:::-;679:20;;:::i;:::-;-1:-1:-1;679:25:3;;;;;;;;711:11;;;;;;729:13;;;679:25;;;;729:13;;;754:33;;;;;;;;;;679:25;;754:33;;;;;;;;;622:171;;;:::o;27:771::-;;;;;;;;;;-1:-1:-1;27:771:3;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract RoleAuth {\r\n  OwnerRole public or;\r\n  GuestRole public gr;\r\n\r\n  struct OwnerRole {\r\n    bool on;\r\n    bool off;\r\n  }\r\n\r\n  struct GuestRole {\r\n    bool on;\r\n    bool off;\r\n  }\r\n\r\n  event OwnerRoleUpdated(\r\n    bool on,\r\n    bool off\r\n  );\r\n\r\n  event GuestRoleUpdated(\r\n    bool on,\r\n    bool off\r\n  );\r\n  \r\n  constructor() public {\r\n    updateOwnerRole(true,true);\r\n    UpdateGuestRole(true,true);\r\n  }\r\n\r\n\r\n  function updateOwnerRole(bool on,bool off) public {\r\n    OwnerRole memory _or = or;\r\n    _or.on = on;\r\n    _or.off = off;\r\n    emit OwnerRoleUpdated(_or.on, _or.off);\r\n  }\r\n\r\n  function UpdateGuestRole(bool on,bool off) public {\r\n    GuestRole memory _gr = gr;\r\n    _gr.on = on;\r\n    _gr.off = off;\r\n    emit GuestRoleUpdated(_gr.on, _gr.off);\r\n  }\r\n\r\n}",
   "sourcePath": "C:/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol",
   "ast": {
     "absolutePath": "/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol",
@@ -125,7 +161,7 @@
             "name": "or",
             "nodeType": "VariableDeclaration",
             "scope": 569,
-            "src": "50:12:3",
+            "src": "50:19:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -145,7 +181,7 @@
               }
             },
             "value": null,
-            "visibility": "internal"
+            "visibility": "public"
           },
           {
             "constant": false,
@@ -153,7 +189,7 @@
             "name": "gr",
             "nodeType": "VariableDeclaration",
             "scope": 569,
-            "src": "67:12:3",
+            "src": "74:19:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -166,14 +202,14 @@
               "name": "GuestRole",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 480,
-              "src": "67:9:3",
+              "src": "74:9:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_struct$_GuestRole_$480_storage_ptr",
                 "typeString": "struct RoleAuth.GuestRole"
               }
             },
             "value": null,
-            "visibility": "internal"
+            "visibility": "public"
           },
           {
             "canonicalName": "RoleAuth.OwnerRole",
@@ -185,7 +221,7 @@
                 "name": "on",
                 "nodeType": "VariableDeclaration",
                 "scope": 475,
-                "src": "110:7:3",
+                "src": "124:7:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -196,7 +232,7 @@
                   "id": 471,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "110:4:3",
+                  "src": "124:4:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -211,7 +247,7 @@
                 "name": "off",
                 "nodeType": "VariableDeclaration",
                 "scope": 475,
-                "src": "124:8:3",
+                "src": "138:8:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -222,7 +258,7 @@
                   "id": 473,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "124:4:3",
+                  "src": "138:4:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -235,7 +271,7 @@
             "name": "OwnerRole",
             "nodeType": "StructDefinition",
             "scope": 569,
-            "src": "86:52:3",
+            "src": "100:52:3",
             "visibility": "public"
           },
           {
@@ -248,7 +284,7 @@
                 "name": "on",
                 "nodeType": "VariableDeclaration",
                 "scope": 480,
-                "src": "168:7:3",
+                "src": "182:7:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -259,7 +295,7 @@
                   "id": 476,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "168:4:3",
+                  "src": "182:4:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -274,7 +310,7 @@
                 "name": "off",
                 "nodeType": "VariableDeclaration",
                 "scope": 480,
-                "src": "182:8:3",
+                "src": "196:8:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -285,7 +321,7 @@
                   "id": 478,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "182:4:3",
+                  "src": "196:4:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -298,7 +334,7 @@
             "name": "GuestRole",
             "nodeType": "StructDefinition",
             "scope": 569,
-            "src": "144:52:3",
+            "src": "158:52:3",
             "visibility": "public"
           },
           {
@@ -318,7 +354,7 @@
                   "name": "on",
                   "nodeType": "VariableDeclaration",
                   "scope": 486,
-                  "src": "231:7:3",
+                  "src": "245:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -329,7 +365,7 @@
                     "id": 481,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "231:4:3",
+                    "src": "245:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -345,7 +381,7 @@
                   "name": "off",
                   "nodeType": "VariableDeclaration",
                   "scope": 486,
-                  "src": "245:8:3",
+                  "src": "259:8:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -356,7 +392,7 @@
                     "id": 483,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "245:4:3",
+                    "src": "259:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -366,9 +402,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "224:34:3"
+              "src": "238:34:3"
             },
-            "src": "202:57:3"
+            "src": "216:57:3"
           },
           {
             "anonymous": false,
@@ -387,7 +423,7 @@
                   "name": "on",
                   "nodeType": "VariableDeclaration",
                   "scope": 492,
-                  "src": "294:7:3",
+                  "src": "308:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -398,7 +434,7 @@
                     "id": 487,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "294:4:3",
+                    "src": "308:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -414,7 +450,7 @@
                   "name": "off",
                   "nodeType": "VariableDeclaration",
                   "scope": 492,
-                  "src": "308:8:3",
+                  "src": "322:8:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -425,7 +461,7 @@
                     "id": 489,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "308:4:3",
+                    "src": "322:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -435,15 +471,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "287:34:3"
+              "src": "301:34:3"
             },
-            "src": "265:57:3"
+            "src": "279:57:3"
           },
           {
             "body": {
               "id": 505,
               "nodeType": "Block",
-              "src": "351:72:3",
+              "src": "365:72:3",
               "statements": [
                 {
                   "expression": {
@@ -459,7 +495,7 @@
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "374:4:3",
+                        "src": "388:4:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -477,7 +513,7 @@
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "379:4:3",
+                        "src": "393:4:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -502,7 +538,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 537,
-                      "src": "358:15:3",
+                      "src": "372:15:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
@@ -516,7 +552,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "358:26:3",
+                    "src": "372:26:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -524,7 +560,7 @@
                   },
                   "id": 499,
                   "nodeType": "ExpressionStatement",
-                  "src": "358:26:3"
+                  "src": "372:26:3"
                 },
                 {
                   "expression": {
@@ -540,7 +576,7 @@
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "407:4:3",
+                        "src": "421:4:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -558,7 +594,7 @@
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "412:4:3",
+                        "src": "426:4:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -583,7 +619,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 568,
-                      "src": "391:15:3",
+                      "src": "405:15:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
@@ -597,7 +633,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "391:26:3",
+                    "src": "405:26:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -605,7 +641,7 @@
                   },
                   "id": 504,
                   "nodeType": "ExpressionStatement",
-                  "src": "391:26:3"
+                  "src": "405:26:3"
                 }
               ]
             },
@@ -620,16 +656,16 @@
               "id": 493,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "341:2:3"
+              "src": "355:2:3"
             },
             "returnParameters": {
               "id": 494,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "351:0:3"
+              "src": "365:0:3"
             },
             "scope": 569,
-            "src": "330:93:3",
+            "src": "344:93:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -638,7 +674,7 @@
             "body": {
               "id": 536,
               "nodeType": "Block",
-              "src": "481:121:3",
+              "src": "495:121:3",
               "statements": [
                 {
                   "assignments": [
@@ -651,7 +687,7 @@
                       "name": "_or",
                       "nodeType": "VariableDeclaration",
                       "scope": 536,
-                      "src": "488:20:3",
+                      "src": "502:20:3",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
@@ -664,7 +700,7 @@
                         "name": "OwnerRole",
                         "nodeType": "UserDefinedTypeName",
                         "referencedDeclaration": 475,
-                        "src": "488:9:3",
+                        "src": "502:9:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_OwnerRole_$475_storage_ptr",
                           "typeString": "struct RoleAuth.OwnerRole"
@@ -682,14 +718,14 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 468,
-                    "src": "511:2:3",
+                    "src": "525:2:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_OwnerRole_$475_storage",
                       "typeString": "struct RoleAuth.OwnerRole storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "488:25:3"
+                  "src": "502:25:3"
                 },
                 {
                   "expression": {
@@ -708,7 +744,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 514,
-                        "src": "520:3:3",
+                        "src": "534:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
                           "typeString": "struct RoleAuth.OwnerRole memory"
@@ -722,7 +758,7 @@
                       "memberName": "on",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 472,
-                      "src": "520:6:3",
+                      "src": "534:6:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -737,13 +773,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 508,
-                      "src": "529:2:3",
+                      "src": "543:2:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "520:11:3",
+                    "src": "534:11:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -751,7 +787,7 @@
                   },
                   "id": 522,
                   "nodeType": "ExpressionStatement",
-                  "src": "520:11:3"
+                  "src": "534:11:3"
                 },
                 {
                   "expression": {
@@ -770,7 +806,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 514,
-                        "src": "538:3:3",
+                        "src": "552:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
                           "typeString": "struct RoleAuth.OwnerRole memory"
@@ -784,7 +820,7 @@
                       "memberName": "off",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 474,
-                      "src": "538:7:3",
+                      "src": "552:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -799,13 +835,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 510,
-                      "src": "548:3:3",
+                      "src": "562:3:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "538:13:3",
+                    "src": "552:13:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -813,7 +849,7 @@
                   },
                   "id": 528,
                   "nodeType": "ExpressionStatement",
-                  "src": "538:13:3"
+                  "src": "552:13:3"
                 },
                 {
                   "eventCall": {
@@ -828,7 +864,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 514,
-                          "src": "580:3:3",
+                          "src": "594:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
                             "typeString": "struct RoleAuth.OwnerRole memory"
@@ -842,7 +878,7 @@
                         "memberName": "on",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 472,
-                        "src": "580:6:3",
+                        "src": "594:6:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -857,7 +893,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 514,
-                          "src": "588:3:3",
+                          "src": "602:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
                             "typeString": "struct RoleAuth.OwnerRole memory"
@@ -871,7 +907,7 @@
                         "memberName": "off",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 474,
-                        "src": "588:7:3",
+                        "src": "602:7:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -894,7 +930,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 486,
-                      "src": "563:16:3",
+                      "src": "577:16:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
@@ -908,7 +944,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "563:33:3",
+                    "src": "577:33:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -916,7 +952,7 @@
                   },
                   "id": 535,
                   "nodeType": "EmitStatement",
-                  "src": "558:38:3"
+                  "src": "572:38:3"
                 }
               ]
             },
@@ -937,7 +973,7 @@
                   "name": "on",
                   "nodeType": "VariableDeclaration",
                   "scope": 537,
-                  "src": "456:7:3",
+                  "src": "470:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -948,7 +984,7 @@
                     "id": 507,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "456:4:3",
+                    "src": "470:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -963,7 +999,7 @@
                   "name": "off",
                   "nodeType": "VariableDeclaration",
                   "scope": 537,
-                  "src": "464:8:3",
+                  "src": "478:8:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -974,7 +1010,7 @@
                     "id": 509,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "464:4:3",
+                    "src": "478:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -984,16 +1020,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "455:18:3"
+              "src": "469:18:3"
             },
             "returnParameters": {
               "id": 512,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "481:0:3"
+              "src": "495:0:3"
             },
             "scope": 569,
-            "src": "431:171:3",
+            "src": "445:171:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -1002,7 +1038,7 @@
             "body": {
               "id": 567,
               "nodeType": "Block",
-              "src": "658:121:3",
+              "src": "672:121:3",
               "statements": [
                 {
                   "assignments": [
@@ -1015,7 +1051,7 @@
                       "name": "_gr",
                       "nodeType": "VariableDeclaration",
                       "scope": 567,
-                      "src": "665:20:3",
+                      "src": "679:20:3",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
@@ -1028,7 +1064,7 @@
                         "name": "GuestRole",
                         "nodeType": "UserDefinedTypeName",
                         "referencedDeclaration": 480,
-                        "src": "665:9:3",
+                        "src": "679:9:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_GuestRole_$480_storage_ptr",
                           "typeString": "struct RoleAuth.GuestRole"
@@ -1046,14 +1082,14 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 470,
-                    "src": "688:2:3",
+                    "src": "702:2:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_GuestRole_$480_storage",
                       "typeString": "struct RoleAuth.GuestRole storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "665:25:3"
+                  "src": "679:25:3"
                 },
                 {
                   "expression": {
@@ -1072,7 +1108,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 545,
-                        "src": "697:3:3",
+                        "src": "711:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
                           "typeString": "struct RoleAuth.GuestRole memory"
@@ -1086,7 +1122,7 @@
                       "memberName": "on",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 477,
-                      "src": "697:6:3",
+                      "src": "711:6:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1101,13 +1137,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 539,
-                      "src": "706:2:3",
+                      "src": "720:2:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "697:11:3",
+                    "src": "711:11:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1115,7 +1151,7 @@
                   },
                   "id": 553,
                   "nodeType": "ExpressionStatement",
-                  "src": "697:11:3"
+                  "src": "711:11:3"
                 },
                 {
                   "expression": {
@@ -1134,7 +1170,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 545,
-                        "src": "715:3:3",
+                        "src": "729:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
                           "typeString": "struct RoleAuth.GuestRole memory"
@@ -1148,7 +1184,7 @@
                       "memberName": "off",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 479,
-                      "src": "715:7:3",
+                      "src": "729:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1163,13 +1199,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 541,
-                      "src": "725:3:3",
+                      "src": "739:3:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "715:13:3",
+                    "src": "729:13:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1177,7 +1213,7 @@
                   },
                   "id": 559,
                   "nodeType": "ExpressionStatement",
-                  "src": "715:13:3"
+                  "src": "729:13:3"
                 },
                 {
                   "eventCall": {
@@ -1192,7 +1228,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 545,
-                          "src": "757:3:3",
+                          "src": "771:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
                             "typeString": "struct RoleAuth.GuestRole memory"
@@ -1206,7 +1242,7 @@
                         "memberName": "on",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 477,
-                        "src": "757:6:3",
+                        "src": "771:6:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1221,7 +1257,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 545,
-                          "src": "765:3:3",
+                          "src": "779:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
                             "typeString": "struct RoleAuth.GuestRole memory"
@@ -1235,7 +1271,7 @@
                         "memberName": "off",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 479,
-                        "src": "765:7:3",
+                        "src": "779:7:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1258,7 +1294,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 492,
-                      "src": "740:16:3",
+                      "src": "754:16:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
@@ -1272,7 +1308,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "740:33:3",
+                    "src": "754:33:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1280,7 +1316,7 @@
                   },
                   "id": 566,
                   "nodeType": "EmitStatement",
-                  "src": "735:38:3"
+                  "src": "749:38:3"
                 }
               ]
             },
@@ -1301,7 +1337,7 @@
                   "name": "on",
                   "nodeType": "VariableDeclaration",
                   "scope": 568,
-                  "src": "633:7:3",
+                  "src": "647:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1312,7 +1348,7 @@
                     "id": 538,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "633:4:3",
+                    "src": "647:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1327,7 +1363,7 @@
                   "name": "off",
                   "nodeType": "VariableDeclaration",
                   "scope": 568,
-                  "src": "641:8:3",
+                  "src": "655:8:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1338,7 +1374,7 @@
                     "id": 540,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "641:4:3",
+                    "src": "655:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1348,26 +1384,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "632:18:3"
+              "src": "646:18:3"
             },
             "returnParameters": {
               "id": 543,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "658:0:3"
+              "src": "672:0:3"
             },
             "scope": 569,
-            "src": "608:171:3",
+            "src": "622:171:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 570,
-        "src": "27:757:3"
+        "src": "27:771:3"
       }
     ],
-    "src": "0:784:3"
+    "src": "0:798:3"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol",
@@ -1409,7 +1445,7 @@
             "name": "or",
             "nodeType": "VariableDeclaration",
             "scope": 569,
-            "src": "50:12:3",
+            "src": "50:19:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1429,7 +1465,7 @@
               }
             },
             "value": null,
-            "visibility": "internal"
+            "visibility": "public"
           },
           {
             "constant": false,
@@ -1437,7 +1473,7 @@
             "name": "gr",
             "nodeType": "VariableDeclaration",
             "scope": 569,
-            "src": "67:12:3",
+            "src": "74:19:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1450,14 +1486,14 @@
               "name": "GuestRole",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 480,
-              "src": "67:9:3",
+              "src": "74:9:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_struct$_GuestRole_$480_storage_ptr",
                 "typeString": "struct RoleAuth.GuestRole"
               }
             },
             "value": null,
-            "visibility": "internal"
+            "visibility": "public"
           },
           {
             "canonicalName": "RoleAuth.OwnerRole",
@@ -1469,7 +1505,7 @@
                 "name": "on",
                 "nodeType": "VariableDeclaration",
                 "scope": 475,
-                "src": "110:7:3",
+                "src": "124:7:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1480,7 +1516,7 @@
                   "id": 471,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "110:4:3",
+                  "src": "124:4:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -1495,7 +1531,7 @@
                 "name": "off",
                 "nodeType": "VariableDeclaration",
                 "scope": 475,
-                "src": "124:8:3",
+                "src": "138:8:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1506,7 +1542,7 @@
                   "id": 473,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "124:4:3",
+                  "src": "138:4:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -1519,7 +1555,7 @@
             "name": "OwnerRole",
             "nodeType": "StructDefinition",
             "scope": 569,
-            "src": "86:52:3",
+            "src": "100:52:3",
             "visibility": "public"
           },
           {
@@ -1532,7 +1568,7 @@
                 "name": "on",
                 "nodeType": "VariableDeclaration",
                 "scope": 480,
-                "src": "168:7:3",
+                "src": "182:7:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1543,7 +1579,7 @@
                   "id": 476,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "168:4:3",
+                  "src": "182:4:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -1558,7 +1594,7 @@
                 "name": "off",
                 "nodeType": "VariableDeclaration",
                 "scope": 480,
-                "src": "182:8:3",
+                "src": "196:8:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1569,7 +1605,7 @@
                   "id": 478,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "182:4:3",
+                  "src": "196:4:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -1582,7 +1618,7 @@
             "name": "GuestRole",
             "nodeType": "StructDefinition",
             "scope": 569,
-            "src": "144:52:3",
+            "src": "158:52:3",
             "visibility": "public"
           },
           {
@@ -1602,7 +1638,7 @@
                   "name": "on",
                   "nodeType": "VariableDeclaration",
                   "scope": 486,
-                  "src": "231:7:3",
+                  "src": "245:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1613,7 +1649,7 @@
                     "id": 481,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "231:4:3",
+                    "src": "245:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1629,7 +1665,7 @@
                   "name": "off",
                   "nodeType": "VariableDeclaration",
                   "scope": 486,
-                  "src": "245:8:3",
+                  "src": "259:8:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1640,7 +1676,7 @@
                     "id": 483,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "245:4:3",
+                    "src": "259:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1650,9 +1686,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "224:34:3"
+              "src": "238:34:3"
             },
-            "src": "202:57:3"
+            "src": "216:57:3"
           },
           {
             "anonymous": false,
@@ -1671,7 +1707,7 @@
                   "name": "on",
                   "nodeType": "VariableDeclaration",
                   "scope": 492,
-                  "src": "294:7:3",
+                  "src": "308:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1682,7 +1718,7 @@
                     "id": 487,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "294:4:3",
+                    "src": "308:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1698,7 +1734,7 @@
                   "name": "off",
                   "nodeType": "VariableDeclaration",
                   "scope": 492,
-                  "src": "308:8:3",
+                  "src": "322:8:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1709,7 +1745,7 @@
                     "id": 489,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "308:4:3",
+                    "src": "322:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1719,15 +1755,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "287:34:3"
+              "src": "301:34:3"
             },
-            "src": "265:57:3"
+            "src": "279:57:3"
           },
           {
             "body": {
               "id": 505,
               "nodeType": "Block",
-              "src": "351:72:3",
+              "src": "365:72:3",
               "statements": [
                 {
                   "expression": {
@@ -1743,7 +1779,7 @@
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "374:4:3",
+                        "src": "388:4:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -1761,7 +1797,7 @@
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "379:4:3",
+                        "src": "393:4:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -1786,7 +1822,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 537,
-                      "src": "358:15:3",
+                      "src": "372:15:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
@@ -1800,7 +1836,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "358:26:3",
+                    "src": "372:26:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1808,7 +1844,7 @@
                   },
                   "id": 499,
                   "nodeType": "ExpressionStatement",
-                  "src": "358:26:3"
+                  "src": "372:26:3"
                 },
                 {
                   "expression": {
@@ -1824,7 +1860,7 @@
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "407:4:3",
+                        "src": "421:4:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -1842,7 +1878,7 @@
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "412:4:3",
+                        "src": "426:4:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -1867,7 +1903,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 568,
-                      "src": "391:15:3",
+                      "src": "405:15:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
@@ -1881,7 +1917,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "391:26:3",
+                    "src": "405:26:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1889,7 +1925,7 @@
                   },
                   "id": 504,
                   "nodeType": "ExpressionStatement",
-                  "src": "391:26:3"
+                  "src": "405:26:3"
                 }
               ]
             },
@@ -1904,16 +1940,16 @@
               "id": 493,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "341:2:3"
+              "src": "355:2:3"
             },
             "returnParameters": {
               "id": 494,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "351:0:3"
+              "src": "365:0:3"
             },
             "scope": 569,
-            "src": "330:93:3",
+            "src": "344:93:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -1922,7 +1958,7 @@
             "body": {
               "id": 536,
               "nodeType": "Block",
-              "src": "481:121:3",
+              "src": "495:121:3",
               "statements": [
                 {
                   "assignments": [
@@ -1935,7 +1971,7 @@
                       "name": "_or",
                       "nodeType": "VariableDeclaration",
                       "scope": 536,
-                      "src": "488:20:3",
+                      "src": "502:20:3",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
@@ -1948,7 +1984,7 @@
                         "name": "OwnerRole",
                         "nodeType": "UserDefinedTypeName",
                         "referencedDeclaration": 475,
-                        "src": "488:9:3",
+                        "src": "502:9:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_OwnerRole_$475_storage_ptr",
                           "typeString": "struct RoleAuth.OwnerRole"
@@ -1966,14 +2002,14 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 468,
-                    "src": "511:2:3",
+                    "src": "525:2:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_OwnerRole_$475_storage",
                       "typeString": "struct RoleAuth.OwnerRole storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "488:25:3"
+                  "src": "502:25:3"
                 },
                 {
                   "expression": {
@@ -1992,7 +2028,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 514,
-                        "src": "520:3:3",
+                        "src": "534:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
                           "typeString": "struct RoleAuth.OwnerRole memory"
@@ -2006,7 +2042,7 @@
                       "memberName": "on",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 472,
-                      "src": "520:6:3",
+                      "src": "534:6:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -2021,13 +2057,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 508,
-                      "src": "529:2:3",
+                      "src": "543:2:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "520:11:3",
+                    "src": "534:11:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2035,7 +2071,7 @@
                   },
                   "id": 522,
                   "nodeType": "ExpressionStatement",
-                  "src": "520:11:3"
+                  "src": "534:11:3"
                 },
                 {
                   "expression": {
@@ -2054,7 +2090,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 514,
-                        "src": "538:3:3",
+                        "src": "552:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
                           "typeString": "struct RoleAuth.OwnerRole memory"
@@ -2068,7 +2104,7 @@
                       "memberName": "off",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 474,
-                      "src": "538:7:3",
+                      "src": "552:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -2083,13 +2119,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 510,
-                      "src": "548:3:3",
+                      "src": "562:3:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "538:13:3",
+                    "src": "552:13:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2097,7 +2133,7 @@
                   },
                   "id": 528,
                   "nodeType": "ExpressionStatement",
-                  "src": "538:13:3"
+                  "src": "552:13:3"
                 },
                 {
                   "eventCall": {
@@ -2112,7 +2148,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 514,
-                          "src": "580:3:3",
+                          "src": "594:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
                             "typeString": "struct RoleAuth.OwnerRole memory"
@@ -2126,7 +2162,7 @@
                         "memberName": "on",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 472,
-                        "src": "580:6:3",
+                        "src": "594:6:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2141,7 +2177,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 514,
-                          "src": "588:3:3",
+                          "src": "602:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
                             "typeString": "struct RoleAuth.OwnerRole memory"
@@ -2155,7 +2191,7 @@
                         "memberName": "off",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 474,
-                        "src": "588:7:3",
+                        "src": "602:7:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2178,7 +2214,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 486,
-                      "src": "563:16:3",
+                      "src": "577:16:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
@@ -2192,7 +2228,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "563:33:3",
+                    "src": "577:33:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -2200,7 +2236,7 @@
                   },
                   "id": 535,
                   "nodeType": "EmitStatement",
-                  "src": "558:38:3"
+                  "src": "572:38:3"
                 }
               ]
             },
@@ -2221,7 +2257,7 @@
                   "name": "on",
                   "nodeType": "VariableDeclaration",
                   "scope": 537,
-                  "src": "456:7:3",
+                  "src": "470:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2232,7 +2268,7 @@
                     "id": 507,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "456:4:3",
+                    "src": "470:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2247,7 +2283,7 @@
                   "name": "off",
                   "nodeType": "VariableDeclaration",
                   "scope": 537,
-                  "src": "464:8:3",
+                  "src": "478:8:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2258,7 +2294,7 @@
                     "id": 509,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "464:4:3",
+                    "src": "478:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2268,16 +2304,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "455:18:3"
+              "src": "469:18:3"
             },
             "returnParameters": {
               "id": 512,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "481:0:3"
+              "src": "495:0:3"
             },
             "scope": 569,
-            "src": "431:171:3",
+            "src": "445:171:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -2286,7 +2322,7 @@
             "body": {
               "id": 567,
               "nodeType": "Block",
-              "src": "658:121:3",
+              "src": "672:121:3",
               "statements": [
                 {
                   "assignments": [
@@ -2299,7 +2335,7 @@
                       "name": "_gr",
                       "nodeType": "VariableDeclaration",
                       "scope": 567,
-                      "src": "665:20:3",
+                      "src": "679:20:3",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
@@ -2312,7 +2348,7 @@
                         "name": "GuestRole",
                         "nodeType": "UserDefinedTypeName",
                         "referencedDeclaration": 480,
-                        "src": "665:9:3",
+                        "src": "679:9:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_GuestRole_$480_storage_ptr",
                           "typeString": "struct RoleAuth.GuestRole"
@@ -2330,14 +2366,14 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 470,
-                    "src": "688:2:3",
+                    "src": "702:2:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_GuestRole_$480_storage",
                       "typeString": "struct RoleAuth.GuestRole storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "665:25:3"
+                  "src": "679:25:3"
                 },
                 {
                   "expression": {
@@ -2356,7 +2392,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 545,
-                        "src": "697:3:3",
+                        "src": "711:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
                           "typeString": "struct RoleAuth.GuestRole memory"
@@ -2370,7 +2406,7 @@
                       "memberName": "on",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 477,
-                      "src": "697:6:3",
+                      "src": "711:6:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -2385,13 +2421,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 539,
-                      "src": "706:2:3",
+                      "src": "720:2:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "697:11:3",
+                    "src": "711:11:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2399,7 +2435,7 @@
                   },
                   "id": 553,
                   "nodeType": "ExpressionStatement",
-                  "src": "697:11:3"
+                  "src": "711:11:3"
                 },
                 {
                   "expression": {
@@ -2418,7 +2454,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 545,
-                        "src": "715:3:3",
+                        "src": "729:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
                           "typeString": "struct RoleAuth.GuestRole memory"
@@ -2432,7 +2468,7 @@
                       "memberName": "off",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 479,
-                      "src": "715:7:3",
+                      "src": "729:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -2447,13 +2483,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 541,
-                      "src": "725:3:3",
+                      "src": "739:3:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "715:13:3",
+                    "src": "729:13:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2461,7 +2497,7 @@
                   },
                   "id": 559,
                   "nodeType": "ExpressionStatement",
-                  "src": "715:13:3"
+                  "src": "729:13:3"
                 },
                 {
                   "eventCall": {
@@ -2476,7 +2512,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 545,
-                          "src": "757:3:3",
+                          "src": "771:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
                             "typeString": "struct RoleAuth.GuestRole memory"
@@ -2490,7 +2526,7 @@
                         "memberName": "on",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 477,
-                        "src": "757:6:3",
+                        "src": "771:6:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2505,7 +2541,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 545,
-                          "src": "765:3:3",
+                          "src": "779:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
                             "typeString": "struct RoleAuth.GuestRole memory"
@@ -2519,7 +2555,7 @@
                         "memberName": "off",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 479,
-                        "src": "765:7:3",
+                        "src": "779:7:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2542,7 +2578,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 492,
-                      "src": "740:16:3",
+                      "src": "754:16:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
@@ -2556,7 +2592,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "740:33:3",
+                    "src": "754:33:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -2564,7 +2600,7 @@
                   },
                   "id": 566,
                   "nodeType": "EmitStatement",
-                  "src": "735:38:3"
+                  "src": "749:38:3"
                 }
               ]
             },
@@ -2585,7 +2621,7 @@
                   "name": "on",
                   "nodeType": "VariableDeclaration",
                   "scope": 568,
-                  "src": "633:7:3",
+                  "src": "647:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2596,7 +2632,7 @@
                     "id": 538,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "633:4:3",
+                    "src": "647:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2611,7 +2647,7 @@
                   "name": "off",
                   "nodeType": "VariableDeclaration",
                   "scope": 568,
-                  "src": "641:8:3",
+                  "src": "655:8:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2622,7 +2658,7 @@
                     "id": 540,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "641:4:3",
+                    "src": "655:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2632,26 +2668,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "632:18:3"
+              "src": "646:18:3"
             },
             "returnParameters": {
               "id": 543,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "658:0:3"
+              "src": "672:0:3"
             },
             "scope": 569,
-            "src": "608:171:3",
+            "src": "622:171:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 570,
-        "src": "27:757:3"
+        "src": "27:771:3"
       }
     ],
-    "src": "0:784:3"
+    "src": "0:798:3"
   },
   "compiler": {
     "name": "solc",
@@ -2659,7 +2695,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-09-19T02:48:19.135Z",
+  "updatedAt": "2019-09-19T02:59:49.024Z",
   "devdoc": {
     "methods": {}
   },
