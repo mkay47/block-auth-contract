@@ -1,21 +1,36 @@
 {
-  "name": "my-first-truffle-project",
-  "version": "0.0.1",
-  "engines": {
-    "node": "11.6.x",
-    "npm": "6.5.x"
-  },
-  "scripts": {
-    "ganache": "ganache-cli --networkId $npm_package_config_ganache_networkId --allowUnlimitedContractSize --gasLimit $npm_package_config_ganache_gasLimit --gasPrice $npm_package_config_ganache_gasPrice --mnemonic \"$MNEMONIC\""
-  },
-  "config": {
-    "ganache": {
-      "networkId": 3431,
-      "gasPrice": 25000000000,
-      "gasLimit": 6500000
+    "name": "block-auth-contract",
+    "version": "1.0.0",
+    "description": "Block-Auth, A blockchain security model for IoT systems",
+    "main": "truffle-config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mkay47/block-auth-contract.git"
+    },
+    "author": "Mkhululi Mtshemla",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mkay47/block-auth-contract/issues"
+    },
+    "homepage": "https://github.com/mkay47/block-auth-contract#readme",
+    "dependencies": {
+        "dotenv": "^8.0.0",
+        "truffle-hdwallet-provider": "^1.0.15"
+    },
+    "devDependencies": {
+        "bootstrap": "^4.3.1",
+        "chai": "^4.1.2",
+        "chai-as-promised": "^7.1.1",
+        "chai-bignumber": "^2.0.2",
+        "lite-server": "^2.3.0",
+        "nodemon": "^1.17.3",
+        "truffle": "5.0.2",
+        "truffle-contract": "3.0.6"
     }
-  },
-  "dependencies": {
-    "ganache-cli": "^6.4.4"
-  }
 }
