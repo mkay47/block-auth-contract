@@ -1,1 +1,1 @@
-ganache-cli -h "192.168.8.106" -m "ranch arch cool purse kangaroo horn run mix material regular fine lava"
+ganache-cli -h "192.168.8.194" -m "ranch arch cool purse kangaroo horn run mix material regular fine lava"
