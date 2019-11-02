@@ -1,0 +1,1193 @@
+{
+  "contractName": "GuestRoleAuth",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "off",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "on",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "on",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "name": "off",
+          "type": "bool"
+        }
+      ],
+      "name": "GuestRoleUpdated",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "onCommand",
+          "type": "bool"
+        },
+        {
+          "name": "offCommand",
+          "type": "bool"
+        }
+      ],
+      "name": "updateGuestRole",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"onCommand\",\"type\":\"bool\"},{\"name\":\"offCommand\",\"type\":\"bool\"}],\"name\":\"updateGuestRole\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"off\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"on\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"on\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"GuestRoleUpdated\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/GuestRoleAuth.sol\":\"GuestRoleAuth\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/GuestRoleAuth.sol\":{\"keccak256\":\"0x5ff11dced815fff85a9d89ac726fe9deef65019d4ba4c52ca26bb04e74161eb6\",\"urls\":[\"bzzr://8b512b0097c8b789dd6a21114c2a87ae4473aeb662bdec1f093ef8a7108f7083\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506000805461ff001960ff1990911660011716610100179055610142806100386000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806307f7227b146100465780636626b26d1461006f57806367b7c0341461008b575b600080fd5b61006d6004803603604081101561005c57600080fd5b508035151590602001351515610093565b005b6100776100ff565b604080519115158252519081900360200190f35b61007761010d565b6000805460ff19168315151761ff001916610100831515810291909117918290556040805160ff80851615158252929093049091161515602083015280517fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df9281900390910190a15050565b600054610100900460ff1681565b60005460ff168156fea165627a7a723058204ef21511fe566c3b8f5002d17862c7abe76c01180f27d131e466814e05fc53390029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806307f7227b146100465780636626b26d1461006f57806367b7c0341461008b575b600080fd5b61006d6004803603604081101561005c57600080fd5b508035151590602001351515610093565b005b6100776100ff565b604080519115158252519081900360200190f35b61007761010d565b6000805460ff19168315151761ff001916610100831515810291909117918290556040805160ff80851615158252929093049091161515602083015280517fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df9281900390910190a15050565b600054610100900460ff1681565b60005460ff168156fea165627a7a723058204ef21511fe566c3b8f5002d17862c7abe76c01180f27d131e466814e05fc53390029",
+  "sourceMap": "27:362:2:-;;;96:64;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;126:2:2;:9;;-1:-1:-1;;;;126:9:2;;;131:4;126:9;144:10;126:9;144:10;;;27:362;;;;;;",
+  "deployedSourceMap": "27:362:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:362:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;166:151;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;166:151:2;;;;;;;;;;;:::i;:::-;;74:15;;;:::i;:::-;;;;;;;;;;;;;;;;;;55:14;;;:::i;166:151::-;237:2;:14;;-1:-1:-1;;237:14:2;;;;;-1:-1:-1;;258:16:2;237:14;258:16;;;;;;;;;;;;;286:25;;;237:14;303:2;;;286:25;;;;307:3;;;;;;;286:25;;;;;;;;;;;;;;;;;;166:151;;:::o;74:15::-;;;;;;;;;:::o;55:14::-;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract GuestRoleAuth {\r\n  bool public on;\r\n  bool public off;\r\n\r\n  constructor() public {\r\n      on = true;\r\n      off = true;\r\n  }\r\n\r\n  function updateGuestRole(bool onCommand,bool offCommand) public {\r\n    on = onCommand;\r\n    off = offCommand;\r\n    emit GuestRoleUpdated(on, off);\r\n  }\r\n\r\n  event GuestRoleUpdated(\r\n      bool on,\r\n      bool off\r\n  );\r\n\r\n}",
+  "sourcePath": "C:/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/GuestRoleAuth.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/GuestRoleAuth.sol",
+    "exportedSymbols": {
+      "GuestRoleAuth": [
+        456
+      ]
+    },
+    "id": 457,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 412,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 456,
+        "linearizedBaseContracts": [
+          456
+        ],
+        "name": "GuestRoleAuth",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 414,
+            "name": "on",
+            "nodeType": "VariableDeclaration",
+            "scope": 456,
+            "src": "55:14:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 413,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "55:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 416,
+            "name": "off",
+            "nodeType": "VariableDeclaration",
+            "scope": 456,
+            "src": "74:15:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 415,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "74:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 427,
+              "nodeType": "Block",
+              "src": "117:43:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 421,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 419,
+                      "name": "on",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 414,
+                      "src": "126:2:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 420,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "131:4:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "126:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 422,
+                  "nodeType": "ExpressionStatement",
+                  "src": "126:9:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 425,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 423,
+                      "name": "off",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 416,
+                      "src": "144:3:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 424,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "150:4:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "144:10:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 426,
+                  "nodeType": "ExpressionStatement",
+                  "src": "144:10:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 428,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 417,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "107:2:2"
+            },
+            "returnParameters": {
+              "id": 418,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "117:0:2"
+            },
+            "scope": 456,
+            "src": "96:64:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 448,
+              "nodeType": "Block",
+              "src": "230:87:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 437,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 435,
+                      "name": "on",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 414,
+                      "src": "237:2:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 436,
+                      "name": "onCommand",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 430,
+                      "src": "242:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "237:14:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 438,
+                  "nodeType": "ExpressionStatement",
+                  "src": "237:14:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 441,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 439,
+                      "name": "off",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 416,
+                      "src": "258:3:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 440,
+                      "name": "offCommand",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 432,
+                      "src": "264:10:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "258:16:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 442,
+                  "nodeType": "ExpressionStatement",
+                  "src": "258:16:2"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 444,
+                        "name": "on",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 414,
+                        "src": "303:2:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 445,
+                        "name": "off",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 416,
+                        "src": "307:3:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 443,
+                      "name": "GuestRoleUpdated",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 455,
+                      "src": "286:16:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_bool_$returns$__$",
+                        "typeString": "function (bool,bool)"
+                      }
+                    },
+                    "id": 446,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "286:25:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 447,
+                  "nodeType": "EmitStatement",
+                  "src": "281:30:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 449,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateGuestRole",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 433,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 430,
+                  "name": "onCommand",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 449,
+                  "src": "191:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 429,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "191:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 432,
+                  "name": "offCommand",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 449,
+                  "src": "206:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 431,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "206:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "190:32:2"
+            },
+            "returnParameters": {
+              "id": 434,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "230:0:2"
+            },
+            "scope": 456,
+            "src": "166:151:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 455,
+            "name": "GuestRoleUpdated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 454,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 451,
+                  "indexed": false,
+                  "name": "on",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 455,
+                  "src": "354:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 450,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "354:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 453,
+                  "indexed": false,
+                  "name": "off",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 455,
+                  "src": "370:8:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 452,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "370:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "345:38:2"
+            },
+            "src": "323:61:2"
+          }
+        ],
+        "scope": 457,
+        "src": "27:362:2"
+      }
+    ],
+    "src": "0:389:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/GuestRoleAuth.sol",
+    "exportedSymbols": {
+      "GuestRoleAuth": [
+        456
+      ]
+    },
+    "id": 457,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 412,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 456,
+        "linearizedBaseContracts": [
+          456
+        ],
+        "name": "GuestRoleAuth",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 414,
+            "name": "on",
+            "nodeType": "VariableDeclaration",
+            "scope": 456,
+            "src": "55:14:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 413,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "55:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 416,
+            "name": "off",
+            "nodeType": "VariableDeclaration",
+            "scope": 456,
+            "src": "74:15:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 415,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "74:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 427,
+              "nodeType": "Block",
+              "src": "117:43:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 421,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 419,
+                      "name": "on",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 414,
+                      "src": "126:2:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 420,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "131:4:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "126:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 422,
+                  "nodeType": "ExpressionStatement",
+                  "src": "126:9:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 425,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 423,
+                      "name": "off",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 416,
+                      "src": "144:3:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 424,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "150:4:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "144:10:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 426,
+                  "nodeType": "ExpressionStatement",
+                  "src": "144:10:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 428,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 417,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "107:2:2"
+            },
+            "returnParameters": {
+              "id": 418,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "117:0:2"
+            },
+            "scope": 456,
+            "src": "96:64:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 448,
+              "nodeType": "Block",
+              "src": "230:87:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 437,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 435,
+                      "name": "on",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 414,
+                      "src": "237:2:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 436,
+                      "name": "onCommand",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 430,
+                      "src": "242:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "237:14:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 438,
+                  "nodeType": "ExpressionStatement",
+                  "src": "237:14:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 441,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 439,
+                      "name": "off",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 416,
+                      "src": "258:3:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 440,
+                      "name": "offCommand",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 432,
+                      "src": "264:10:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "258:16:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 442,
+                  "nodeType": "ExpressionStatement",
+                  "src": "258:16:2"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 444,
+                        "name": "on",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 414,
+                        "src": "303:2:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 445,
+                        "name": "off",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 416,
+                        "src": "307:3:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 443,
+                      "name": "GuestRoleUpdated",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 455,
+                      "src": "286:16:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_bool_$returns$__$",
+                        "typeString": "function (bool,bool)"
+                      }
+                    },
+                    "id": 446,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "286:25:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 447,
+                  "nodeType": "EmitStatement",
+                  "src": "281:30:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 449,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateGuestRole",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 433,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 430,
+                  "name": "onCommand",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 449,
+                  "src": "191:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 429,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "191:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 432,
+                  "name": "offCommand",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 449,
+                  "src": "206:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 431,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "206:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "190:32:2"
+            },
+            "returnParameters": {
+              "id": 434,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "230:0:2"
+            },
+            "scope": 456,
+            "src": "166:151:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 455,
+            "name": "GuestRoleUpdated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 454,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 451,
+                  "indexed": false,
+                  "name": "on",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 455,
+                  "src": "354:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 450,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "354:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 453,
+                  "indexed": false,
+                  "name": "off",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 455,
+                  "src": "370:8:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 452,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "370:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "345:38:2"
+            },
+            "src": "323:61:2"
+          }
+        ],
+        "scope": 457,
+        "src": "27:362:2"
+      }
+    ],
+    "src": "0:389:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {
+    "1572694160025": {
+      "events": {},
+      "links": {},
+      "address": "0x485527723f0fDa5E74F82D33719251FfC2Eb4BeC",
+      "transactionHash": "0x4cc016343377e26fc1fb77e29c6cb97b17fc07b532a0fa952eb908c8c9de132a"
+    }
+  },
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-11-02T11:29:46.547Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

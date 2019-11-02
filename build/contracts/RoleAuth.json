@@ -114,25 +114,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"or\",\"outputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"gr\",\"outputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"updateOwnerRole\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"UpdateGuestRole\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"on\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"OwnerRoleUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"on\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"GuestRoleUpdated\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol\":\"RoleAuth\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol\":{\"keccak256\":\"0xd5a598e062350c9cabcf49a4cd87d417d4b283c64706a3f4ee305eb33865302a\",\"urls\":[\"bzzr://921fec38d454f7f797220a5c6b34f5598acc7acd3894b30961cfe8bff3e3ee64\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5061002260018061003860201b60201c565b61003360018061009560201b60201c565b610109565b6100406100f2565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b61009d6100f2565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b604080518082019091526000808252602082015290565b6101ed806101186000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80632d5e74d814610051578063950da23f14610074578063edf35cf81461007c578063f26d64da146100a5575b600080fd5b6100596100cc565b60408051921515835290151560208301528051918290030190f35b6100596100de565b6100a36004803603604081101561009257600080fd5b5080351515906020013515156100f0565b005b6100a3600480360360408110156100bb57600080fd5b50803515159060200135151561014d565b60005460ff8082169161010090041682565b60015460ff8082169161010090041682565b6100f86101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b6101556101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b60408051808201909152600080825260208201529056fea165627a7a72305820fbae26a0520d2e0361e700bef7c199050267be06916955fc045cde7d72aa592a0029",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80632d5e74d814610051578063950da23f14610074578063edf35cf81461007c578063f26d64da146100a5575b600080fd5b6100596100cc565b60408051921515835290151560208301528051918290030190f35b6100596100de565b6100a36004803603604081101561009257600080fd5b5080351515906020013515156100f0565b005b6100a3600480360360408110156100bb57600080fd5b50803515159060200135151561014d565b60005460ff8082169161010090041682565b60015460ff8082169161010090041682565b6100f86101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b6101556101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b60408051808201909152600080825260208201529056fea165627a7a72305820fbae26a0520d2e0361e700bef7c199050267be06916955fc045cde7d72aa592a0029",
-  "sourceMap": "27:771:3:-;;;344:93;8:9:-1;5:2;;;30:1;27;20:12;5:2;344:93:3;372:26;388:4;393;372:15;;;:26;;:::i;:::-;405;421:4;426;405:15;;;:26;;:::i;:::-;27:771;;445:171;502:20;;:::i;:::-;-1:-1:-1;502:25:3;;;;;;;;534:11;;;;;;552:13;;;502:25;;;;552:13;;;577:33;;;;;;;;;;502:25;;577:33;;;;;;;;;445:171;;;:::o;622:::-;679:20;;:::i;:::-;-1:-1:-1;679:25:3;;;;;;;;711:11;;;;;;729:13;;;679:25;;;;729:13;;;754:33;;;;;;;;;;679:25;;754:33;;;;;;;;;622:171;;;:::o;27:771::-;;;;;;;;;;-1:-1:-1;27:771:3;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "27:771:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:771:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;50:19;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;74;;;:::i;445:171::-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;445:171:3;;;;;;;;;;;:::i;:::-;;622;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;622:171:3;;;;;;;;;;;:::i;50:19::-;;;;;;;;;;;;;:::o;74:::-;;;;;;;;;;;;;:::o;445:171::-;502:20;;:::i;:::-;-1:-1:-1;502:25:3;;;;;;;;534:11;;;;;;552:13;;;502:25;;;;552:13;;;577:33;;;;;;;;;;502:25;;577:33;;;;;;;;;445:171;;;:::o;622:::-;679:20;;:::i;:::-;-1:-1:-1;679:25:3;;;;;;;;711:11;;;;;;729:13;;;679:25;;;;729:13;;;754:33;;;;;;;;;;679:25;;754:33;;;;;;;;;622:171;;;:::o;27:771::-;;;;;;;;;;-1:-1:-1;27:771:3;;;;;;;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"or\",\"outputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"gr\",\"outputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"updateOwnerRole\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"on\",\"type\":\"bool\"},{\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"UpdateGuestRole\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"on\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"OwnerRoleUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"on\",\"type\":\"bool\"},{\"indexed\":false,\"name\":\"off\",\"type\":\"bool\"}],\"name\":\"GuestRoleUpdated\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/RoleAuth.sol\":\"RoleAuth\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/RoleAuth.sol\":{\"keccak256\":\"0xd5a598e062350c9cabcf49a4cd87d417d4b283c64706a3f4ee305eb33865302a\",\"urls\":[\"bzzr://921fec38d454f7f797220a5c6b34f5598acc7acd3894b30961cfe8bff3e3ee64\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061002260018061003860201b60201c565b61003360018061009560201b60201c565b610109565b6100406100f2565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b61009d6100f2565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b604080518082019091526000808252602082015290565b6101ed806101186000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80632d5e74d814610051578063950da23f14610074578063edf35cf81461007c578063f26d64da146100a5575b600080fd5b6100596100cc565b60408051921515835290151560208301528051918290030190f35b6100596100de565b6100a36004803603604081101561009257600080fd5b5080351515906020013515156100f0565b005b6100a3600480360360408110156100bb57600080fd5b50803515159060200135151561014d565b60005460ff8082169161010090041682565b60015460ff8082169161010090041682565b6100f86101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b6101556101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b60408051808201909152600080825260208201529056fea165627a7a72305820b5c235e14b181ea0c29a9b3cd00a833b9ea724f39875d642d2348f11d874df340029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80632d5e74d814610051578063950da23f14610074578063edf35cf81461007c578063f26d64da146100a5575b600080fd5b6100596100cc565b60408051921515835290151560208301528051918290030190f35b6100596100de565b6100a36004803603604081101561009257600080fd5b5080351515906020013515156100f0565b005b6100a3600480360360408110156100bb57600080fd5b50803515159060200135151561014d565b60005460ff8082169161010090041682565b60015460ff8082169161010090041682565b6100f86101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927f9e2db047e554d55a2c954aefe4cb14d674aa72716e8d0bcc8691d77a763db36f92918290030190a1505050565b6101556101aa565b5060408051808201825283151580825283151560208084018290528451928352820152825191927fe64deeb8da62acafa673404a9fc9133e506ffaafb67e7097a2a6b0401b30d6df92918290030190a1505050565b60408051808201909152600080825260208201529056fea165627a7a72305820b5c235e14b181ea0c29a9b3cd00a833b9ea724f39875d642d2348f11d874df340029",
+  "sourceMap": "27:771:4:-;;;344:93;8:9:-1;5:2;;;30:1;27;20:12;5:2;344:93:4;372:26;388:4;393;372:15;;;:26;;:::i;:::-;405;421:4;426;405:15;;;:26;;:::i;:::-;27:771;;445:171;502:20;;:::i;:::-;-1:-1:-1;502:25:4;;;;;;;;534:11;;;;;;552:13;;;502:25;;;;552:13;;;577:33;;;;;;;;;;502:25;;577:33;;;;;;;;;445:171;;;:::o;622:::-;679:20;;:::i;:::-;-1:-1:-1;679:25:4;;;;;;;;711:11;;;;;;729:13;;;679:25;;;;729:13;;;754:33;;;;;;;;;;679:25;;754:33;;;;;;;;;622:171;;;:::o;27:771::-;;;;;;;;;;-1:-1:-1;27:771:4;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "27:771:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:771:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;50:19;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;74;;;:::i;445:171::-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;445:171:4;;;;;;;;;;;:::i;:::-;;622;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;622:171:4;;;;;;;;;;;:::i;50:19::-;;;;;;;;;;;;;:::o;74:::-;;;;;;;;;;;;;:::o;445:171::-;502:20;;:::i;:::-;-1:-1:-1;502:25:4;;;;;;;;534:11;;;;;;552:13;;;502:25;;;;552:13;;;577:33;;;;;;;;;;502:25;;577:33;;;;;;;;;445:171;;;:::o;622:::-;679:20;;:::i;:::-;-1:-1:-1;679:25:4;;;;;;;;711:11;;;;;;729:13;;;679:25;;;;729:13;;;754:33;;;;;;;;;;679:25;;754:33;;;;;;;;;622:171;;;:::o;27:771::-;;;;;;;;;;-1:-1:-1;27:771:4;;;;;;;;:::o",
   "source": "pragma solidity ^0.5.0;\r\n\r\ncontract RoleAuth {\r\n  OwnerRole public or;\r\n  GuestRole public gr;\r\n\r\n  struct OwnerRole {\r\n    bool on;\r\n    bool off;\r\n  }\r\n\r\n  struct GuestRole {\r\n    bool on;\r\n    bool off;\r\n  }\r\n\r\n  event OwnerRoleUpdated(\r\n    bool on,\r\n    bool off\r\n  );\r\n\r\n  event GuestRoleUpdated(\r\n    bool on,\r\n    bool off\r\n  );\r\n  \r\n  constructor() public {\r\n    updateOwnerRole(true,true);\r\n    UpdateGuestRole(true,true);\r\n  }\r\n\r\n\r\n  function updateOwnerRole(bool on,bool off) public {\r\n    OwnerRole memory _or = or;\r\n    _or.on = on;\r\n    _or.off = off;\r\n    emit OwnerRoleUpdated(_or.on, _or.off);\r\n  }\r\n\r\n  function UpdateGuestRole(bool on,bool off) public {\r\n    GuestRole memory _gr = gr;\r\n    _gr.on = on;\r\n    _gr.off = off;\r\n    emit GuestRoleUpdated(_gr.on, _gr.off);\r\n  }\r\n\r\n}",
-  "sourcePath": "C:/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol",
+  "sourcePath": "C:/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/RoleAuth.sol",
   "ast": {
-    "absolutePath": "/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol",
+    "absolutePath": "/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/RoleAuth.sol",
     "exportedSymbols": {
       "RoleAuth": [
-        569
+        649
       ]
     },
-    "id": 570,
+    "id": 650,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 466,
+        "id": 546,
         "literals": [
           "solidity",
           "^",
@@ -140,7 +140,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:3"
+        "src": "0:23:4"
       },
       {
         "baseContracts": [],
@@ -148,35 +148,35 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 569,
+        "id": 649,
         "linearizedBaseContracts": [
-          569
+          649
         ],
         "name": "RoleAuth",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 468,
+            "id": 548,
             "name": "or",
             "nodeType": "VariableDeclaration",
-            "scope": 569,
-            "src": "50:19:3",
+            "scope": 649,
+            "src": "50:19:4",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_OwnerRole_$475_storage",
+              "typeIdentifier": "t_struct$_OwnerRole_$555_storage",
               "typeString": "struct RoleAuth.OwnerRole"
             },
             "typeName": {
               "contractScope": null,
-              "id": 467,
+              "id": 547,
               "name": "OwnerRole",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 475,
-              "src": "50:9:3",
+              "referencedDeclaration": 555,
+              "src": "50:9:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_OwnerRole_$475_storage_ptr",
+                "typeIdentifier": "t_struct$_OwnerRole_$555_storage_ptr",
                 "typeString": "struct RoleAuth.OwnerRole"
               }
             },
@@ -185,26 +185,26 @@
           },
           {
             "constant": false,
-            "id": 470,
+            "id": 550,
             "name": "gr",
             "nodeType": "VariableDeclaration",
-            "scope": 569,
-            "src": "74:19:3",
+            "scope": 649,
+            "src": "74:19:4",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_GuestRole_$480_storage",
+              "typeIdentifier": "t_struct$_GuestRole_$560_storage",
               "typeString": "struct RoleAuth.GuestRole"
             },
             "typeName": {
               "contractScope": null,
-              "id": 469,
+              "id": 549,
               "name": "GuestRole",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 480,
-              "src": "74:9:3",
+              "referencedDeclaration": 560,
+              "src": "74:9:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_GuestRole_$480_storage_ptr",
+                "typeIdentifier": "t_struct$_GuestRole_$560_storage_ptr",
                 "typeString": "struct RoleAuth.GuestRole"
               }
             },
@@ -213,15 +213,15 @@
           },
           {
             "canonicalName": "RoleAuth.OwnerRole",
-            "id": 475,
+            "id": 555,
             "members": [
               {
                 "constant": false,
-                "id": 472,
+                "id": 552,
                 "name": "on",
                 "nodeType": "VariableDeclaration",
-                "scope": 475,
-                "src": "124:7:3",
+                "scope": 555,
+                "src": "124:7:4",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -229,10 +229,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 471,
+                  "id": 551,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "124:4:3",
+                  "src": "124:4:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -243,11 +243,11 @@
               },
               {
                 "constant": false,
-                "id": 474,
+                "id": 554,
                 "name": "off",
                 "nodeType": "VariableDeclaration",
-                "scope": 475,
-                "src": "138:8:3",
+                "scope": 555,
+                "src": "138:8:4",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -255,10 +255,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 473,
+                  "id": 553,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "138:4:3",
+                  "src": "138:4:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -270,21 +270,21 @@
             ],
             "name": "OwnerRole",
             "nodeType": "StructDefinition",
-            "scope": 569,
-            "src": "100:52:3",
+            "scope": 649,
+            "src": "100:52:4",
             "visibility": "public"
           },
           {
             "canonicalName": "RoleAuth.GuestRole",
-            "id": 480,
+            "id": 560,
             "members": [
               {
                 "constant": false,
-                "id": 477,
+                "id": 557,
                 "name": "on",
                 "nodeType": "VariableDeclaration",
-                "scope": 480,
-                "src": "182:7:3",
+                "scope": 560,
+                "src": "182:7:4",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -292,10 +292,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 476,
+                  "id": 556,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "182:4:3",
+                  "src": "182:4:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -306,11 +306,11 @@
               },
               {
                 "constant": false,
-                "id": 479,
+                "id": 559,
                 "name": "off",
                 "nodeType": "VariableDeclaration",
-                "scope": 480,
-                "src": "196:8:3",
+                "scope": 560,
+                "src": "196:8:4",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -318,10 +318,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 478,
+                  "id": 558,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "196:4:3",
+                  "src": "196:4:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -333,28 +333,28 @@
             ],
             "name": "GuestRole",
             "nodeType": "StructDefinition",
-            "scope": 569,
-            "src": "158:52:3",
+            "scope": 649,
+            "src": "158:52:4",
             "visibility": "public"
           },
           {
             "anonymous": false,
             "documentation": null,
-            "id": 486,
+            "id": 566,
             "name": "OwnerRoleUpdated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 485,
+              "id": 565,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 482,
+                  "id": 562,
                   "indexed": false,
                   "name": "on",
                   "nodeType": "VariableDeclaration",
-                  "scope": 486,
-                  "src": "245:7:3",
+                  "scope": 566,
+                  "src": "245:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -362,10 +362,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 481,
+                    "id": 561,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "245:4:3",
+                    "src": "245:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -376,12 +376,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 484,
+                  "id": 564,
                   "indexed": false,
                   "name": "off",
                   "nodeType": "VariableDeclaration",
-                  "scope": 486,
-                  "src": "259:8:3",
+                  "scope": 566,
+                  "src": "259:8:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -389,10 +389,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 483,
+                    "id": 563,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "259:4:3",
+                    "src": "259:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -402,28 +402,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "238:34:3"
+              "src": "238:34:4"
             },
-            "src": "216:57:3"
+            "src": "216:57:4"
           },
           {
             "anonymous": false,
             "documentation": null,
-            "id": 492,
+            "id": 572,
             "name": "GuestRoleUpdated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 491,
+              "id": 571,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 488,
+                  "id": 568,
                   "indexed": false,
                   "name": "on",
                   "nodeType": "VariableDeclaration",
-                  "scope": 492,
-                  "src": "308:7:3",
+                  "scope": 572,
+                  "src": "308:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -431,10 +431,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 487,
+                    "id": 567,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "308:4:3",
+                    "src": "308:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -445,12 +445,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 490,
+                  "id": 570,
                   "indexed": false,
                   "name": "off",
                   "nodeType": "VariableDeclaration",
-                  "scope": 492,
-                  "src": "322:8:3",
+                  "scope": 572,
+                  "src": "322:8:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -458,10 +458,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 489,
+                    "id": 569,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "322:4:3",
+                    "src": "322:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -471,15 +471,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "301:34:3"
+              "src": "301:34:4"
             },
-            "src": "279:57:3"
+            "src": "279:57:4"
           },
           {
             "body": {
-              "id": 505,
+              "id": 585,
               "nodeType": "Block",
-              "src": "365:72:3",
+              "src": "365:72:4",
               "statements": [
                 {
                   "expression": {
@@ -488,14 +488,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "74727565",
-                        "id": 496,
+                        "id": 576,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "388:4:3",
+                        "src": "388:4:4",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -506,14 +506,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "74727565",
-                        "id": 497,
+                        "id": 577,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "393:4:3",
+                        "src": "393:4:4",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -533,18 +533,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 495,
+                      "id": 575,
                       "name": "updateOwnerRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 537,
-                      "src": "372:15:3",
+                      "referencedDeclaration": 617,
+                      "src": "372:15:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
                       }
                     },
-                    "id": 498,
+                    "id": 578,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -552,15 +552,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "372:26:3",
+                    "src": "372:26:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 499,
+                  "id": 579,
                   "nodeType": "ExpressionStatement",
-                  "src": "372:26:3"
+                  "src": "372:26:4"
                 },
                 {
                   "expression": {
@@ -569,14 +569,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "74727565",
-                        "id": 501,
+                        "id": 581,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "421:4:3",
+                        "src": "421:4:4",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -587,14 +587,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "74727565",
-                        "id": 502,
+                        "id": 582,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "426:4:3",
+                        "src": "426:4:4",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -614,18 +614,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 500,
+                      "id": 580,
                       "name": "UpdateGuestRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 568,
-                      "src": "405:15:3",
+                      "referencedDeclaration": 648,
+                      "src": "405:15:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
                       }
                     },
-                    "id": 503,
+                    "id": 583,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -633,76 +633,76 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "405:26:3",
+                    "src": "405:26:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 504,
+                  "id": 584,
                   "nodeType": "ExpressionStatement",
-                  "src": "405:26:3"
+                  "src": "405:26:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 506,
+            "id": 586,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 493,
+              "id": 573,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "355:2:3"
+              "src": "355:2:4"
             },
             "returnParameters": {
-              "id": 494,
+              "id": 574,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "365:0:3"
+              "src": "365:0:4"
             },
-            "scope": 569,
-            "src": "344:93:3",
+            "scope": 649,
+            "src": "344:93:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 536,
+              "id": 616,
               "nodeType": "Block",
-              "src": "495:121:3",
+              "src": "495:121:4",
               "statements": [
                 {
                   "assignments": [
-                    514
+                    594
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 514,
+                      "id": 594,
                       "name": "_or",
                       "nodeType": "VariableDeclaration",
-                      "scope": 536,
-                      "src": "502:20:3",
+                      "scope": 616,
+                      "src": "502:20:4",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
+                        "typeIdentifier": "t_struct$_OwnerRole_$555_memory_ptr",
                         "typeString": "struct RoleAuth.OwnerRole"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 513,
+                        "id": 593,
                         "name": "OwnerRole",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 475,
-                        "src": "502:9:3",
+                        "referencedDeclaration": 555,
+                        "src": "502:9:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_OwnerRole_$475_storage_ptr",
+                          "typeIdentifier": "t_struct$_OwnerRole_$555_storage_ptr",
                           "typeString": "struct RoleAuth.OwnerRole"
                         }
                       },
@@ -710,27 +710,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 516,
+                  "id": 596,
                   "initialValue": {
                     "argumentTypes": null,
-                    "id": 515,
+                    "id": 595,
                     "name": "or",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 468,
-                    "src": "525:2:3",
+                    "referencedDeclaration": 548,
+                    "src": "525:2:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_OwnerRole_$475_storage",
+                      "typeIdentifier": "t_struct$_OwnerRole_$555_storage",
                       "typeString": "struct RoleAuth.OwnerRole storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "502:25:3"
+                  "src": "502:25:4"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 521,
+                    "id": 601,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -739,26 +739,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 517,
+                        "id": 597,
                         "name": "_or",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 514,
-                        "src": "534:3:3",
+                        "referencedDeclaration": 594,
+                        "src": "534:3:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
+                          "typeIdentifier": "t_struct$_OwnerRole_$555_memory_ptr",
                           "typeString": "struct RoleAuth.OwnerRole memory"
                         }
                       },
-                      "id": 519,
+                      "id": 599,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "on",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 472,
-                      "src": "534:6:3",
+                      "referencedDeclaration": 552,
+                      "src": "534:6:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -768,31 +768,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 520,
+                      "id": 600,
                       "name": "on",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 508,
-                      "src": "543:2:3",
+                      "referencedDeclaration": 588,
+                      "src": "543:2:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "534:11:3",
+                    "src": "534:11:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 522,
+                  "id": 602,
                   "nodeType": "ExpressionStatement",
-                  "src": "534:11:3"
+                  "src": "534:11:4"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 527,
+                    "id": 607,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -801,26 +801,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 523,
+                        "id": 603,
                         "name": "_or",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 514,
-                        "src": "552:3:3",
+                        "referencedDeclaration": 594,
+                        "src": "552:3:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
+                          "typeIdentifier": "t_struct$_OwnerRole_$555_memory_ptr",
                           "typeString": "struct RoleAuth.OwnerRole memory"
                         }
                       },
-                      "id": 525,
+                      "id": 605,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "off",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 474,
-                      "src": "552:7:3",
+                      "referencedDeclaration": 554,
+                      "src": "552:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -830,26 +830,26 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 526,
+                      "id": 606,
                       "name": "off",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 510,
-                      "src": "562:3:3",
+                      "referencedDeclaration": 590,
+                      "src": "562:3:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "552:13:3",
+                    "src": "552:13:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 528,
+                  "id": 608,
                   "nodeType": "ExpressionStatement",
-                  "src": "552:13:3"
+                  "src": "552:13:4"
                 },
                 {
                   "eventCall": {
@@ -859,26 +859,26 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 530,
+                          "id": 610,
                           "name": "_or",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 514,
-                          "src": "594:3:3",
+                          "referencedDeclaration": 594,
+                          "src": "594:3:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
+                            "typeIdentifier": "t_struct$_OwnerRole_$555_memory_ptr",
                             "typeString": "struct RoleAuth.OwnerRole memory"
                           }
                         },
-                        "id": 531,
+                        "id": 611,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "on",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 472,
-                        "src": "594:6:3",
+                        "referencedDeclaration": 552,
+                        "src": "594:6:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -888,26 +888,26 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 532,
+                          "id": 612,
                           "name": "_or",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 514,
-                          "src": "602:3:3",
+                          "referencedDeclaration": 594,
+                          "src": "602:3:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
+                            "typeIdentifier": "t_struct$_OwnerRole_$555_memory_ptr",
                             "typeString": "struct RoleAuth.OwnerRole memory"
                           }
                         },
-                        "id": 533,
+                        "id": 613,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "off",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 474,
-                        "src": "602:7:3",
+                        "referencedDeclaration": 554,
+                        "src": "602:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -925,18 +925,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 529,
+                      "id": 609,
                       "name": "OwnerRoleUpdated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 486,
-                      "src": "577:16:3",
+                      "referencedDeclaration": 566,
+                      "src": "577:16:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
                       }
                     },
-                    "id": 534,
+                    "id": 614,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -944,36 +944,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "577:33:3",
+                    "src": "577:33:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 535,
+                  "id": 615,
                   "nodeType": "EmitStatement",
-                  "src": "572:38:3"
+                  "src": "572:38:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 537,
+            "id": 617,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "updateOwnerRole",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 511,
+              "id": 591,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 508,
+                  "id": 588,
                   "name": "on",
                   "nodeType": "VariableDeclaration",
-                  "scope": 537,
-                  "src": "470:7:3",
+                  "scope": 617,
+                  "src": "470:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -981,10 +981,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 507,
+                    "id": 587,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "470:4:3",
+                    "src": "470:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -995,11 +995,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 510,
+                  "id": 590,
                   "name": "off",
                   "nodeType": "VariableDeclaration",
-                  "scope": 537,
-                  "src": "478:8:3",
+                  "scope": 617,
+                  "src": "478:8:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1007,10 +1007,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 509,
+                    "id": 589,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "478:4:3",
+                    "src": "478:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1020,53 +1020,53 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "469:18:3"
+              "src": "469:18:4"
             },
             "returnParameters": {
-              "id": 512,
+              "id": 592,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "495:0:3"
+              "src": "495:0:4"
             },
-            "scope": 569,
-            "src": "445:171:3",
+            "scope": 649,
+            "src": "445:171:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 567,
+              "id": 647,
               "nodeType": "Block",
-              "src": "672:121:3",
+              "src": "672:121:4",
               "statements": [
                 {
                   "assignments": [
-                    545
+                    625
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 545,
+                      "id": 625,
                       "name": "_gr",
                       "nodeType": "VariableDeclaration",
-                      "scope": 567,
-                      "src": "679:20:3",
+                      "scope": 647,
+                      "src": "679:20:4",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
+                        "typeIdentifier": "t_struct$_GuestRole_$560_memory_ptr",
                         "typeString": "struct RoleAuth.GuestRole"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 544,
+                        "id": 624,
                         "name": "GuestRole",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 480,
-                        "src": "679:9:3",
+                        "referencedDeclaration": 560,
+                        "src": "679:9:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_GuestRole_$480_storage_ptr",
+                          "typeIdentifier": "t_struct$_GuestRole_$560_storage_ptr",
                           "typeString": "struct RoleAuth.GuestRole"
                         }
                       },
@@ -1074,27 +1074,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 547,
+                  "id": 627,
                   "initialValue": {
                     "argumentTypes": null,
-                    "id": 546,
+                    "id": 626,
                     "name": "gr",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 470,
-                    "src": "702:2:3",
+                    "referencedDeclaration": 550,
+                    "src": "702:2:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_GuestRole_$480_storage",
+                      "typeIdentifier": "t_struct$_GuestRole_$560_storage",
                       "typeString": "struct RoleAuth.GuestRole storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "679:25:3"
+                  "src": "679:25:4"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 552,
+                    "id": 632,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1103,26 +1103,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 548,
+                        "id": 628,
                         "name": "_gr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 545,
-                        "src": "711:3:3",
+                        "referencedDeclaration": 625,
+                        "src": "711:3:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
+                          "typeIdentifier": "t_struct$_GuestRole_$560_memory_ptr",
                           "typeString": "struct RoleAuth.GuestRole memory"
                         }
                       },
-                      "id": 550,
+                      "id": 630,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "on",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 477,
-                      "src": "711:6:3",
+                      "referencedDeclaration": 557,
+                      "src": "711:6:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1132,31 +1132,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 551,
+                      "id": 631,
                       "name": "on",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 539,
-                      "src": "720:2:3",
+                      "referencedDeclaration": 619,
+                      "src": "720:2:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "711:11:3",
+                    "src": "711:11:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 553,
+                  "id": 633,
                   "nodeType": "ExpressionStatement",
-                  "src": "711:11:3"
+                  "src": "711:11:4"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 558,
+                    "id": 638,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1165,26 +1165,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 554,
+                        "id": 634,
                         "name": "_gr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 545,
-                        "src": "729:3:3",
+                        "referencedDeclaration": 625,
+                        "src": "729:3:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
+                          "typeIdentifier": "t_struct$_GuestRole_$560_memory_ptr",
                           "typeString": "struct RoleAuth.GuestRole memory"
                         }
                       },
-                      "id": 556,
+                      "id": 636,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "off",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 479,
-                      "src": "729:7:3",
+                      "referencedDeclaration": 559,
+                      "src": "729:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1194,26 +1194,26 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 557,
+                      "id": 637,
                       "name": "off",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 541,
-                      "src": "739:3:3",
+                      "referencedDeclaration": 621,
+                      "src": "739:3:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "729:13:3",
+                    "src": "729:13:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 559,
+                  "id": 639,
                   "nodeType": "ExpressionStatement",
-                  "src": "729:13:3"
+                  "src": "729:13:4"
                 },
                 {
                   "eventCall": {
@@ -1223,26 +1223,26 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 561,
+                          "id": 641,
                           "name": "_gr",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 545,
-                          "src": "771:3:3",
+                          "referencedDeclaration": 625,
+                          "src": "771:3:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
+                            "typeIdentifier": "t_struct$_GuestRole_$560_memory_ptr",
                             "typeString": "struct RoleAuth.GuestRole memory"
                           }
                         },
-                        "id": 562,
+                        "id": 642,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "on",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 477,
-                        "src": "771:6:3",
+                        "referencedDeclaration": 557,
+                        "src": "771:6:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1252,26 +1252,26 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 563,
+                          "id": 643,
                           "name": "_gr",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 545,
-                          "src": "779:3:3",
+                          "referencedDeclaration": 625,
+                          "src": "779:3:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
+                            "typeIdentifier": "t_struct$_GuestRole_$560_memory_ptr",
                             "typeString": "struct RoleAuth.GuestRole memory"
                           }
                         },
-                        "id": 564,
+                        "id": 644,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "off",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 479,
-                        "src": "779:7:3",
+                        "referencedDeclaration": 559,
+                        "src": "779:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1289,18 +1289,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 560,
+                      "id": 640,
                       "name": "GuestRoleUpdated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 492,
-                      "src": "754:16:3",
+                      "referencedDeclaration": 572,
+                      "src": "754:16:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
                       }
                     },
-                    "id": 565,
+                    "id": 645,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1308,36 +1308,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "754:33:3",
+                    "src": "754:33:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 566,
+                  "id": 646,
                   "nodeType": "EmitStatement",
-                  "src": "749:38:3"
+                  "src": "749:38:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 568,
+            "id": 648,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "UpdateGuestRole",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 542,
+              "id": 622,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 539,
+                  "id": 619,
                   "name": "on",
                   "nodeType": "VariableDeclaration",
-                  "scope": 568,
-                  "src": "647:7:3",
+                  "scope": 648,
+                  "src": "647:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1345,10 +1345,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 538,
+                    "id": 618,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "647:4:3",
+                    "src": "647:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1359,11 +1359,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 541,
+                  "id": 621,
                   "name": "off",
                   "nodeType": "VariableDeclaration",
-                  "scope": 568,
-                  "src": "655:8:3",
+                  "scope": 648,
+                  "src": "655:8:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1371,10 +1371,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 540,
+                    "id": 620,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "655:4:3",
+                    "src": "655:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1384,39 +1384,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "646:18:3"
+              "src": "646:18:4"
             },
             "returnParameters": {
-              "id": 543,
+              "id": 623,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "672:0:3"
+              "src": "672:0:4"
             },
-            "scope": 569,
-            "src": "622:171:3",
+            "scope": 649,
+            "src": "622:171:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 570,
-        "src": "27:771:3"
+        "scope": 650,
+        "src": "27:771:4"
       }
     ],
-    "src": "0:798:3"
+    "src": "0:798:4"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/Mkay_DaSextja/Documents/BScHons - UJ/Project/Code/block-auth-contract/contracts/RoleAuth.sol",
+    "absolutePath": "/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/RoleAuth.sol",
     "exportedSymbols": {
       "RoleAuth": [
-        569
+        649
       ]
     },
-    "id": 570,
+    "id": 650,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 466,
+        "id": 546,
         "literals": [
           "solidity",
           "^",
@@ -1424,7 +1424,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:3"
+        "src": "0:23:4"
       },
       {
         "baseContracts": [],
@@ -1432,35 +1432,35 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 569,
+        "id": 649,
         "linearizedBaseContracts": [
-          569
+          649
         ],
         "name": "RoleAuth",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 468,
+            "id": 548,
             "name": "or",
             "nodeType": "VariableDeclaration",
-            "scope": 569,
-            "src": "50:19:3",
+            "scope": 649,
+            "src": "50:19:4",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_OwnerRole_$475_storage",
+              "typeIdentifier": "t_struct$_OwnerRole_$555_storage",
               "typeString": "struct RoleAuth.OwnerRole"
             },
             "typeName": {
               "contractScope": null,
-              "id": 467,
+              "id": 547,
               "name": "OwnerRole",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 475,
-              "src": "50:9:3",
+              "referencedDeclaration": 555,
+              "src": "50:9:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_OwnerRole_$475_storage_ptr",
+                "typeIdentifier": "t_struct$_OwnerRole_$555_storage_ptr",
                 "typeString": "struct RoleAuth.OwnerRole"
               }
             },
@@ -1469,26 +1469,26 @@
           },
           {
             "constant": false,
-            "id": 470,
+            "id": 550,
             "name": "gr",
             "nodeType": "VariableDeclaration",
-            "scope": 569,
-            "src": "74:19:3",
+            "scope": 649,
+            "src": "74:19:4",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_GuestRole_$480_storage",
+              "typeIdentifier": "t_struct$_GuestRole_$560_storage",
               "typeString": "struct RoleAuth.GuestRole"
             },
             "typeName": {
               "contractScope": null,
-              "id": 469,
+              "id": 549,
               "name": "GuestRole",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 480,
-              "src": "74:9:3",
+              "referencedDeclaration": 560,
+              "src": "74:9:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_GuestRole_$480_storage_ptr",
+                "typeIdentifier": "t_struct$_GuestRole_$560_storage_ptr",
                 "typeString": "struct RoleAuth.GuestRole"
               }
             },
@@ -1497,15 +1497,15 @@
           },
           {
             "canonicalName": "RoleAuth.OwnerRole",
-            "id": 475,
+            "id": 555,
             "members": [
               {
                 "constant": false,
-                "id": 472,
+                "id": 552,
                 "name": "on",
                 "nodeType": "VariableDeclaration",
-                "scope": 475,
-                "src": "124:7:3",
+                "scope": 555,
+                "src": "124:7:4",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1513,10 +1513,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 471,
+                  "id": 551,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "124:4:3",
+                  "src": "124:4:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -1527,11 +1527,11 @@
               },
               {
                 "constant": false,
-                "id": 474,
+                "id": 554,
                 "name": "off",
                 "nodeType": "VariableDeclaration",
-                "scope": 475,
-                "src": "138:8:3",
+                "scope": 555,
+                "src": "138:8:4",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1539,10 +1539,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 473,
+                  "id": 553,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "138:4:3",
+                  "src": "138:4:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -1554,21 +1554,21 @@
             ],
             "name": "OwnerRole",
             "nodeType": "StructDefinition",
-            "scope": 569,
-            "src": "100:52:3",
+            "scope": 649,
+            "src": "100:52:4",
             "visibility": "public"
           },
           {
             "canonicalName": "RoleAuth.GuestRole",
-            "id": 480,
+            "id": 560,
             "members": [
               {
                 "constant": false,
-                "id": 477,
+                "id": 557,
                 "name": "on",
                 "nodeType": "VariableDeclaration",
-                "scope": 480,
-                "src": "182:7:3",
+                "scope": 560,
+                "src": "182:7:4",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1576,10 +1576,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 476,
+                  "id": 556,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "182:4:3",
+                  "src": "182:4:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -1590,11 +1590,11 @@
               },
               {
                 "constant": false,
-                "id": 479,
+                "id": 559,
                 "name": "off",
                 "nodeType": "VariableDeclaration",
-                "scope": 480,
-                "src": "196:8:3",
+                "scope": 560,
+                "src": "196:8:4",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1602,10 +1602,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 478,
+                  "id": 558,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "196:4:3",
+                  "src": "196:4:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -1617,28 +1617,28 @@
             ],
             "name": "GuestRole",
             "nodeType": "StructDefinition",
-            "scope": 569,
-            "src": "158:52:3",
+            "scope": 649,
+            "src": "158:52:4",
             "visibility": "public"
           },
           {
             "anonymous": false,
             "documentation": null,
-            "id": 486,
+            "id": 566,
             "name": "OwnerRoleUpdated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 485,
+              "id": 565,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 482,
+                  "id": 562,
                   "indexed": false,
                   "name": "on",
                   "nodeType": "VariableDeclaration",
-                  "scope": 486,
-                  "src": "245:7:3",
+                  "scope": 566,
+                  "src": "245:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1646,10 +1646,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 481,
+                    "id": 561,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "245:4:3",
+                    "src": "245:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1660,12 +1660,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 484,
+                  "id": 564,
                   "indexed": false,
                   "name": "off",
                   "nodeType": "VariableDeclaration",
-                  "scope": 486,
-                  "src": "259:8:3",
+                  "scope": 566,
+                  "src": "259:8:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1673,10 +1673,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 483,
+                    "id": 563,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "259:4:3",
+                    "src": "259:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1686,28 +1686,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "238:34:3"
+              "src": "238:34:4"
             },
-            "src": "216:57:3"
+            "src": "216:57:4"
           },
           {
             "anonymous": false,
             "documentation": null,
-            "id": 492,
+            "id": 572,
             "name": "GuestRoleUpdated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 491,
+              "id": 571,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 488,
+                  "id": 568,
                   "indexed": false,
                   "name": "on",
                   "nodeType": "VariableDeclaration",
-                  "scope": 492,
-                  "src": "308:7:3",
+                  "scope": 572,
+                  "src": "308:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1715,10 +1715,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 487,
+                    "id": 567,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "308:4:3",
+                    "src": "308:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1729,12 +1729,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 490,
+                  "id": 570,
                   "indexed": false,
                   "name": "off",
                   "nodeType": "VariableDeclaration",
-                  "scope": 492,
-                  "src": "322:8:3",
+                  "scope": 572,
+                  "src": "322:8:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1742,10 +1742,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 489,
+                    "id": 569,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "322:4:3",
+                    "src": "322:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1755,15 +1755,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "301:34:3"
+              "src": "301:34:4"
             },
-            "src": "279:57:3"
+            "src": "279:57:4"
           },
           {
             "body": {
-              "id": 505,
+              "id": 585,
               "nodeType": "Block",
-              "src": "365:72:3",
+              "src": "365:72:4",
               "statements": [
                 {
                   "expression": {
@@ -1772,14 +1772,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "74727565",
-                        "id": 496,
+                        "id": 576,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "388:4:3",
+                        "src": "388:4:4",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -1790,14 +1790,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "74727565",
-                        "id": 497,
+                        "id": 577,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "393:4:3",
+                        "src": "393:4:4",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -1817,18 +1817,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 495,
+                      "id": 575,
                       "name": "updateOwnerRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 537,
-                      "src": "372:15:3",
+                      "referencedDeclaration": 617,
+                      "src": "372:15:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
                       }
                     },
-                    "id": 498,
+                    "id": 578,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1836,15 +1836,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "372:26:3",
+                    "src": "372:26:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 499,
+                  "id": 579,
                   "nodeType": "ExpressionStatement",
-                  "src": "372:26:3"
+                  "src": "372:26:4"
                 },
                 {
                   "expression": {
@@ -1853,14 +1853,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "74727565",
-                        "id": 501,
+                        "id": 581,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "421:4:3",
+                        "src": "421:4:4",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -1871,14 +1871,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "74727565",
-                        "id": 502,
+                        "id": 582,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "426:4:3",
+                        "src": "426:4:4",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -1898,18 +1898,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 500,
+                      "id": 580,
                       "name": "UpdateGuestRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 568,
-                      "src": "405:15:3",
+                      "referencedDeclaration": 648,
+                      "src": "405:15:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
                       }
                     },
-                    "id": 503,
+                    "id": 583,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1917,76 +1917,76 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "405:26:3",
+                    "src": "405:26:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 504,
+                  "id": 584,
                   "nodeType": "ExpressionStatement",
-                  "src": "405:26:3"
+                  "src": "405:26:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 506,
+            "id": 586,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 493,
+              "id": 573,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "355:2:3"
+              "src": "355:2:4"
             },
             "returnParameters": {
-              "id": 494,
+              "id": 574,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "365:0:3"
+              "src": "365:0:4"
             },
-            "scope": 569,
-            "src": "344:93:3",
+            "scope": 649,
+            "src": "344:93:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 536,
+              "id": 616,
               "nodeType": "Block",
-              "src": "495:121:3",
+              "src": "495:121:4",
               "statements": [
                 {
                   "assignments": [
-                    514
+                    594
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 514,
+                      "id": 594,
                       "name": "_or",
                       "nodeType": "VariableDeclaration",
-                      "scope": 536,
-                      "src": "502:20:3",
+                      "scope": 616,
+                      "src": "502:20:4",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
+                        "typeIdentifier": "t_struct$_OwnerRole_$555_memory_ptr",
                         "typeString": "struct RoleAuth.OwnerRole"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 513,
+                        "id": 593,
                         "name": "OwnerRole",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 475,
-                        "src": "502:9:3",
+                        "referencedDeclaration": 555,
+                        "src": "502:9:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_OwnerRole_$475_storage_ptr",
+                          "typeIdentifier": "t_struct$_OwnerRole_$555_storage_ptr",
                           "typeString": "struct RoleAuth.OwnerRole"
                         }
                       },
@@ -1994,27 +1994,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 516,
+                  "id": 596,
                   "initialValue": {
                     "argumentTypes": null,
-                    "id": 515,
+                    "id": 595,
                     "name": "or",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 468,
-                    "src": "525:2:3",
+                    "referencedDeclaration": 548,
+                    "src": "525:2:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_OwnerRole_$475_storage",
+                      "typeIdentifier": "t_struct$_OwnerRole_$555_storage",
                       "typeString": "struct RoleAuth.OwnerRole storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "502:25:3"
+                  "src": "502:25:4"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 521,
+                    "id": 601,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2023,26 +2023,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 517,
+                        "id": 597,
                         "name": "_or",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 514,
-                        "src": "534:3:3",
+                        "referencedDeclaration": 594,
+                        "src": "534:3:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
+                          "typeIdentifier": "t_struct$_OwnerRole_$555_memory_ptr",
                           "typeString": "struct RoleAuth.OwnerRole memory"
                         }
                       },
-                      "id": 519,
+                      "id": 599,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "on",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 472,
-                      "src": "534:6:3",
+                      "referencedDeclaration": 552,
+                      "src": "534:6:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -2052,31 +2052,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 520,
+                      "id": 600,
                       "name": "on",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 508,
-                      "src": "543:2:3",
+                      "referencedDeclaration": 588,
+                      "src": "543:2:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "534:11:3",
+                    "src": "534:11:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 522,
+                  "id": 602,
                   "nodeType": "ExpressionStatement",
-                  "src": "534:11:3"
+                  "src": "534:11:4"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 527,
+                    "id": 607,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2085,26 +2085,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 523,
+                        "id": 603,
                         "name": "_or",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 514,
-                        "src": "552:3:3",
+                        "referencedDeclaration": 594,
+                        "src": "552:3:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
+                          "typeIdentifier": "t_struct$_OwnerRole_$555_memory_ptr",
                           "typeString": "struct RoleAuth.OwnerRole memory"
                         }
                       },
-                      "id": 525,
+                      "id": 605,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "off",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 474,
-                      "src": "552:7:3",
+                      "referencedDeclaration": 554,
+                      "src": "552:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -2114,26 +2114,26 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 526,
+                      "id": 606,
                       "name": "off",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 510,
-                      "src": "562:3:3",
+                      "referencedDeclaration": 590,
+                      "src": "562:3:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "552:13:3",
+                    "src": "552:13:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 528,
+                  "id": 608,
                   "nodeType": "ExpressionStatement",
-                  "src": "552:13:3"
+                  "src": "552:13:4"
                 },
                 {
                   "eventCall": {
@@ -2143,26 +2143,26 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 530,
+                          "id": 610,
                           "name": "_or",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 514,
-                          "src": "594:3:3",
+                          "referencedDeclaration": 594,
+                          "src": "594:3:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
+                            "typeIdentifier": "t_struct$_OwnerRole_$555_memory_ptr",
                             "typeString": "struct RoleAuth.OwnerRole memory"
                           }
                         },
-                        "id": 531,
+                        "id": 611,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "on",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 472,
-                        "src": "594:6:3",
+                        "referencedDeclaration": 552,
+                        "src": "594:6:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2172,26 +2172,26 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 532,
+                          "id": 612,
                           "name": "_or",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 514,
-                          "src": "602:3:3",
+                          "referencedDeclaration": 594,
+                          "src": "602:3:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_OwnerRole_$475_memory_ptr",
+                            "typeIdentifier": "t_struct$_OwnerRole_$555_memory_ptr",
                             "typeString": "struct RoleAuth.OwnerRole memory"
                           }
                         },
-                        "id": 533,
+                        "id": 613,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "off",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 474,
-                        "src": "602:7:3",
+                        "referencedDeclaration": 554,
+                        "src": "602:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2209,18 +2209,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 529,
+                      "id": 609,
                       "name": "OwnerRoleUpdated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 486,
-                      "src": "577:16:3",
+                      "referencedDeclaration": 566,
+                      "src": "577:16:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
                       }
                     },
-                    "id": 534,
+                    "id": 614,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2228,36 +2228,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "577:33:3",
+                    "src": "577:33:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 535,
+                  "id": 615,
                   "nodeType": "EmitStatement",
-                  "src": "572:38:3"
+                  "src": "572:38:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 537,
+            "id": 617,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "updateOwnerRole",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 511,
+              "id": 591,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 508,
+                  "id": 588,
                   "name": "on",
                   "nodeType": "VariableDeclaration",
-                  "scope": 537,
-                  "src": "470:7:3",
+                  "scope": 617,
+                  "src": "470:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2265,10 +2265,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 507,
+                    "id": 587,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "470:4:3",
+                    "src": "470:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2279,11 +2279,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 510,
+                  "id": 590,
                   "name": "off",
                   "nodeType": "VariableDeclaration",
-                  "scope": 537,
-                  "src": "478:8:3",
+                  "scope": 617,
+                  "src": "478:8:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2291,10 +2291,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 509,
+                    "id": 589,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "478:4:3",
+                    "src": "478:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2304,53 +2304,53 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "469:18:3"
+              "src": "469:18:4"
             },
             "returnParameters": {
-              "id": 512,
+              "id": 592,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "495:0:3"
+              "src": "495:0:4"
             },
-            "scope": 569,
-            "src": "445:171:3",
+            "scope": 649,
+            "src": "445:171:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 567,
+              "id": 647,
               "nodeType": "Block",
-              "src": "672:121:3",
+              "src": "672:121:4",
               "statements": [
                 {
                   "assignments": [
-                    545
+                    625
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 545,
+                      "id": 625,
                       "name": "_gr",
                       "nodeType": "VariableDeclaration",
-                      "scope": 567,
-                      "src": "679:20:3",
+                      "scope": 647,
+                      "src": "679:20:4",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
+                        "typeIdentifier": "t_struct$_GuestRole_$560_memory_ptr",
                         "typeString": "struct RoleAuth.GuestRole"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 544,
+                        "id": 624,
                         "name": "GuestRole",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 480,
-                        "src": "679:9:3",
+                        "referencedDeclaration": 560,
+                        "src": "679:9:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_GuestRole_$480_storage_ptr",
+                          "typeIdentifier": "t_struct$_GuestRole_$560_storage_ptr",
                           "typeString": "struct RoleAuth.GuestRole"
                         }
                       },
@@ -2358,27 +2358,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 547,
+                  "id": 627,
                   "initialValue": {
                     "argumentTypes": null,
-                    "id": 546,
+                    "id": 626,
                     "name": "gr",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 470,
-                    "src": "702:2:3",
+                    "referencedDeclaration": 550,
+                    "src": "702:2:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_GuestRole_$480_storage",
+                      "typeIdentifier": "t_struct$_GuestRole_$560_storage",
                       "typeString": "struct RoleAuth.GuestRole storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "679:25:3"
+                  "src": "679:25:4"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 552,
+                    "id": 632,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2387,26 +2387,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 548,
+                        "id": 628,
                         "name": "_gr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 545,
-                        "src": "711:3:3",
+                        "referencedDeclaration": 625,
+                        "src": "711:3:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
+                          "typeIdentifier": "t_struct$_GuestRole_$560_memory_ptr",
                           "typeString": "struct RoleAuth.GuestRole memory"
                         }
                       },
-                      "id": 550,
+                      "id": 630,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "on",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 477,
-                      "src": "711:6:3",
+                      "referencedDeclaration": 557,
+                      "src": "711:6:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -2416,31 +2416,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 551,
+                      "id": 631,
                       "name": "on",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 539,
-                      "src": "720:2:3",
+                      "referencedDeclaration": 619,
+                      "src": "720:2:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "711:11:3",
+                    "src": "711:11:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 553,
+                  "id": 633,
                   "nodeType": "ExpressionStatement",
-                  "src": "711:11:3"
+                  "src": "711:11:4"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 558,
+                    "id": 638,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2449,26 +2449,26 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 554,
+                        "id": 634,
                         "name": "_gr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 545,
-                        "src": "729:3:3",
+                        "referencedDeclaration": 625,
+                        "src": "729:3:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
+                          "typeIdentifier": "t_struct$_GuestRole_$560_memory_ptr",
                           "typeString": "struct RoleAuth.GuestRole memory"
                         }
                       },
-                      "id": 556,
+                      "id": 636,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "off",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 479,
-                      "src": "729:7:3",
+                      "referencedDeclaration": 559,
+                      "src": "729:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -2478,26 +2478,26 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 557,
+                      "id": 637,
                       "name": "off",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 541,
-                      "src": "739:3:3",
+                      "referencedDeclaration": 621,
+                      "src": "739:3:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "729:13:3",
+                    "src": "729:13:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 559,
+                  "id": 639,
                   "nodeType": "ExpressionStatement",
-                  "src": "729:13:3"
+                  "src": "729:13:4"
                 },
                 {
                   "eventCall": {
@@ -2507,26 +2507,26 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 561,
+                          "id": 641,
                           "name": "_gr",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 545,
-                          "src": "771:3:3",
+                          "referencedDeclaration": 625,
+                          "src": "771:3:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
+                            "typeIdentifier": "t_struct$_GuestRole_$560_memory_ptr",
                             "typeString": "struct RoleAuth.GuestRole memory"
                           }
                         },
-                        "id": 562,
+                        "id": 642,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "on",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 477,
-                        "src": "771:6:3",
+                        "referencedDeclaration": 557,
+                        "src": "771:6:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2536,26 +2536,26 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 563,
+                          "id": 643,
                           "name": "_gr",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 545,
-                          "src": "779:3:3",
+                          "referencedDeclaration": 625,
+                          "src": "779:3:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_GuestRole_$480_memory_ptr",
+                            "typeIdentifier": "t_struct$_GuestRole_$560_memory_ptr",
                             "typeString": "struct RoleAuth.GuestRole memory"
                           }
                         },
-                        "id": 564,
+                        "id": 644,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "off",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 479,
-                        "src": "779:7:3",
+                        "referencedDeclaration": 559,
+                        "src": "779:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2573,18 +2573,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 560,
+                      "id": 640,
                       "name": "GuestRoleUpdated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 492,
-                      "src": "754:16:3",
+                      "referencedDeclaration": 572,
+                      "src": "754:16:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_bool_$returns$__$",
                         "typeString": "function (bool,bool)"
                       }
                     },
-                    "id": 565,
+                    "id": 645,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2592,36 +2592,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "754:33:3",
+                    "src": "754:33:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 566,
+                  "id": 646,
                   "nodeType": "EmitStatement",
-                  "src": "749:38:3"
+                  "src": "749:38:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 568,
+            "id": 648,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "UpdateGuestRole",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 542,
+              "id": 622,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 539,
+                  "id": 619,
                   "name": "on",
                   "nodeType": "VariableDeclaration",
-                  "scope": 568,
-                  "src": "647:7:3",
+                  "scope": 648,
+                  "src": "647:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2629,10 +2629,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 538,
+                    "id": 618,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "647:4:3",
+                    "src": "647:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2643,11 +2643,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 541,
+                  "id": 621,
                   "name": "off",
                   "nodeType": "VariableDeclaration",
-                  "scope": 568,
-                  "src": "655:8:3",
+                  "scope": 648,
+                  "src": "655:8:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2655,10 +2655,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 540,
+                    "id": 620,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "655:4:3",
+                    "src": "655:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2668,26 +2668,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "646:18:3"
+              "src": "646:18:4"
             },
             "returnParameters": {
-              "id": 543,
+              "id": 623,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "672:0:3"
+              "src": "672:0:4"
             },
-            "scope": 569,
-            "src": "622:171:3",
+            "scope": 649,
+            "src": "622:171:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 570,
-        "src": "27:771:3"
+        "scope": 650,
+        "src": "27:771:4"
       }
     ],
-    "src": "0:798:3"
+    "src": "0:798:4"
   },
   "compiler": {
     "name": "solc",
@@ -2699,10 +2699,22 @@
       "links": {},
       "address": "0xcaCb3ebb477717d79e4F82A3547D287342025c61",
       "transactionHash": "0x90a93f614a02f143d7fa8252977ad31f1bf78edcd6197e550c72744a6bb10d57"
+    },
+    "1572379945259": {
+      "events": {},
+      "links": {},
+      "address": "0xcaCb3ebb477717d79e4F82A3547D287342025c61",
+      "transactionHash": "0xf4f0f8244dcfa7077fe4f322c2d7024491cc8b22237ec1e6937e03584bbf7b92"
+    },
+    "1572694160025": {
+      "events": {},
+      "links": {},
+      "address": "0xcaCb3ebb477717d79e4F82A3547D287342025c61",
+      "transactionHash": "0xf4f0f8244dcfa7077fe4f322c2d7024491cc8b22237ec1e6937e03584bbf7b92"
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-09-19T13:14:35.866Z",
+  "updatedAt": "2019-11-02T11:29:45.588Z",
   "devdoc": {
     "methods": {}
   },
