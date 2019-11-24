@@ -3618,10 +3618,16 @@
       "links": {},
       "address": "0x22cfeC59A21b351e3Ad258588Cd79eBBCf6cF617",
       "transactionHash": "0x11fc5e88724e1b76796abc8c2f9948498c9534bb7148be70c3f5b0410b588763"
+    },
+    "1572801835959": {
+      "events": {},
+      "links": {},
+      "address": "0x22cfeC59A21b351e3Ad258588Cd79eBBCf6cF617",
+      "transactionHash": "0x11fc5e88724e1b76796abc8c2f9948498c9534bb7148be70c3f5b0410b588763"
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-11-02T11:29:44.662Z",
+  "updatedAt": "2019-11-03T17:24:14.477Z",
   "devdoc": {
     "methods": {}
   },

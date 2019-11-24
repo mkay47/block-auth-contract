@@ -5621,10 +5621,16 @@
       "links": {},
       "address": "0xE1294B1Ec5A7587222bDd10d8647bdE559bC1CE0",
       "transactionHash": "0xa9a827280c717fb6bd00b3a48464e0f518caa5ed9e07cd43e8b0777acebfee4e"
+    },
+    "1572801835959": {
+      "events": {},
+      "links": {},
+      "address": "0xE1294B1Ec5A7587222bDd10d8647bdE559bC1CE0",
+      "transactionHash": "0xa9a827280c717fb6bd00b3a48464e0f518caa5ed9e07cd43e8b0777acebfee4e"
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-11-02T11:29:45.256Z",
+  "updatedAt": "2019-11-03T17:24:14.951Z",
   "devdoc": {
     "methods": {}
   },
