@@ -1,0 +1,1704 @@
+{
+  "contractName": "LogsAuth",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "logsCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "logs",
+      "outputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "action",
+          "type": "string"
+        },
+        {
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "name": "role",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "action",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "role",
+          "type": "string"
+        }
+      ],
+      "name": "LogAdded",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "action",
+          "type": "string"
+        },
+        {
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "name": "role",
+          "type": "string"
+        }
+      ],
+      "name": "addLog",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"action\",\"type\":\"string\"},{\"name\":\"account\",\"type\":\"address\"},{\"name\":\"role\",\"type\":\"string\"}],\"name\":\"addLog\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"logsCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"logs\",\"outputs\":[{\"name\":\"id\",\"type\":\"uint256\"},{\"name\":\"action\",\"type\":\"string\"},{\"name\":\"account\",\"type\":\"address\"},{\"name\":\"role\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"action\",\"type\":\"string\"},{\"indexed\":false,\"name\":\"account\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"role\",\"type\":\"string\"}],\"name\":\"LogAdded\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/LogsAuth.sol\":\"LogsAuth\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/LogsAuth.sol\":{\"keccak256\":\"0xa93eb1d93736cb6d4444f2d3c1dedea229d4699695d63ab6c652d34d2adea67a\",\"urls\":[\"bzzr://2ca37ce0d6a206b9958923e7cac317d9182a2f51b677d7b6c1838da5cb70f43c\"]}},\"version\":1}",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b5061069b806100246000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80636441ddde14610046578063cd1f839314610186578063e79899bd146101a0575b600080fd5b6101846004803603606081101561005c57600080fd5b81019060208101813564010000000081111561007757600080fd5b82018360208201111561008957600080fd5b803590602001918460018302840111640100000000831117156100ab57600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092956001600160a01b0385351695909490935060408101925060200135905064010000000081111561010f57600080fd5b82018360208201111561012157600080fd5b8035906020019184600183028401116401000000008311171561014357600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506102bb945050505050565b005b61018e610486565b60408051918252519081900360200190f35b6101bd600480360360208110156101b657600080fd5b503561048c565b6040518085815260200180602001846001600160a01b03166001600160a01b0316815260200180602001838103835286818151815260200191508051906020019080838360005b8381101561021c578181015183820152602001610204565b50505050905090810190601f1680156102495780820380516001836020036101000a031916815260200191505b50838103825284518152845160209182019186019080838360005b8381101561027c578181015183820152602001610264565b50505050905090810190601f1680156102a95780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390f35b6000805460019081018083556040805160808101825282815260208082018981526001600160a01b03891683850152606083018890529386528481529190942084518155915180519293610317939085019291909101906105d4565b5060408201516002820180546001600160a01b0319166001600160a01b03909216919091179055606082015180516103599160038401916020909101906105d4565b509050507f3b803c1c440f8884cc716057f47203dbaf4372ccb47619c0041b7e2584a8bd6e6000548484846040518085815260200180602001846001600160a01b03166001600160a01b0316815260200180602001838103835286818151815260200191508051906020019080838360005b838110156103e35781810151838201526020016103cb565b50505050905090810190601f1680156104105780820380516001836020036101000a031916815260200191505b50838103825284518152845160209182019186019080838360005b8381101561044357818101518382015260200161042b565b50505050905090810190601f1680156104705780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390a1505050565b60005481565b600160208181526000928352604092839020805481840180548651600296821615610100026000190190911695909504601f810185900485028601850190965285855290949193929091908301828280156105285780601f106104fd57610100808354040283529160200191610528565b820191906000526020600020905b81548152906001019060200180831161050b57829003601f168201915b505050506002838101546003850180546040805160206101006001851615026000190190931695909504601f810183900483028601830190915280855295966001600160a01b03909316959294509091908301828280156105ca5780601f1061059f576101008083540402835291602001916105ca565b820191906000526020600020905b8154815290600101906020018083116105ad57829003601f168201915b5050505050905084565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061061557805160ff1916838001178555610642565b82800160010185558215610642579182015b82811115610642578251825591602001919060010190610627565b5061064e929150610652565b5090565b61066c91905b8082111561064e5760008155600101610658565b9056fea165627a7a723058207cb44b7f960bc7ab38e59eefdb2152427a38886da562965145b8a5b064ed211a0029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80636441ddde14610046578063cd1f839314610186578063e79899bd146101a0575b600080fd5b6101846004803603606081101561005c57600080fd5b81019060208101813564010000000081111561007757600080fd5b82018360208201111561008957600080fd5b803590602001918460018302840111640100000000831117156100ab57600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092956001600160a01b0385351695909490935060408101925060200135905064010000000081111561010f57600080fd5b82018360208201111561012157600080fd5b8035906020019184600183028401116401000000008311171561014357600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506102bb945050505050565b005b61018e610486565b60408051918252519081900360200190f35b6101bd600480360360208110156101b657600080fd5b503561048c565b6040518085815260200180602001846001600160a01b03166001600160a01b0316815260200180602001838103835286818151815260200191508051906020019080838360005b8381101561021c578181015183820152602001610204565b50505050905090810190601f1680156102495780820380516001836020036101000a031916815260200191505b50838103825284518152845160209182019186019080838360005b8381101561027c578181015183820152602001610264565b50505050905090810190601f1680156102a95780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390f35b6000805460019081018083556040805160808101825282815260208082018981526001600160a01b03891683850152606083018890529386528481529190942084518155915180519293610317939085019291909101906105d4565b5060408201516002820180546001600160a01b0319166001600160a01b03909216919091179055606082015180516103599160038401916020909101906105d4565b509050507f3b803c1c440f8884cc716057f47203dbaf4372ccb47619c0041b7e2584a8bd6e6000548484846040518085815260200180602001846001600160a01b03166001600160a01b0316815260200180602001838103835286818151815260200191508051906020019080838360005b838110156103e35781810151838201526020016103cb565b50505050905090810190601f1680156104105780820380516001836020036101000a031916815260200191505b50838103825284518152845160209182019186019080838360005b8381101561044357818101518382015260200161042b565b50505050905090810190601f1680156104705780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390a1505050565b60005481565b600160208181526000928352604092839020805481840180548651600296821615610100026000190190911695909504601f810185900485028601850190965285855290949193929091908301828280156105285780601f106104fd57610100808354040283529160200191610528565b820191906000526020600020905b81548152906001019060200180831161050b57829003601f168201915b505050506002838101546003850180546040805160206101006001851615026000190190931695909504601f810183900483028601830190915280855295966001600160a01b03909316959294509091908301828280156105ca5780601f1061059f576101008083540402835291602001916105ca565b820191906000526020600020905b8154815290600101906020018083116105ad57829003601f168201915b5050505050905084565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061061557805160ff1916838001178555610642565b82800160010185558215610642579182015b82811115610642578251825591602001919060010190610627565b5061064e929150610652565b5090565b61066c91905b8082111561064e5760008155600101610658565b9056fea165627a7a723058207cb44b7f960bc7ab38e59eefdb2152427a38886da562965145b8a5b064ed211a0029",
+  "sourceMap": "27:529:3:-;;;75:1;51:25;;27:529;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:529:3;;;;;;;",
+  "deployedSourceMap": "27:529:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:529:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;242:236;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;242:236:3;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;242:236:3;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;242:236:3;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;242:236:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;242:236:3;;-1:-1:-1;;;;;242:236:3;;;;;;;;-1:-1:-1;242:236:3;;;;-1:-1:-1;242:236:3;;;;-1:-1:-1;21:11;5:28;;2:2;;;46:1;43;36:12;2:2;242:236:3;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;242:236:3;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;242:236:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;242:236:3;;-1:-1:-1;242:236:3;;-1:-1:-1;;;;;242:236:3:i;:::-;;51:25;;;:::i;:::-;;;;;;;;;;;;;;;;85:32;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;85:32:3;;:::i;:::-;;;;;;;;;;;;;-1:-1:-1;;;;;85:32:3;-1:-1:-1;;;;;85:32:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;85:32:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;85:32:3;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;85:32:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;242:236;335:9;:12;;;;;;;;;376:36;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;376:36:3;;;;;;;;;;;;358:15;;;;;;;;;;:54;;;;;;;;:15;;:54;;;;;;;;;;;;:::i;:::-;-1:-1:-1;358:54:3;;;;;;;;;-1:-1:-1;;;;;;358:54:3;-1:-1:-1;;;;;358:54:3;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;428:42;437:9;;448:6;456:7;465:4;428:42;;;;;;;;;;;;-1:-1:-1;;;;;428:42:3;-1:-1:-1;;;;;428:42:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;428:42:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;428:42:3;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;428:42:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;242:236;;;:::o;51:25::-;;;;:::o;85:32::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;85:32:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;85:32:3;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;85:32:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;85:32:3;;;;;;-1:-1:-1;85:32:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;27:529::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:529:3;;;-1:-1:-1;27:529:3;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract LogsAuth{\r\n    uint public logsCount = 0;\r\n\r\n    mapping(uint => Log) public logs;\r\n\r\n    struct Log{\r\n        uint id;\r\n        string action;\r\n        address account;\r\n        string role;\r\n    }\r\n\r\n    function addLog(string memory action, address account, string memory role) public {\r\n        logsCount ++;\r\n        logs[logsCount] = Log(logsCount,action, account, role);\r\n        emit LogAdded(logsCount, action, account, role);\r\n    }\r\n\r\n    event LogAdded(uint id,string action,address account, string role);\r\n}",
+  "sourcePath": "C:/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/LogsAuth.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/LogsAuth.sol",
+    "exportedSymbols": {
+      "LogsAuth": [
+        516
+      ]
+    },
+    "id": 517,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 458,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 516,
+        "linearizedBaseContracts": [
+          516
+        ],
+        "name": "LogsAuth",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 461,
+            "name": "logsCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 516,
+            "src": "51:25:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 459,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "51:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 460,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "75:1:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 465,
+            "name": "logs",
+            "nodeType": "VariableDeclaration",
+            "scope": 516,
+            "src": "85:32:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Log_$474_storage_$",
+              "typeString": "mapping(uint256 => struct LogsAuth.Log)"
+            },
+            "typeName": {
+              "id": 464,
+              "keyType": {
+                "id": 462,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "93:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "85:20:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Log_$474_storage_$",
+                "typeString": "mapping(uint256 => struct LogsAuth.Log)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 463,
+                "name": "Log",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 474,
+                "src": "101:3:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Log_$474_storage_ptr",
+                  "typeString": "struct LogsAuth.Log"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "LogsAuth.Log",
+            "id": 474,
+            "members": [
+              {
+                "constant": false,
+                "id": 467,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 474,
+                "src": "147:7:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 466,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "147:4:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 469,
+                "name": "action",
+                "nodeType": "VariableDeclaration",
+                "scope": 474,
+                "src": "165:13:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 468,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "165:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 471,
+                "name": "account",
+                "nodeType": "VariableDeclaration",
+                "scope": 474,
+                "src": "189:15:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 470,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "189:7:3",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 473,
+                "name": "role",
+                "nodeType": "VariableDeclaration",
+                "scope": 474,
+                "src": "215:11:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 472,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "215:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Log",
+            "nodeType": "StructDefinition",
+            "scope": 516,
+            "src": "126:108:3",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 504,
+              "nodeType": "Block",
+              "src": "324:154:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 484,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "335:12:3",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 483,
+                      "name": "logsCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 461,
+                      "src": "335:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 485,
+                  "nodeType": "ExpressionStatement",
+                  "src": "335:12:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 495,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 486,
+                        "name": "logs",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 465,
+                        "src": "358:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Log_$474_storage_$",
+                          "typeString": "mapping(uint256 => struct LogsAuth.Log storage ref)"
+                        }
+                      },
+                      "id": 488,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 487,
+                        "name": "logsCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 461,
+                        "src": "363:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "358:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Log_$474_storage",
+                        "typeString": "struct LogsAuth.Log storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 490,
+                          "name": "logsCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 461,
+                          "src": "380:9:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 491,
+                          "name": "action",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 476,
+                          "src": "390:6:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 492,
+                          "name": "account",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 478,
+                          "src": "398:7:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 493,
+                          "name": "role",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 480,
+                          "src": "407:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 489,
+                        "name": "Log",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 474,
+                        "src": "376:3:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Log_$474_storage_ptr_$",
+                          "typeString": "type(struct LogsAuth.Log storage pointer)"
+                        }
+                      },
+                      "id": 494,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "376:36:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Log_$474_memory",
+                        "typeString": "struct LogsAuth.Log memory"
+                      }
+                    },
+                    "src": "358:54:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Log_$474_storage",
+                      "typeString": "struct LogsAuth.Log storage ref"
+                    }
+                  },
+                  "id": 496,
+                  "nodeType": "ExpressionStatement",
+                  "src": "358:54:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 498,
+                        "name": "logsCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 461,
+                        "src": "437:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 499,
+                        "name": "action",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 476,
+                        "src": "448:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 500,
+                        "name": "account",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 478,
+                        "src": "456:7:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 501,
+                        "name": "role",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 480,
+                        "src": "465:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 497,
+                      "name": "LogAdded",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 515,
+                      "src": "428:8:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_string_memory_ptr_$_t_address_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (uint256,string memory,address,string memory)"
+                      }
+                    },
+                    "id": 502,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "428:42:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 503,
+                  "nodeType": "EmitStatement",
+                  "src": "423:47:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 505,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addLog",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 481,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 476,
+                  "name": "action",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "258:20:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 475,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "258:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 478,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "280:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 477,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "280:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 480,
+                  "name": "role",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "297:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 479,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "297:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "257:59:3"
+            },
+            "returnParameters": {
+              "id": 482,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "324:0:3"
+            },
+            "scope": 516,
+            "src": "242:236:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 515,
+            "name": "LogAdded",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 514,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 507,
+                  "indexed": false,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 515,
+                  "src": "501:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 506,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "501:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 509,
+                  "indexed": false,
+                  "name": "action",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 515,
+                  "src": "509:13:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 508,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "509:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 511,
+                  "indexed": false,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 515,
+                  "src": "523:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 510,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "523:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 513,
+                  "indexed": false,
+                  "name": "role",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 515,
+                  "src": "540:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 512,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "540:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "500:52:3"
+            },
+            "src": "486:67:3"
+          }
+        ],
+        "scope": 517,
+        "src": "27:529:3"
+      }
+    ],
+    "src": "0:556:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Mkhululi Mtshemla/Documents/BScHons Computer Science/First Semester/Project/D4 Prototype/block-auth-contract/contracts/LogsAuth.sol",
+    "exportedSymbols": {
+      "LogsAuth": [
+        516
+      ]
+    },
+    "id": 517,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 458,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 516,
+        "linearizedBaseContracts": [
+          516
+        ],
+        "name": "LogsAuth",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 461,
+            "name": "logsCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 516,
+            "src": "51:25:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 459,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "51:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 460,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "75:1:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 465,
+            "name": "logs",
+            "nodeType": "VariableDeclaration",
+            "scope": 516,
+            "src": "85:32:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Log_$474_storage_$",
+              "typeString": "mapping(uint256 => struct LogsAuth.Log)"
+            },
+            "typeName": {
+              "id": 464,
+              "keyType": {
+                "id": 462,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "93:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "85:20:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Log_$474_storage_$",
+                "typeString": "mapping(uint256 => struct LogsAuth.Log)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 463,
+                "name": "Log",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 474,
+                "src": "101:3:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Log_$474_storage_ptr",
+                  "typeString": "struct LogsAuth.Log"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "LogsAuth.Log",
+            "id": 474,
+            "members": [
+              {
+                "constant": false,
+                "id": 467,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 474,
+                "src": "147:7:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 466,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "147:4:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 469,
+                "name": "action",
+                "nodeType": "VariableDeclaration",
+                "scope": 474,
+                "src": "165:13:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 468,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "165:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 471,
+                "name": "account",
+                "nodeType": "VariableDeclaration",
+                "scope": 474,
+                "src": "189:15:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 470,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "189:7:3",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 473,
+                "name": "role",
+                "nodeType": "VariableDeclaration",
+                "scope": 474,
+                "src": "215:11:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 472,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "215:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Log",
+            "nodeType": "StructDefinition",
+            "scope": 516,
+            "src": "126:108:3",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 504,
+              "nodeType": "Block",
+              "src": "324:154:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 484,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "335:12:3",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 483,
+                      "name": "logsCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 461,
+                      "src": "335:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 485,
+                  "nodeType": "ExpressionStatement",
+                  "src": "335:12:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 495,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 486,
+                        "name": "logs",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 465,
+                        "src": "358:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Log_$474_storage_$",
+                          "typeString": "mapping(uint256 => struct LogsAuth.Log storage ref)"
+                        }
+                      },
+                      "id": 488,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 487,
+                        "name": "logsCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 461,
+                        "src": "363:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "358:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Log_$474_storage",
+                        "typeString": "struct LogsAuth.Log storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 490,
+                          "name": "logsCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 461,
+                          "src": "380:9:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 491,
+                          "name": "action",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 476,
+                          "src": "390:6:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 492,
+                          "name": "account",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 478,
+                          "src": "398:7:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 493,
+                          "name": "role",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 480,
+                          "src": "407:4:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 489,
+                        "name": "Log",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 474,
+                        "src": "376:3:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Log_$474_storage_ptr_$",
+                          "typeString": "type(struct LogsAuth.Log storage pointer)"
+                        }
+                      },
+                      "id": 494,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "376:36:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Log_$474_memory",
+                        "typeString": "struct LogsAuth.Log memory"
+                      }
+                    },
+                    "src": "358:54:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Log_$474_storage",
+                      "typeString": "struct LogsAuth.Log storage ref"
+                    }
+                  },
+                  "id": 496,
+                  "nodeType": "ExpressionStatement",
+                  "src": "358:54:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 498,
+                        "name": "logsCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 461,
+                        "src": "437:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 499,
+                        "name": "action",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 476,
+                        "src": "448:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 500,
+                        "name": "account",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 478,
+                        "src": "456:7:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 501,
+                        "name": "role",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 480,
+                        "src": "465:4:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 497,
+                      "name": "LogAdded",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 515,
+                      "src": "428:8:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_string_memory_ptr_$_t_address_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (uint256,string memory,address,string memory)"
+                      }
+                    },
+                    "id": 502,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "428:42:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 503,
+                  "nodeType": "EmitStatement",
+                  "src": "423:47:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 505,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addLog",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 481,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 476,
+                  "name": "action",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "258:20:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 475,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "258:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 478,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "280:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 477,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "280:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 480,
+                  "name": "role",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "297:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 479,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "297:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "257:59:3"
+            },
+            "returnParameters": {
+              "id": 482,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "324:0:3"
+            },
+            "scope": 516,
+            "src": "242:236:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 515,
+            "name": "LogAdded",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 514,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 507,
+                  "indexed": false,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 515,
+                  "src": "501:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 506,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "501:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 509,
+                  "indexed": false,
+                  "name": "action",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 515,
+                  "src": "509:13:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 508,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "509:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 511,
+                  "indexed": false,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 515,
+                  "src": "523:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 510,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "523:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 513,
+                  "indexed": false,
+                  "name": "role",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 515,
+                  "src": "540:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 512,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "540:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "500:52:3"
+            },
+            "src": "486:67:3"
+          }
+        ],
+        "scope": 517,
+        "src": "27:529:3"
+      }
+    ],
+    "src": "0:556:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {
+    "1572379945259": {
+      "events": {},
+      "links": {},
+      "address": "0x2241156f59ac0B59E04825650201041AE6cF1d97",
+      "transactionHash": "0xb95b2cf04703a946b1cb08caf2762912e5d205eb245d3838c20aeb0df11db68d"
+    },
+    "1572694160025": {
+      "events": {},
+      "links": {},
+      "address": "0x2241156f59ac0B59E04825650201041AE6cF1d97",
+      "transactionHash": "0x133f16abb204f6d2cfa97b7a59c6f35b89f17f050186349c3bf1f57eb22ee4b0"
+    },
+    "1572801835959": {
+      "events": {},
+      "links": {},
+      "address": "0x2241156f59ac0B59E04825650201041AE6cF1d97",
+      "transactionHash": "0xaffa58f1b445bad765fabea7f518d6ea97e7bb0a68dfe09dc9f5d9ead0854d4d"
+    }
+  },
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-11-03T17:24:15.685Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
